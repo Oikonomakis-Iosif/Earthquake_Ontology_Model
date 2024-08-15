@@ -1,0 +1,441 @@
+
+EARTHQUAKE MODEL
+
+
+--- CLASSES ---
+	
+
+	EQ1 Earthquake
+	
+		subclass of :
+			E5 Event
+		
+		Scope Note : Earthquakes are temporal events, they are a movement of tectonic plates. As such EQ1 is a subclass of E5 Event. Earthquakes may consist of
+			smaller sub-quakes. 
+			
+		Examples : "e7" , "Earthquake of 1365" , "Earthquake with entry number 13" 
+	
+		
+	
+	EQ2 Comparison evaluation
+		subclass of :
+			I5 Inference Making
+			S5 Inference Making
+			
+		Scope Note : This is used to compare two instances of the same entity . It is similar to a mathematical comparison. However, the comparison can be done both for entities 
+		that can not be measured, which means they are either equal or unequal, and for entities that can be measured.  Currently this can also be used to implement a logical XOR 
+		comparison, but it is subject to change in the future.
+		
+		
+	EQ3 Comparison Value
+		subclass of 
+			E59 Primitive Value
+			
+		Scope Note : These are the values that a comparison evaluation can have. Exclusive is subject to be removed in the future.
+		
+		Constraint - Allowed values are (parentheses give the mathematical interpretation, not the value given) :
+			equal ( == ), unequal ( /= ), more than ( > ), less than ( < ), equal or more than ( >= ), equal or less than ( <= ), exclusive (XOR) .
+	
+
+--- PROPERTIES ---
+	
+
+		
+	PEQ1 has error margin (is error margin of)
+	
+		Domain : E54 Dimension
+		Range : E60 Number.
+		
+		Quantification : Many to 1.
+		
+		Scope note : This is used for dimensions that were measured with a physical error (i.e. 5.4 ± 0.2 cm) to express the error value. A ranged value 7-9 is different from 
+			a measured value 8 ± 1 .
+		
+
+		
+
+	PEQ2 checks equality of (of whom equality is checked in )
+	
+		Domain: EQ6 Comparison evaluation
+		Range : E1 CRM Entity
+		
+		Quantification : Many to 1.
+		
+		Scope Note : Used for comparison evaluations, provides the left side of the comparison.
+		
+		Constraints: many to 1.  Requires usage of checks equality to. Both ranges must be the same class.
+
+		
+	PEQ3 checks equality to ( to whom equality is checked in )
+	
+		Domain: EQ6 Comparison evaluation
+		Range : E1 CRM Entity
+		
+		Quantification : Many to 1.
+		
+		Scope Note : Used for comparison evaluations, provides the right side of the comparison.
+		
+		Constraints: many to 1.  Requires usage of checks equality of. Both ranges must be the same class.
+		
+	PEQ4 has comparison value (is comparison value of)
+	
+		Domain : EQ6 Comparison evaluation
+		Range : EQ7 Comparison Value
+		
+		Quantification : Many to 1.
+		
+		Scope Note : Used to provide the result/value of a comparison.
+
+
+	PEQ5 has documented possible timespan ( is possible timespan documented in )
+	
+		subproperty of : "P4 has time-span"
+	
+		Domain : EQ1 Earthquake
+		Range : E52 Time-Span
+		
+		Quantification : Many to Many.
+		
+		Scope Note : This is a shortcut to an uncertain timespan.
+
+
+	PEQ6 has documented possible place ( is possible place documented in )
+	
+		subproperty of : "P7 took place at"
+	
+		Domain : EQ1 Earthquake
+		Range : E53 Place
+		
+		Quantification : Many to Many.
+	
+		Scope Note : This is a shortcut to an uncertain place.
+	
+	PEQ7 has documented possible epicenter place ( is possible epicenter place documented in )
+	
+		subproperty of : "P7 took place at"
+	
+		Domain : EQ1 Earthquake
+		Range : E53 Place
+		
+		Quantification : Many to Many.
+		
+		Scope Note : This is a shortcut to an uncertain epicenter place.
+	
+	PEQ8 has documented possible dimension ( is possible dimension documented in )
+	
+		subproperty of : "O12 has dimension"
+	
+		Domain : EQ1 Earthquake
+		Range : E54 Place
+		
+		Quantification : Many to Many.
+		
+		Scope Note : This is a shortcut to an uncertain dimension.
+		
+	PEQ9 has documented uncertainty factor  ( is uncertainty factor documented in )
+	
+		Domain : E54 Dimentsion
+		Range : I6 Belief Value
+		
+		Quantification : Many to Many.
+		
+		Scope Note : This is a shortcut to a referred uncertainty factor.
+		
+		
+--- EXAMPLES OF MODEL ---
+
+
+	--- Book Initialization ---
+
+	"Platakis Book" is instance of E31 document.
+	
+	E31 "Platakis Book" has title E35 "ΟΙ ΣΕΙΣΜΟΙ ΤΗΣ ΚΡΗΤΗΣ ΑΠΟ ΤΩΝ ΑΡΧΑΙΟΤΑΤΩΝ ΜΕΧΡΙ ΤΩΝ ΚΑΘ' ΗΜΑΣ ΧΡΟΝΩΝ"
+	E31 "Platakis Book"  P94i was created by E65 " Writing of ΟΙ ΣΕΙΣΜΟΙ ΤΗΣ ΚΡΗΤΗΣ ΑΠΟ ΤΩΝ ΑΡΧΑΙΟΤΑΤΩΝ ΜΕΧΡΙ ΤΩΝ ΚΑΘ' ΗΜΑΣ ΧΡΟΝΩΝ "
+	E65 "Writing of ΟΙ ΣΕΙΣΜΟΙ ΤΗΣ ΚΡΗΤΗΣ ΑΠΟ ΤΩΝ ΑΡΧΑΙΟΤΑΤΩΝ ΜΕΧΡΙ ΤΩΝ ΚΑΘ' ΗΜΑΣ ΧΡΟΝΩΝ " carried out by E39 "Ελευθέριος Πλατάκης"
+	
+	"Papadopoulos Book" is instance of E31 document.
+	
+	"Papadopoulos Book" has title "A Seismic History of Crete"
+	"Papadopoulos Book" was created by E65 Creation " Writing of A Seismic History of Crete "
+	" Writing of A Seismic History of Cret " carried out by "Gerasimos A. Papadopoulos"
+
+
+	--- Place Initialization ---
+	
+	"Crete" contains "Chania"
+	"Crete" contains "Heraklion"
+	"Crete" contains "Ierapetra"
+	"Crete" contains "Mallia"
+
+
+
+
+***EARTHQUAKE EXAMPLES*** :
+
+
+--- Example 1 ---
+
+	Note: Relative Epicenter
+	
+E1
+
+	e1 is instance of EQ1 Earthquake.
+
+    --reference
+	
+	"e1" is documented in "Platakis Book"
+	"e1" is subject of "e1 list of references"
+	"e1 list of references" is documented in "Platakis Book" 
+	"e1 list of references" refers to "Asteroskopeio Athinon , Annales des l'Observatoires de'Athenes "
+	
+	--timespan and places
+	
+	"e1" P4 has time-span "13-08-1922 00:10 GMT+00"
+	"13-08-1922 00:10 GMT+00" P82 at some time within E61 Time Primitive "1922"
+	
+	"e1" took place at "Heraklion"
+	"e1" took place at "Malia"
+	"e1" took place at "Ierapetra"
+	
+	
+
+
+	--measurements
+	"e1" O11i was described by S6 "e1 data evaluation"
+	
+	"e1" O24i was measured by "e1 Malia Measurement"
+	"e1" O24i was measured by "e1 Malia Quake Direction Measurement"
+	"e1" O24i was measured by "e1 Ierapetra Measurement"
+	"e1"O24i was measured by "e1 Ierapetra Quake Direction Measurement"
+	"e1" O24i was measured by "e1 Heraklion Intensity Measurement"
+	"e1" O24i was measured by "e1 Epicenter Measurement"
+	
+	"e1 Mallia Measurement" P14 carried out by E74 "Asteroskopeio Athinon"
+	"e1 Ierapetra Measurement" P14 carried out by E74 "Asteroskopeio Athinon"
+	"e1 Mallia Measurement Quake Direction Measurement" P14 carried out by E74 "Asteroskopeio Athinon"
+	"e1 Ierapetra Measurement Quake Direction Measurement" P14 carried out by E74 "Asteroskopeio Athinon"
+	"e1 Heraklion Measurement" P14 carried out by E74 "Asteroskopeio Athinon"
+	"e1 Epicenter Measurement" P14 carried out by E74 "Asteroskopeio Athinon"
+	
+	--Heraklion measurement
+	
+	"e1 Heraklion Intensity Measurement" P7 took place at E53 "Heraklion"
+	"e1 Heraklion Intensity Measurement" O16 observed value E62 String "Perceivable"
+	
+	
+	--epicenter
+
+	"e1 Epicenter Measurement" O16 Observed value "Southeast of Santorini".
+
+	I7 Belief Adoption "My adoption of Platakis' belief about the epicenter of e1." J7 is based on evidence from "Platakis Book"
+	"My adoption of Platakis' belief about the epicenter of e1." J13 adopted interpretation I12 Adopted Belief "The epicenter of the earthquake was Southeast of Santorini"
+	"The epicenter of the earthquake was Southeast of Santorini" J5 holds to be I6 Belief Value " True " .
+	
+	"e1" PEQ7 has documented possible epicenter place " Southeast of Santorini "
+	
+	
+	
+	--Malia measurement
+
+	"e1 Malia Measurement" P7 took place at E53 "Malia"
+	
+	"e1 Malia Quake Direction Measurement" P7 took place at E53 "Malia"
+	"e1 Malia Quake Direction Measurement" O16 observed value : "West"
+	
+		
+	"e1 Malia Measurement" observed dimension E54 "e1 Malia intensity"
+	"e1 Malia intensity" has type " intensity "
+	"e1 Malia intensity" has unit E58 (Measurement Unit) "Rossi-Forel"
+	"e1 Malia intensity" has value E60 (Number) "4"
+		
+		
+	"e1 Malia Measurement" observed dimension E54 "e1 Malia duration"
+	"e1 Malia duration" has type "duration"
+	"e1 Malia duration" has type "ranged value"
+	"e1 Malia duration" has unit E58 (Measurement Unit) "Seconds"
+	"e1 Malia duration" has lower value limit "2"
+	"e1 Malia duration" has upper value limit "3"
+	
+	"e1 Malia Measurement" O9 observed S15 "e1 Malia quake movement type"
+	"e1 Malia quake movement type" has type "wave"
+	
+	
+	
+	--Ierapetra measurement
+	
+	"e1 Ierapetra Measurement" P7 took place at E53 "Ierapetra"
+	
+	"e1 Ierapetra Quake Direction Measurement" P7 took place at E53 "Ierapetra"
+	"e1 Ierapetra Quake Direction Measurement" O16 observed value (value was observed by): "Southeast"
+
+	"e1 Ierapetra Measurement" observed dimension E54 "e1 Ierapetra intensity"
+	"e1 Ierapetra intensity" has type "intensity"
+	"e1 Ierapetra intensity" has unit E58 (Measurement Unit) "Rossi-Forel"
+	"e1 Ierapetra intensity" has value E60 (Number) "4"
+	
+	"e1 Ierapetra Measurement" observed dimension E54 "e1 Ierapetra duration"
+	"e1 Ierapetra duration" has type "duration"
+	"e1 Ierapetra duration" has unit E58 (Measurement Unit) "Seconds"
+	"e1 Ierapetra duration" has value "10"
+	
+	"e1 Ierapetra Measurement" O9 observed S15 "e1 Ierapetra quake movement type"
+	"e1 Ierapetra quake movement type" has type "wave"
+
+
+
+
+--- Example 2 ---
+	
+	Note : Intensity uncertainty
+	
+E2
+	
+	e2 is instance of EQ1 Earthquake.
+	
+	 --reference
+	
+	"e2" is documented in "Platakis Book"
+	"e2" is subject of "e2 list of references"
+	"e2 list of references" is documented in "Platakis Book" 
+	"e2 list of references" refers to "Rauliv V. , Déscription physique de l'île da Créte"
+	
+	
+	--time-span and damages
+	
+	"e2" P7 has time-span "1246"
+	E52 "1246" at some time within E61 "1246"
+	"e2" P7 took place at  E53 "Chania"
+	"e2" O13 triggered S18 Alteration "Chania Walls damage."
+	"Chania Walls damage." O18 altered E24 Physical Human-Made Thing "Chania Walls"
+
+
+	--intensity
+
+	"e2" O11i was described by S6 "e2 data evaluation"
+	"e2 data evaluation" carried out by "Platakis"
+
+
+	"e2 data evaluation" assigned dimension "e2 Chania intensity"
+	"e2 Chania intensity" has type " intensity "
+	"e2 Chania intensity" has value E60 (Number) "9"
+	"e2 Chania intensity" has unit E58 (Measurement Unit) "Rossi-Forel"
+
+
+	"My adoption of Platakis' belief about the intensity of e2." J7 is based on evidence from "Platakis Book"
+	"My adoption of Platakis' belief about the intensity  of e2." J13 adopted interpretation "The earthquake has a possible intensity of 9"
+	"The earthquake has a possible intensity of 9" J5 holds to be " Possible " .
+	
+	"e2" PEQ8 has documented possible dimension "e2 Chania intensity"
+	"e2 Chania intensity" PEQ9 has documented uncertainty factor " Possible "
+
+	
+	
+---Example 3---
+	
+	Note: Timespan uncertainty, Intensity uncertainty, Earthquake comparison
+	
+--Earthquake 3 :	
+E3
+	
+	e3 is instance of EQ1 Earthquake.
+	e4 is instance of EQ1 Earthquake.
+	
+	
+	--references
+	
+	"e3" is documented in "Platakis Book"
+	"e3" is subject of "e3 list of references"
+	"e3 list of references" is documented in "Platakis Book" 
+	"e3 list of references" refers to "Stavrakis N. , Statistiki tou plithismou tis Kritis meta diaforon geografikon, istorikon, arxaiologiko, ekklisiastikon klp. Eidiseon peri tis nisou, 1890, p.107-111"
+	"e3 list of references" refers to "Zabelios S. , Istorika Skinografimata"
+	
+
+	I10 "e3 references provenance 1" is about the provenance of "Zabelios S. , Istorika Skinografimata"
+	I10 "e3 references provenance 1" is referred to by "Stavrakis N. , Statistiki tou plithismou tis Kritis meta diaforon geografikon, istorikon, arxaiologiko, ekklisiastikon klp. Eidiseon peri tis nisou, 1890, p.107-111" 
+	"e3 references provenance 1" is documented in "Platakis Book"
+	
+	
+	--timespan
+	
+	"e3" took place at "Heraklion"
+	
+	"e3" P7 has time-span "08-08-1303 (Julian)"
+	"08-08-1303 (Julian Calendar)" is identified by E41 Appelation  "21-08-1303 (Gregorian Calendar)"
+	"08-08-1303 (Julian)" at some time within "1303"
+	
+	"My adoption of Platakis' belief about the time-span of e3." J7 is based on evidence from "Platakis Book"
+	"My adoption of Platakis' belief about the time-span  of e3." J13 adopted interpretation "08-08-1303 (Julian Calendar) might be wrong ,probably happened in 1304"
+	"08-08-1303 (Julian Calendar) might be wrong ,probably happened in 1304" J5 holds to be " Maybe " .
+		
+	"e3" PEQ5 has documented possible timespan "08-08-1303 (Julian Calendar)"
+		
+		
+	--intensity
+	
+
+	
+	"e3" O11i was described by S6 "e3 data evaluation"
+	"e3 data evaluation" carried out by "Platakis"
+	
+	"e3 data evaluation" assigned dimension "e3 Heraklion intensity"
+	"e3 Heraklion intensity" has type " ranged value "
+	*"e3 Heraklion intensity" has type " intensity "
+	"e3 Heraklion intensity" P90a has lower value limit "8"
+	"e3 Heraklion intensity" P90b has upper value limit "9"
+	"e3 Heraklion intensity" has unit E58 (Measurement Unit) "Rossi-Forel"
+	
+	"My adoption of Platakis' belief about the intensity of e3." J7 is based on evidence from "Platakis Book"
+	"My adoption of Platakis' belief about the intensity  of e3." J13 adopted interpretation "The earthquake has a possible intensity of 8-9"
+	"The earthquake has a possible intensity of 8-9" J5 holds to be " Possible " .
+	
+	"e3" PEQ8 has documented possible dimension "e3 Heraklion intensity"
+	"e3 Heraklion intensity" PEQ9 has documented uncertainty factor " Possible "
+		
+		
+	--earthquake comparison
+		
+	EQ2 Comparison evaluation "e3-e4 equality evaluation." PEQ2 checks equality of "e3"
+	"e3-e4 equality evaluation." PEQ3 checks equality to "e4"
+	"e3-e4 equality evaluation." PEQ4 has comparison value EQ3 Comparison Value "equal"
+	
+	
+	"My adoption of Platakis' belief about the equality of e3 and e4 ." J7 is based on evidence from "Platakis Book"
+	"My adoption of Platakis' belief about the equality of e3 and e4 ." J13 adopted interpretation " e3 and e4 are probably equal "
+	" e3 and e4 are probably equal " J5 holds to be " Probable " .
+	
+	
+		
+
+	--damages
+	
+	"e3" O13 triggered S18 Alteration "Cracked Heraklion Walls."
+	"Cracked Heraklion Walls." O18 altered E24 Physical Human-Made Thing "Heraklion Walls"
+	
+	"e3" O13 triggered E6 Destruction "Destruction of Megalos Koules"
+	"Destruction Megalos of Koules" P13 destroyed E24 Physical Human-Made Thing "Megalos Koules"
+
+	"Destruction Megalos of Koules" P134i was continued by E12 Production " Rebuilding of Megalos Koules "
+	" Rebuilding of Megalos Koules " P108 has produced E24 Physical Human-Made Thing "Megalos Koules (reconstructed)"
+	
+	
+--Earthquake 4 :
+E4
+
+	--reference
+	
+	"e4" is documented in "Platakis Book"
+	"e4" is subject of "e4 list of references"
+	"e4 list of references" is documented in "Platakis Book" 
+	"e4 list of references" refers to "Hieronymous Donatus"
+
+
+	--timespan
+	
+	"e4" P4 has time-span "Morning of 08-08-1304 (Julian Calendar)"
+	"Morning of 08-08-1304 (Julian Calendar)" P1 is identified by E41 Appelation "Morning of 21-08-1304 (Gregorian Calendar)"
+	"e4" at some time within "1304"
+	
+	-- damages
+	
+	"e4" triggered E69 Death " Death of 4000 people. "
+	
