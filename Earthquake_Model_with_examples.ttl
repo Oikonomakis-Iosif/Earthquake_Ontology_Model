@@ -6601,7 +6601,8 @@ earthquake_model1:Asteroskopeio_Athinon rdf:type owl:NamedIndividual ,
 
 ###  https://www.ics.forth.gr/earthquake_model/Chania
 earthquake_model1:Chania rdf:type owl:NamedIndividual ,
-                                  cidoc-crm:E53_Place .
+                                  cidoc-crm:E53_Place ;
+                         cidoc-crm:P89_falls_within earthquake_model1:Crete .
 
 
 ###  https://www.ics.forth.gr/earthquake_model/Chania_Walls
@@ -6644,7 +6645,8 @@ earthquake_model1:Destruction_of_Megalos_Koules rdf:type owl:NamedIndividual ,
 
 ###  https://www.ics.forth.gr/earthquake_model/Heraklion
 earthquake_model1:Heraklion rdf:type owl:NamedIndividual ,
-                                     cidoc-crm:E53_Place .
+                                     cidoc-crm:E53_Place ;
+                            cidoc-crm:P89_falls_within earthquake_model1:Crete .
 
 
 ###  https://www.ics.forth.gr/earthquake_model/Heraklion_Walls
@@ -6659,12 +6661,14 @@ earthquake_model1:Hieronymous_Donatus rdf:type owl:NamedIndividual ,
 
 ###  https://www.ics.forth.gr/earthquake_model/Ierapetra
 earthquake_model1:Ierapetra rdf:type owl:NamedIndividual ,
-                                     cidoc-crm:E53_Place .
+                                     cidoc-crm:E53_Place ;
+                            cidoc-crm:P86_falls_within earthquake_model1:Crete .
 
 
 ###  https://www.ics.forth.gr/earthquake_model/Malia
 earthquake_model1:Malia rdf:type owl:NamedIndividual ,
-                                 cidoc-crm:E53_Place .
+                                 cidoc-crm:E53_Place ;
+                        cidoc-crm:P89_falls_within earthquake_model1:Crete .
 
 
 ###  https://www.ics.forth.gr/earthquake_model/Megalos_Koules
@@ -6771,6 +6775,10 @@ earthquake_model1:e1 rdf:type owl:NamedIndividual ,
                      cidoc-crm:P7_took_place_at earthquake_model1:Heraklion ,
                                                 earthquake_model1:Ierapetra ,
                                                 earthquake_model1:Malia ;
+                     crmsci:O12_has_dimension earthquake_model1:e1_Ierapetra_duration ,
+                                              earthquake_model1:e1_Ierapetra_intensity ,
+                                              earthquake_model1:e1_Malia_duration ,
+                                              earthquake_model1:e1_Malia_intensity ;
                      earthquake_model1:PEQ7_has_documented_possible_epicenter_place earthquake_model1:Southeast_of_Santorini .
 
 
@@ -6820,7 +6828,7 @@ earthquake_model1:e1_Ierapetra_intensity rdf:type owl:NamedIndividual ,
                                                   cidoc-crm:E54_Dimension ;
                                          cidoc-crm:P2_has_type earthquake_model1:intensity ;
                                          cidoc-crm:P91_has_unit earthquake_model1:Rossi-Forel ;
-                                         cidoc-crm:P90_has_value 4 .
+                                         cidoc-crm:P90_has_value "4"^^rdfs:Literal .
 
 
 ###  https://www.ics.forth.gr/earthquake_model/e1_Ierapetra_quake_movement_type
@@ -6886,6 +6894,7 @@ earthquake_model1:e2 rdf:type owl:NamedIndividual ,
                      cidoc-crm:P70i_is_documented_in earthquake_model1:Platakis_Book ;
                      cidoc-crm:P7_took_place_at earthquake_model1:Chania ;
                      crmsci:O11i_was_described_by earthquake_model1:e2_data_evaluation ;
+                     crmsci:O12_has_dimension earthquake_model1:e2_Chania_intensity ;
                      crmsci:O13_triggered earthquake_model1:Chania_Walls_Damage ;
                      earthquake_model1:PEQ8_has_documented_possible_dimension earthquake_model1:e2_Chania_intensity .
 
@@ -6925,7 +6934,9 @@ earthquake_model1:e3 rdf:type owl:NamedIndividual ,
                      cidoc-crm:P129i_is_subject_of earthquake_model1:e3_list_of_references ;
                      cidoc-crm:P4_has_time-span <https://www.ics.forth.gr/earthquake_model/08-08-1303_(Julian)> ;
                      cidoc-crm:P70i_is_documented_in earthquake_model1:Platakis_Book ;
+                     cidoc-crm:P7_took_place_at earthquake_model1:Heraklion ;
                      crmsci:O11i_was_described_by earthquake_model1:e3_intensity_evaluation ;
+                     crmsci:O12_has_dimension earthquake_model1:e3_Heraklion_intensity ;
                      crmsci:O13_triggered earthquake_model1:Cracked_Heraklion_Walls ,
                                           earthquake_model1:Destruction_of_Megalos_Koules ;
                      earthquake_model1:PEQ5_has_documented_possible_timespan <https://www.ics.forth.gr/earthquake_model/08-08-1303_(Julian)> ;

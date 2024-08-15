@@ -8149,6 +8149,7 @@ Note, that the class E9 Move inherits the property P7 took place at (witnessed):
 
     <owl:NamedIndividual rdf:about="https://www.ics.forth.gr/earthquake_model/Chania">
         <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E53_Place"/>
+        <P89_falls_within rdf:resource="https://www.ics.forth.gr/earthquake_model/Crete"/>
     </owl:NamedIndividual>
     
 
@@ -8213,6 +8214,7 @@ Note, that the class E9 Move inherits the property P7 took place at (witnessed):
 
     <owl:NamedIndividual rdf:about="https://www.ics.forth.gr/earthquake_model/Heraklion">
         <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E53_Place"/>
+        <P89_falls_within rdf:resource="https://www.ics.forth.gr/earthquake_model/Crete"/>
     </owl:NamedIndividual>
     
 
@@ -8237,6 +8239,7 @@ Note, that the class E9 Move inherits the property P7 took place at (witnessed):
 
     <owl:NamedIndividual rdf:about="https://www.ics.forth.gr/earthquake_model/Ierapetra">
         <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E53_Place"/>
+        <P86_falls_within rdf:resource="https://www.ics.forth.gr/earthquake_model/Crete"/>
     </owl:NamedIndividual>
     
 
@@ -8245,6 +8248,7 @@ Note, that the class E9 Move inherits the property P7 took place at (witnessed):
 
     <owl:NamedIndividual rdf:about="https://www.ics.forth.gr/earthquake_model/Malia">
         <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E53_Place"/>
+        <P89_falls_within rdf:resource="https://www.ics.forth.gr/earthquake_model/Crete"/>
     </owl:NamedIndividual>
     
 
@@ -8402,6 +8406,10 @@ Note, that the class E9 Move inherits the property P7 took place at (witnessed):
         <P7_took_place_at rdf:resource="https://www.ics.forth.gr/earthquake_model/Heraklion"/>
         <P7_took_place_at rdf:resource="https://www.ics.forth.gr/earthquake_model/Ierapetra"/>
         <P7_took_place_at rdf:resource="https://www.ics.forth.gr/earthquake_model/Malia"/>
+        <crmsci:O12_has_dimension rdf:resource="https://www.ics.forth.gr/earthquake_model/e1_Ierapetra_duration"/>
+        <crmsci:O12_has_dimension rdf:resource="https://www.ics.forth.gr/earthquake_model/e1_Ierapetra_intensity"/>
+        <crmsci:O12_has_dimension rdf:resource="https://www.ics.forth.gr/earthquake_model/e1_Malia_duration"/>
+        <crmsci:O12_has_dimension rdf:resource="https://www.ics.forth.gr/earthquake_model/e1_Malia_intensity"/>
         <earthquake_model1:PEQ7_has_documented_possible_epicenter_place rdf:resource="https://www.ics.forth.gr/earthquake_model/Southeast_of_Santorini"/>
     </owl:NamedIndividual>
     
@@ -8469,7 +8477,7 @@ Note, that the class E9 Move inherits the property P7 took place at (witnessed):
         <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"/>
         <P2_has_type rdf:resource="https://www.ics.forth.gr/earthquake_model/intensity"/>
         <P91_has_unit rdf:resource="https://www.ics.forth.gr/earthquake_model/Rossi-Forel"/>
-        <P90_has_value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</P90_has_value>
+        <P90_has_value rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">4</P90_has_value>
     </owl:NamedIndividual>
     
 
@@ -8559,6 +8567,7 @@ Note, that the class E9 Move inherits the property P7 took place at (witnessed):
         <P70i_is_documented_in rdf:resource="https://www.ics.forth.gr/earthquake_model/Platakis_Book"/>
         <P7_took_place_at rdf:resource="https://www.ics.forth.gr/earthquake_model/Chania"/>
         <crmsci:O11i_was_described_by rdf:resource="https://www.ics.forth.gr/earthquake_model/e2_data_evaluation"/>
+        <crmsci:O12_has_dimension rdf:resource="https://www.ics.forth.gr/earthquake_model/e2_Chania_intensity"/>
         <crmsci:O13_triggered rdf:resource="https://www.ics.forth.gr/earthquake_model/Chania_Walls_Damage"/>
         <earthquake_model1:PEQ8_has_documented_possible_dimension rdf:resource="https://www.ics.forth.gr/earthquake_model/e2_Chania_intensity"/>
     </owl:NamedIndividual>
@@ -8613,7 +8622,9 @@ Note, that the class E9 Move inherits the property P7 took place at (witnessed):
         <P129i_is_subject_of rdf:resource="https://www.ics.forth.gr/earthquake_model/e3_list_of_references"/>
         <P4_has_time-span rdf:resource="https://www.ics.forth.gr/earthquake_model/08-08-1303_(Julian)"/>
         <P70i_is_documented_in rdf:resource="https://www.ics.forth.gr/earthquake_model/Platakis_Book"/>
+        <P7_took_place_at rdf:resource="https://www.ics.forth.gr/earthquake_model/Heraklion"/>
         <crmsci:O11i_was_described_by rdf:resource="https://www.ics.forth.gr/earthquake_model/e3_intensity_evaluation"/>
+        <crmsci:O12_has_dimension rdf:resource="https://www.ics.forth.gr/earthquake_model/e3_Heraklion_intensity"/>
         <crmsci:O13_triggered rdf:resource="https://www.ics.forth.gr/earthquake_model/Cracked_Heraklion_Walls"/>
         <crmsci:O13_triggered rdf:resource="https://www.ics.forth.gr/earthquake_model/Destruction_of_Megalos_Koules"/>
         <earthquake_model1:PEQ5_has_documented_possible_timespan rdf:resource="https://www.ics.forth.gr/earthquake_model/08-08-1303_(Julian)"/>
