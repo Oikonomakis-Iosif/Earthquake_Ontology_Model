@@ -87,7 +87,7 @@ EARTHQUAKE MODEL
 		Scope Note : Used to provide the result/value of a comparison.
 
 
-	PEQ5 has documented possible timespan ( is possible timespan documented in )
+	PEQ5 has documented possible timespan ( is documented possible timespan of )
 	
 		subproperty of : "P4 has time-span"
 	
@@ -99,7 +99,7 @@ EARTHQUAKE MODEL
 		Scope Note : This is a shortcut to an uncertain timespan.
 
 
-	PEQ6 has documented possible place ( is possible place documented in )
+	PEQ6 has documented possible place ( is documented possible place of )
 	
 		subproperty of : "P7 took place at"
 	
@@ -110,7 +110,7 @@ EARTHQUAKE MODEL
 	
 		Scope Note : This is a shortcut to an uncertain place.
 	
-	PEQ7 has documented possible epicenter place ( is possible epicenter place documented in )
+	PEQ7 has documented possible epicenter place ( is  documented possible epicenter place of )
 	
 		subproperty of : "P7 took place at"
 	
@@ -121,7 +121,7 @@ EARTHQUAKE MODEL
 		
 		Scope Note : This is a shortcut to an uncertain epicenter place.
 	
-	PEQ8 has documented possible dimension ( is possible dimension documented in )
+	PEQ8 has documented possible dimension ( is documented possible dimension  of )
 	
 		subproperty of : "O12 has dimension"
 	
@@ -132,7 +132,7 @@ EARTHQUAKE MODEL
 		
 		Scope Note : This is a shortcut to an uncertain dimension.
 		
-	PEQ9 has documented uncertainty factor  ( is uncertainty factor documented in )
+	PEQ9 has documented uncertainty factor  ( is documented uncertainty factor  of )
 	
 		Domain : E54 Dimentsion
 		Range : I6 Belief Value
@@ -201,8 +201,7 @@ E1
 
 
 	--measurements
-	"e1" O11i was described by S6 "e1 data evaluation"
-	
+
 	"e1" O24i was measured by "e1 Malia Measurement"
 	"e1" O24i was measured by "e1 Malia Quake Direction Measurement"
 	"e1" O24i was measured by "e1 Ierapetra Measurement"
@@ -214,7 +213,7 @@ E1
 	"e1 Ierapetra Measurement" P14 carried out by E74 "Asteroskopeio Athinon"
 	"e1 Mallia Measurement Quake Direction Measurement" P14 carried out by E74 "Asteroskopeio Athinon"
 	"e1 Ierapetra Measurement Quake Direction Measurement" P14 carried out by E74 "Asteroskopeio Athinon"
-	"e1 Heraklion Measurement" P14 carried out by E74 "Asteroskopeio Athinon"
+	"e1 Heraklion Intensity Measurement" P14 carried out by E74 "Asteroskopeio Athinon"
 	"e1 Epicenter Measurement" P14 carried out by E74 "Asteroskopeio Athinon"
 	
 	--Heraklion measurement
@@ -227,8 +226,8 @@ E1
 
 	"e1 Epicenter Measurement" O16 Observed value "Southeast of Santorini".
 
-	I7 Belief Adoption "My adoption of Platakis' belief about the epicenter of e1." J7 is based on evidence from "Platakis Book"
-	"My adoption of Platakis' belief about the epicenter of e1." J13 adopted interpretation I12 Adopted Belief "The epicenter of the earthquake was Southeast of Santorini"
+	I7 Belief Adoption "The adoption of Platakis' belief about the epicenter of e1." J7 is based on evidence from "Platakis Book"
+	"The adoption of Platakis' belief about the epicenter of e1." J13 adopted interpretation I12 Adopted Belief "The epicenter of the earthquake was Southeast of Santorini"
 	"The epicenter of the earthquake was Southeast of Santorini" J5 holds to be I6 Belief Value " True " .
 	
 	"e1" PEQ7 has documented possible epicenter place " Southeast of Santorini "
@@ -319,10 +318,9 @@ E2
 	"e2 Chania intensity" has type " intensity "
 	"e2 Chania intensity" has value E60 (Number) "9"
 	"e2 Chania intensity" has unit E58 (Measurement Unit) "Rossi-Forel"
-
-
-	"My adoption of Platakis' belief about the intensity of e2." J7 is based on evidence from "Platakis Book"
-	"My adoption of Platakis' belief about the intensity  of e2." J13 adopted interpretation "The earthquake has a possible intensity of 9"
+	
+	"The adoption of Platakis' belief about the intensity of e2." J7 is based on evidence from "Platakis Book".
+	"The adoption of Platakis' belief about the intensity of e2." J13 adopted interpretation I12 "The earthquake has a possible intensity of 9" 
 	"The earthquake has a possible intensity of 9" J5 holds to be " Possible " .
 	
 	"e2" PEQ8 has documented possible dimension "e2 Chania intensity"
@@ -348,11 +346,10 @@ E3
 	"e3 list of references" is documented in "Platakis Book" 
 	"e3 list of references" refers to "Stavrakis N. , Statistiki tou plithismou tis Kritis meta diaforon geografikon, istorikon, arxaiologiko, ekklisiastikon klp. Eidiseon peri tis nisou, 1890, p.107-111"
 	"e3 list of references" refers to "Zabelios S. , Istorika Skinografimata"
-	
+	"e3 list of references" refers to I10 "e3 references provenance 1"
 
 	I10 "e3 references provenance 1" is about the provenance of "Zabelios S. , Istorika Skinografimata"
 	I10 "e3 references provenance 1" is referred to by "Stavrakis N. , Statistiki tou plithismou tis Kritis meta diaforon geografikon, istorikon, arxaiologiko, ekklisiastikon klp. Eidiseon peri tis nisou, 1890, p.107-111" 
-	"e3 references provenance 1" is documented in "Platakis Book"
 	
 	
 	--timespan
@@ -363,8 +360,7 @@ E3
 	"08-08-1303 (Julian Calendar)" is identified by E41 Appelation  "21-08-1303 (Gregorian Calendar)"
 	"08-08-1303 (Julian)" at some time within "1303"
 	
-	"My adoption of Platakis' belief about the time-span of e3." J7 is based on evidence from "Platakis Book"
-	"My adoption of Platakis' belief about the time-span  of e3." J13 adopted interpretation "08-08-1303 (Julian Calendar) might be wrong ,probably happened in 1304"
+	"08-08-1303 (Julian Calendar) might be wrong ,probably happened in 1304"J14 adopted interpretation of "Platakis Book"
 	"08-08-1303 (Julian Calendar) might be wrong ,probably happened in 1304" J5 holds to be " Maybe " .
 		
 	"e3" PEQ5 has documented possible timespan "08-08-1303 (Julian Calendar)"
@@ -384,8 +380,8 @@ E3
 	"e3 Heraklion intensity" P90b has upper value limit "9"
 	"e3 Heraklion intensity" has unit E58 (Measurement Unit) "Rossi-Forel"
 	
-	"My adoption of Platakis' belief about the intensity of e3." J7 is based on evidence from "Platakis Book"
-	"My adoption of Platakis' belief about the intensity  of e3." J13 adopted interpretation "The earthquake has a possible intensity of 8-9"
+
+	"The earthquake has a possible intensity of 8-9" J14 adopted interpretation of "Platakis Book"
 	"The earthquake has a possible intensity of 8-9" J5 holds to be " Possible " .
 	
 	"e3" PEQ8 has documented possible dimension "e3 Heraklion intensity"
@@ -399,8 +395,7 @@ E3
 	"e3-e4 equality evaluation." PEQ4 has comparison value EQ3 Comparison Value "equal"
 	
 	
-	"My adoption of Platakis' belief about the equality of e3 and e4 ." J7 is based on evidence from "Platakis Book"
-	"My adoption of Platakis' belief about the equality of e3 and e4 ." J13 adopted interpretation " e3 and e4 are probably equal "
+	" e3 and e4 are probably equal " J14 adopted interpretation of  "Platakis Book"
 	" e3 and e4 are probably equal " J5 holds to be " Probable " .
 	
 	
@@ -433,7 +428,7 @@ E4
 	
 	"e4" P4 has time-span "Morning of 08-08-1304 (Julian Calendar)"
 	"Morning of 08-08-1304 (Julian Calendar)" P1 is identified by E41 Appelation "Morning of 21-08-1304 (Gregorian Calendar)"
-	"e4" at some time within "1304"
+	"Morning of 08-08-1304 (Julian Calendar)" at some time within "1304"
 	
 	-- damages
 	
