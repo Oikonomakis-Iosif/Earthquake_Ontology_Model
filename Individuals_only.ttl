@@ -1,0 +1,331 @@
+@prefix : <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix crminf: <http://www.cidoc-crm.org/extensions/crminf/> .
+@prefix crmsci: <http://www.cidoc-crm.org/extensions/crmsci/> .
+@prefix cidoc-crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix earthquake_model: <https://www.ics.forth.gr/earthquake_model/> .
+@base <https://www.ics.forth.gr/earthquake_model/> .
+
+<https://www.ics.forth.gr/earthquake_model/> rdf:type owl:Ontology .
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  https://www.ics.forth.gr/earthquake_model/A_Seismic_History_Of_Crete
+earthquake_model:A_Seismic_History_Of_Crete rdf:type owl:NamedIndividual .
+
+
+###  https://www.ics.forth.gr/earthquake_model/Asteroskopeio_Athinon
+earthquake_model:Asteroskopeio_Athinon rdf:type owl:NamedIndividual .
+
+
+###  https://www.ics.forth.gr/earthquake_model/Chania
+earthquake_model:Chania rdf:type owl:NamedIndividual .
+
+
+###  https://www.ics.forth.gr/earthquake_model/Chania_Walls
+earthquake_model:Chania_Walls rdf:type owl:NamedIndividual .
+
+
+###  https://www.ics.forth.gr/earthquake_model/Chania_Walls_Damage
+earthquake_model:Chania_Walls_Damage rdf:type owl:NamedIndividual .
+
+
+###  https://www.ics.forth.gr/earthquake_model/Cracked_Heraklion_Walls
+earthquake_model:Cracked_Heraklion_Walls rdf:type owl:NamedIndividual .
+
+
+###  https://www.ics.forth.gr/earthquake_model/Crete
+earthquake_model:Crete rdf:type owl:NamedIndividual .
+
+
+###  https://www.ics.forth.gr/earthquake_model/Death_of_4000_people
+earthquake_model:Death_of_4000_people rdf:type owl:NamedIndividual .
+
+
+###  https://www.ics.forth.gr/earthquake_model/Destruction_of_Megalos_Koules
+earthquake_model:Destruction_of_Megalos_Koules rdf:type owl:NamedIndividual .
+
+
+###  https://www.ics.forth.gr/earthquake_model/Heraklion
+earthquake_model:Heraklion rdf:type owl:NamedIndividual .
+
+
+###  https://www.ics.forth.gr/earthquake_model/Heraklion_Walls
+earthquake_model:Heraklion_Walls rdf:type owl:NamedIndividual .
+
+
+###  https://www.ics.forth.gr/earthquake_model/Hieronymous_Donatus
+earthquake_model:Hieronymous_Donatus rdf:type owl:NamedIndividual .
+
+
+###  https://www.ics.forth.gr/earthquake_model/Ierapetra
+earthquake_model:Ierapetra rdf:type owl:NamedIndividual .
+
+
+###  https://www.ics.forth.gr/earthquake_model/Malia
+earthquake_model:Malia rdf:type owl:NamedIndividual .
+
+
+###  https://www.ics.forth.gr/earthquake_model/Megalos_Koules
+earthquake_model:Megalos_Koules rdf:type owl:NamedIndividual .
+
+
+###  https://www.ics.forth.gr/earthquake_model/PAPADOPOULOS_A._GERASIMOS
+earthquake_model:PAPADOPOULOS_A._GERASIMOS rdf:type owl:NamedIndividual .
+
+
+###  https://www.ics.forth.gr/earthquake_model/PLATAKIS_ELEYTHERIOS
+earthquake_model:PLATAKIS_ELEYTHERIOS rdf:type owl:NamedIndividual .
+
+
+###  https://www.ics.forth.gr/earthquake_model/Papadopoulos_Book
+earthquake_model:Papadopoulos_Book rdf:type owl:NamedIndividual .
+
+
+###  https://www.ics.forth.gr/earthquake_model/Perceivable
+earthquake_model:Perceivable rdf:type owl:NamedIndividual .
+
+
+###  https://www.ics.forth.gr/earthquake_model/Platakis_Book
+earthquake_model:Platakis_Book rdf:type owl:NamedIndividual .
+
+
+###  https://www.ics.forth.gr/earthquake_model/Rebuilding_of_Megalos_Koules
+earthquake_model:Rebuilding_of_Megalos_Koules rdf:type owl:NamedIndividual .
+
+
+###  https://www.ics.forth.gr/earthquake_model/Rossi-Forel
+earthquake_model:Rossi-Forel rdf:type owl:NamedIndividual .
+
+
+###  https://www.ics.forth.gr/earthquake_model/Seconds
+earthquake_model:Seconds rdf:type owl:NamedIndividual .
+
+
+###  https://www.ics.forth.gr/earthquake_model/Southeast
+earthquake_model:Southeast rdf:type owl:NamedIndividual .
+
+
+###  https://www.ics.forth.gr/earthquake_model/Southeast_of_Santorini
+earthquake_model:Southeast_of_Santorini rdf:type owl:NamedIndividual .
+
+
+###  https://www.ics.forth.gr/earthquake_model/The_earthquake_has_a_possible_intensity_of_8-9
+earthquake_model:The_earthquake_has_a_possible_intensity_of_8-9 rdf:type owl:NamedIndividual .
+
+
+###  https://www.ics.forth.gr/earthquake_model/The_earthquake_has_a_possible_intensity_of_9
+earthquake_model:The_earthquake_has_a_possible_intensity_of_9 rdf:type owl:NamedIndividual .
+
+
+###  https://www.ics.forth.gr/earthquake_model/The_epicenter_of_the_earthquake_was_Southeast_of_Santorini
+earthquake_model:The_epicenter_of_the_earthquake_was_Southeast_of_Santorini rdf:type owl:NamedIndividual .
+
+
+###  https://www.ics.forth.gr/earthquake_model/West
+earthquake_model:West rdf:type owl:NamedIndividual .
+
+
+###  https://www.ics.forth.gr/earthquake_model/duration
+earthquake_model:duration rdf:type owl:NamedIndividual .
+
+
+###  https://www.ics.forth.gr/earthquake_model/e1
+earthquake_model:e1 rdf:type owl:NamedIndividual .
+
+
+###  https://www.ics.forth.gr/earthquake_model/e1_Epicenter_Measurement
+earthquake_model:e1_Epicenter_Measurement rdf:type owl:NamedIndividual .
+
+
+###  https://www.ics.forth.gr/earthquake_model/e1_Heraklion_Intensity_Measurement
+earthquake_model:e1_Heraklion_Intensity_Measurement rdf:type owl:NamedIndividual .
+
+
+###  https://www.ics.forth.gr/earthquake_model/e1_Ierapetra_Measurement
+earthquake_model:e1_Ierapetra_Measurement rdf:type owl:NamedIndividual .
+
+
+###  https://www.ics.forth.gr/earthquake_model/e1_Ierapetra_Quake_Direction_Measurement
+earthquake_model:e1_Ierapetra_Quake_Direction_Measurement rdf:type owl:NamedIndividual .
+
+
+###  https://www.ics.forth.gr/earthquake_model/e1_Ierapetra_duration
+earthquake_model:e1_Ierapetra_duration rdf:type owl:NamedIndividual .
+
+
+###  https://www.ics.forth.gr/earthquake_model/e1_Ierapetra_intensity
+earthquake_model:e1_Ierapetra_intensity rdf:type owl:NamedIndividual .
+
+
+###  https://www.ics.forth.gr/earthquake_model/e1_Ierapetra_quake_movement_type
+earthquake_model:e1_Ierapetra_quake_movement_type rdf:type owl:NamedIndividual .
+
+
+###  https://www.ics.forth.gr/earthquake_model/e1_Malia_Measurement
+earthquake_model:e1_Malia_Measurement rdf:type owl:NamedIndividual .
+
+
+###  https://www.ics.forth.gr/earthquake_model/e1_Malia_Quake_Direction_Measurement
+earthquake_model:e1_Malia_Quake_Direction_Measurement rdf:type owl:NamedIndividual .
+
+
+###  https://www.ics.forth.gr/earthquake_model/e1_Malia_duration
+earthquake_model:e1_Malia_duration rdf:type owl:NamedIndividual .
+
+
+###  https://www.ics.forth.gr/earthquake_model/e1_Malia_intensity
+earthquake_model:e1_Malia_intensity rdf:type owl:NamedIndividual .
+
+
+###  https://www.ics.forth.gr/earthquake_model/e1_Malia_quake_movement_type
+earthquake_model:e1_Malia_quake_movement_type rdf:type owl:NamedIndividual .
+
+
+###  https://www.ics.forth.gr/earthquake_model/e1_list_of_references
+earthquake_model:e1_list_of_references rdf:type owl:NamedIndividual .
+
+
+###  https://www.ics.forth.gr/earthquake_model/e2
+earthquake_model:e2 rdf:type owl:NamedIndividual .
+
+
+###  https://www.ics.forth.gr/earthquake_model/e2_Chania_intensity
+earthquake_model:e2_Chania_intensity rdf:type owl:NamedIndividual .
+
+
+###  https://www.ics.forth.gr/earthquake_model/e2_data_evaluation
+earthquake_model:e2_data_evaluation rdf:type owl:NamedIndividual .
+
+
+###  https://www.ics.forth.gr/earthquake_model/e2_intensity_Platakis_Belief
+earthquake_model:e2_intensity_Platakis_Belief rdf:type owl:NamedIndividual .
+
+
+###  https://www.ics.forth.gr/earthquake_model/e2_list_of_references
+earthquake_model:e2_list_of_references rdf:type owl:NamedIndividual .
+
+
+###  https://www.ics.forth.gr/earthquake_model/e3
+earthquake_model:e3 rdf:type owl:NamedIndividual .
+
+
+###  https://www.ics.forth.gr/earthquake_model/e3-e4_equality_evaluation
+earthquake_model:e3-e4_equality_evaluation rdf:type owl:NamedIndividual .
+
+
+###  https://www.ics.forth.gr/earthquake_model/e3_Heraklion_intensity
+earthquake_model:e3_Heraklion_intensity rdf:type owl:NamedIndividual .
+
+
+###  https://www.ics.forth.gr/earthquake_model/e3_and_e4_are_probably_equal
+earthquake_model:e3_and_e4_are_probably_equal rdf:type owl:NamedIndividual .
+
+
+###  https://www.ics.forth.gr/earthquake_model/e3_intensity_evaluation
+earthquake_model:e3_intensity_evaluation rdf:type owl:NamedIndividual .
+
+
+###  https://www.ics.forth.gr/earthquake_model/e3_list_of_references
+earthquake_model:e3_list_of_references rdf:type owl:NamedIndividual .
+
+
+###  https://www.ics.forth.gr/earthquake_model/e3_references_provenance_1
+earthquake_model:e3_references_provenance_1 rdf:type owl:NamedIndividual .
+
+
+###  https://www.ics.forth.gr/earthquake_model/e4
+earthquake_model:e4 rdf:type owl:NamedIndividual .
+
+
+###  https://www.ics.forth.gr/earthquake_model/e4_list_of_references
+earthquake_model:e4_list_of_references rdf:type owl:NamedIndividual .
+
+
+###  https://www.ics.forth.gr/earthquake_model/intensity
+earthquake_model:intensity rdf:type owl:NamedIndividual .
+
+
+###  https://www.ics.forth.gr/earthquake_model/ranged_value
+earthquake_model:ranged_value rdf:type owl:NamedIndividual .
+
+
+###  https://www.ics.forth.gr/earthquake_model/wave
+earthquake_model:wave rdf:type owl:NamedIndividual .
+
+
+###  https://www.ics.forth.gr/earthquake_model/08-08-1303_(Julian)
+<https://www.ics.forth.gr/earthquake_model/08-08-1303_(Julian)> rdf:type owl:NamedIndividual .
+
+
+###  https://www.ics.forth.gr/earthquake_model/08-08-1303_(Julian_Calendar)_might_be_wrong_,probably_happened_in_1304
+<https://www.ics.forth.gr/earthquake_model/08-08-1303_(Julian_Calendar)_might_be_wrong_,probably_happened_in_1304> rdf:type owl:NamedIndividual .
+
+
+###  https://www.ics.forth.gr/earthquake_model/1246
+<https://www.ics.forth.gr/earthquake_model/1246> rdf:type owl:NamedIndividual .
+
+
+###  https://www.ics.forth.gr/earthquake_model/13-08-1922_00:10_GMT+00
+<https://www.ics.forth.gr/earthquake_model/13-08-1922_00:10_GMT+00> rdf:type owl:NamedIndividual .
+
+
+###  https://www.ics.forth.gr/earthquake_model/21-08-1303_(Gregorian)
+<https://www.ics.forth.gr/earthquake_model/21-08-1303_(Gregorian)> rdf:type owl:NamedIndividual .
+
+
+###  https://www.ics.forth.gr/earthquake_model/Asteroskopeio_Athinon_,_Annales_des_l'Observatoires_de'Athenes
+<https://www.ics.forth.gr/earthquake_model/Asteroskopeio_Athinon_,_Annales_des_l'Observatoires_de'Athenes> rdf:type owl:NamedIndividual .
+
+
+###  https://www.ics.forth.gr/earthquake_model/Megalos_Koules(reconstructed)
+<https://www.ics.forth.gr/earthquake_model/Megalos_Koules(reconstructed)> rdf:type owl:NamedIndividual .
+
+
+###  https://www.ics.forth.gr/earthquake_model/Morning_of_08-08-1304_(Julian_Calendar)
+<https://www.ics.forth.gr/earthquake_model/Morning_of_08-08-1304_(Julian_Calendar)> rdf:type owl:NamedIndividual .
+
+
+###  https://www.ics.forth.gr/earthquake_model/Morning_of_21-08-1304_(Gregorian_Calendar)
+<https://www.ics.forth.gr/earthquake_model/Morning_of_21-08-1304_(Gregorian_Calendar)> rdf:type owl:NamedIndividual .
+
+
+###  https://www.ics.forth.gr/earthquake_model/Rauliv_V._,_Déscription_physique_de_l'île_da_Créte
+<https://www.ics.forth.gr/earthquake_model/Rauliv_V._,_Déscription_physique_de_l'île_da_Créte> rdf:type owl:NamedIndividual .
+
+
+###  https://www.ics.forth.gr/earthquake_model/Stavrakis_N._,_Statistiki_tou_plithismou_tis_Kritis_meta_diaforon_geografikon,_istorikon,_arxaiologiko,_ekklisiastikon_klp._Eidiseon_peri_tis_nisou,_1890,_p.107-111
+<https://www.ics.forth.gr/earthquake_model/Stavrakis_N._,_Statistiki_tou_plithismou_tis_Kritis_meta_diaforon_geografikon,_istorikon,_arxaiologiko,_ekklisiastikon_klp._Eidiseon_peri_tis_nisou,_1890,_p.107-111> rdf:type owl:NamedIndividual .
+
+
+###  https://www.ics.forth.gr/earthquake_model/The_adoption_of_Platakis'_belief_about_the_epicenter_of_e1.
+<https://www.ics.forth.gr/earthquake_model/The_adoption_of_Platakis'_belief_about_the_epicenter_of_e1.> rdf:type owl:NamedIndividual .
+
+
+###  https://www.ics.forth.gr/earthquake_model/The_adoption_of_Platakis'_belief_about_the_intensity_of_e2.
+<https://www.ics.forth.gr/earthquake_model/The_adoption_of_Platakis'_belief_about_the_intensity_of_e2.> rdf:type owl:NamedIndividual .
+
+
+###  https://www.ics.forth.gr/earthquake_model/Writing_of__'A_Seismic_History_of_Crete'
+<https://www.ics.forth.gr/earthquake_model/Writing_of__'A_Seismic_History_of_Crete'> rdf:type owl:NamedIndividual .
+
+
+###  https://www.ics.forth.gr/earthquake_model/Writing_of_ΟΙ_ΣΕΙΣΜΟΙ_ΤΗΣ_ΚΡΗΤΗΣ_ΑΠΟ_ΤΩΝ_ΑΡΧΑΙΟΤΑΤΩΝ_ΜΕΧΡΙ_ΤΩΝ_ΚΑΘ'_ΗΜΑΣ_ΧΡΟΝΩΝ
+<https://www.ics.forth.gr/earthquake_model/Writing_of_ΟΙ_ΣΕΙΣΜΟΙ_ΤΗΣ_ΚΡΗΤΗΣ_ΑΠΟ_ΤΩΝ_ΑΡΧΑΙΟΤΑΤΩΝ_ΜΕΧΡΙ_ΤΩΝ_ΚΑΘ'_ΗΜΑΣ_ΧΡΟΝΩΝ> rdf:type owl:NamedIndividual .
+
+
+###  https://www.ics.forth.gr/earthquake_model/Zabelios_S._,_Istorika_Skinografimata
+<https://www.ics.forth.gr/earthquake_model/Zabelios_S._,_Istorika_Skinografimata> rdf:type owl:NamedIndividual .
+
+
+###  https://www.ics.forth.gr/earthquake_model/ΟΙ_ΣΕΙΣΜΟΙ_ΤΗΣ_ΚΡΗΤΗΣ_ΑΠΟ_ΤΩΝ_ΑΡΧΑΙΟΤΑΤΩΝ_ΜΕΧΡΙ_ΤΩΝ_ΚΑΘ'_ΗΜΑΣ_ΧΡΟΝΩΝ
+<https://www.ics.forth.gr/earthquake_model/ΟΙ_ΣΕΙΣΜΟΙ_ΤΗΣ_ΚΡΗΤΗΣ_ΑΠΟ_ΤΩΝ_ΑΡΧΑΙΟΤΑΤΩΝ_ΜΕΧΡΙ_ΤΩΝ_ΚΑΘ'_ΗΜΑΣ_ΧΡΟΝΩΝ> rdf:type owl:NamedIndividual .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi

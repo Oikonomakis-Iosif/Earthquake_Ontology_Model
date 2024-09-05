@@ -1,0 +1,378 @@
+@prefix : <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix crminf: <http://www.cidoc-crm.org/extensions/crminf/> .
+@prefix crmsci: <http://www.cidoc-crm.org/extensions/crmsci/> .
+@prefix cidoc-crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix earthquake_model: <https://www.ics.forth.gr/earthquake_model/> .
+@base <https://www.ics.forth.gr/earthquake_model/> .
+
+<https://www.ics.forth.gr/earthquake_model/> rdf:type owl:Ontology .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.cidoc-crm.org/cidoc-crm/P4_has_time-span
+cidoc-crm:P4_has_time-span rdf:type owl:ObjectProperty ;
+                           owl:inverseOf cidoc-crm:P4i_is_time-span_of ;
+                           rdfs:domain cidoc-crm:E2_Temporal_Entity ;
+                           rdfs:range cidoc-crm:E52_Time-Span ;
+                           rdfs:comment "This property associates an instance of E2 Temporal Entity with the instance of E52 Time-Span during which it was on-going. The associated instance of E52 Time-Span is understood as the real time-span during which the phenomena making up the temporal entity instance were active. More than one instance of E2 Temporal Entity may share a common instance of E52 Time-Span only if they come into being and end being due to identical declarations or events."@en ;
+                           rdfs:label "a pour intervalle temporel"@fr ,
+                                      "has time-span"@en ,
+                                      "hat Zeitspanne"@de ,
+                                      "tem período de tempo"@pt ,
+                                      "βρισκόταν σε εξέλιξη"@el ,
+                                      "имеет временной отрезок"@ru ,
+                                      "发生时段是"@zh .
+
+
+###  http://www.cidoc-crm.org/cidoc-crm/P4i_is_time-span_of
+cidoc-crm:P4i_is_time-span_of rdf:type owl:ObjectProperty ;
+                              rdfs:domain cidoc-crm:E52_Time-Span ;
+                              rdfs:range cidoc-crm:E2_Temporal_Entity ;
+                              rdfs:label "est l’intervalle temporel de"@fr ,
+                                         "is time-span of"@en ,
+                                         "ist Zeitspanne von"@de ,
+                                         "é o período de tempo de"@pt ,
+                                         "είναι χρονικό διάστημα του/της"@el ,
+                                         "является временным отрезком для"@ru ,
+                                         "是时段"@zh .
+
+
+###  http://www.cidoc-crm.org/cidoc-crm/P7_took_place_at
+cidoc-crm:P7_took_place_at rdf:type owl:ObjectProperty ;
+                           owl:inverseOf cidoc-crm:P7i_witnessed ;
+                           rdfs:domain cidoc-crm:E4_Period ;
+                           rdfs:range cidoc-crm:E53_Place ;
+                           rdfs:comment """This property describes the spatial location of an instance of E4 Period.
+The related instance of E53 Place should be seen as a wider approximation of the geometric area within which the phenomena that characterise the period in question occurred, see below. P7 took place at (witnessed) does not convey any meaning other than spatial positioning (frequently on the surface of the earth). For example, the period “Révolution française” can be said to have taken place in “France in 1789”; the “Victorian” period may be said to have taken place in “Britain from 1837-1901” and its colonies, as well as other parts of Europe and North America. An instance of E4 Period can take place at multiple non-contiguous, non-overlapping locations.
+Any place where something happened includes the spatial projection of the happening given in the same geometric reference system. For instance, HMS Victory, as place of Lord Nelson's dying, includes the location of his body relative to the hull of HMS Victory at his time of death as the most precise location of his death. By the definition of P161 has spatial projection, an instance of E4 Period takes place on all its spatial projections to respective reference systems, that is, instances of E53 Place. Therefore, this property implies the more fully developed path from E4 Period through P161 has spatial projection, E53 Place, P89 falls within to E53 Place, where both places are defined in the same geometric reference system. The relation between an instance of E53 Place and its reference system can conveniently be documented via the property P157 is at rest relative to (provides reference space for).
+Something that has happened at a given place can also be considered to have happened at a smaller place within it: for example, it is reasonable to say Caesar’s murder took place in Rome, but also on the Forum Romanum, and more precisely in the Curia. It is characteristic for different historical sources to use varying precision in such statements, without being in contradiction with each other. This may be due to lack of knowledge or to the relevance of the precision for the purpose of the statement. In information integration, the more precise statement improves the overall knowledge."""@en ;
+                           rdfs:label "a eu lieu dans"@fr ,
+                                      "fand statt in"@de ,
+                                      "ocorreu em"@pt ,
+                                      "took place at"@en ,
+                                      "έλαβε χώρα σε"@el ,
+                                      "совершался на"@ru ,
+                                      "发生地在"@zh .
+
+
+###  http://www.cidoc-crm.org/cidoc-crm/P7i_witnessed
+cidoc-crm:P7i_witnessed rdf:type owl:ObjectProperty ;
+                        rdfs:domain cidoc-crm:E53_Place ;
+                        rdfs:range cidoc-crm:E4_Period ;
+                        rdfs:label "a été témoin de"@fr ,
+                                   "bezeugte"@de ,
+                                   "testemunhou"@pt ,
+                                   "witnessed"@en ,
+                                   "υπήρξε τόπος του"@el ,
+                                   "был местом совершения"@ru ,
+                                   "发生过"@zh .
+
+
+###  http://www.cidoc-crm.org/extensions/crmsci/O12_has_dimension
+crmsci:O12_has_dimension rdf:type owl:ObjectProperty ;
+                         owl:inverseOf crmsci:O12i_is_dimension_of ;
+                         rdfs:domain crmsci:S15_Observable_Entity ;
+                         rdfs:range cidoc-crm:E54_Dimension ;
+                         rdfs:comment "This property associates an instance of S15 Observable Entity with an instance of E54 Dimension that the observable entity has. It offers no information about how and when an E54 Dimension was established. In case the instance of S15 Observable Entity is more specifically an instance of E18 Physical Thing, using the property O12 has dimension (is dimension of) is equivalent to using the property P43 has dimension (is dimension of). In other words, using the one implies the other."@en ;
+                         rdfs:label "has dimension"@en .
+
+
+###  http://www.cidoc-crm.org/extensions/crmsci/O12i_is_dimension_of
+crmsci:O12i_is_dimension_of rdf:type owl:ObjectProperty ;
+                            rdfs:domain cidoc-crm:E54_Dimension ;
+                            rdfs:range crmsci:S15_Observable_Entity ;
+                            rdfs:label "is dimension of"@en .
+
+
+###  https://www.ics.forth.gr/earthquake_model/PEQ2_checks_equality_of
+earthquake_model:PEQ2_checks_equality_of rdf:type owl:ObjectProperty ;
+                                         owl:inverseOf earthquake_model:PEQ2i__of_whom_equality_is_checked_in ;
+                                         rdfs:domain earthquake_model:EQ2_Comparison_Evaluation ;
+                                         rdfs:range cidoc-crm:E1_CRM_Entity .
+
+
+###  https://www.ics.forth.gr/earthquake_model/PEQ2i__of_whom_equality_is_checked_in
+earthquake_model:PEQ2i__of_whom_equality_is_checked_in rdf:type owl:ObjectProperty ;
+                                                       rdfs:domain cidoc-crm:E1_CRM_Entity ;
+                                                       rdfs:range earthquake_model:EQ2_Comparison_Evaluation .
+
+
+###  https://www.ics.forth.gr/earthquake_model/PEQ3_checks_equality_to
+earthquake_model:PEQ3_checks_equality_to rdf:type owl:ObjectProperty ;
+                                         owl:inverseOf earthquake_model:PEQ3i_to_whom_equality_is_checked_in ;
+                                         rdfs:domain earthquake_model:EQ2_Comparison_Evaluation ;
+                                         rdfs:range cidoc-crm:E1_CRM_Entity .
+
+
+###  https://www.ics.forth.gr/earthquake_model/PEQ3i_to_whom_equality_is_checked_in
+earthquake_model:PEQ3i_to_whom_equality_is_checked_in rdf:type owl:ObjectProperty ;
+                                                      rdfs:domain cidoc-crm:E1_CRM_Entity ;
+                                                      rdfs:range earthquake_model:EQ2_Comparison_Evaluation .
+
+
+###  https://www.ics.forth.gr/earthquake_model/PEQ5_has_documented_possible_timespan
+earthquake_model:PEQ5_has_documented_possible_timespan rdf:type owl:ObjectProperty ;
+                                                       rdfs:subPropertyOf cidoc-crm:P4_has_time-span ;
+                                                       owl:inverseOf earthquake_model:PEQ5i_is_documented_possible_timespan_of ;
+                                                       rdfs:domain earthquake_model:EQ1_Earthquake ;
+                                                       rdfs:range cidoc-crm:E52_Time-Span .
+
+
+###  https://www.ics.forth.gr/earthquake_model/PEQ5i_is_documented_possible_timespan_of
+earthquake_model:PEQ5i_is_documented_possible_timespan_of rdf:type owl:ObjectProperty ;
+                                                          rdfs:subPropertyOf cidoc-crm:P4i_is_time-span_of ;
+                                                          rdfs:domain cidoc-crm:E52_Time-Span ;
+                                                          rdfs:range earthquake_model:EQ1_Earthquake .
+
+
+###  https://www.ics.forth.gr/earthquake_model/PEQ6_has_documented_possible_place
+earthquake_model:PEQ6_has_documented_possible_place rdf:type owl:ObjectProperty ;
+                                                    rdfs:subPropertyOf cidoc-crm:P7_took_place_at ;
+                                                    owl:inverseOf earthquake_model:PEQ6i_is_documented_possible_place_of ;
+                                                    rdfs:domain earthquake_model:EQ1_Earthquake ;
+                                                    rdfs:range cidoc-crm:E53_Place .
+
+
+###  https://www.ics.forth.gr/earthquake_model/PEQ6i_is_documented_possible_place_of
+earthquake_model:PEQ6i_is_documented_possible_place_of rdf:type owl:ObjectProperty ;
+                                                       rdfs:subPropertyOf cidoc-crm:P7i_witnessed ;
+                                                       rdfs:domain cidoc-crm:E53_Place ;
+                                                       rdfs:range earthquake_model:EQ1_Earthquake .
+
+
+###  https://www.ics.forth.gr/earthquake_model/PEQ7_has_documented_possible_epicenter_place
+earthquake_model:PEQ7_has_documented_possible_epicenter_place rdf:type owl:ObjectProperty ;
+                                                              rdfs:subPropertyOf cidoc-crm:P7_took_place_at ;
+                                                              owl:inverseOf earthquake_model:PEQ7i_is__documented_possible_epicenter_place_of ;
+                                                              rdfs:domain earthquake_model:EQ1_Earthquake ;
+                                                              rdfs:range cidoc-crm:E53_Place .
+
+
+###  https://www.ics.forth.gr/earthquake_model/PEQ7i_is__documented_possible_epicenter_place_of
+earthquake_model:PEQ7i_is__documented_possible_epicenter_place_of rdf:type owl:ObjectProperty ;
+                                                                  rdfs:subPropertyOf cidoc-crm:P7i_witnessed ;
+                                                                  rdfs:domain cidoc-crm:E53_Place ;
+                                                                  rdfs:range earthquake_model:EQ1_Earthquake .
+
+
+###  https://www.ics.forth.gr/earthquake_model/PEQ8_has_documented_possible_dimension
+earthquake_model:PEQ8_has_documented_possible_dimension rdf:type owl:ObjectProperty ;
+                                                        rdfs:subPropertyOf crmsci:O12_has_dimension ;
+                                                        owl:inverseOf earthquake_model:PEQ8i_is_documented_possible_dimension__of ;
+                                                        rdfs:domain earthquake_model:EQ1_Earthquake ;
+                                                        rdfs:range cidoc-crm:E54_Dimension .
+
+
+###  https://www.ics.forth.gr/earthquake_model/PEQ8i_is_documented_possible_dimension__of
+earthquake_model:PEQ8i_is_documented_possible_dimension__of rdf:type owl:ObjectProperty ;
+                                                            rdfs:subPropertyOf crmsci:O12i_is_dimension_of ;
+                                                            rdfs:domain cidoc-crm:E54_Dimension ;
+                                                            rdfs:range earthquake_model:EQ1_Earthquake .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  https://www.ics.forth.gr/earthquake_model/PEQ1_has_error_margin
+earthquake_model:PEQ1_has_error_margin rdf:type owl:DatatypeProperty ;
+                                       rdfs:subPropertyOf owl:topDataProperty ;
+                                       rdfs:domain cidoc-crm:E54_Dimension ;
+                                       rdfs:range rdfs:Literal .
+
+
+###  https://www.ics.forth.gr/earthquake_model/PEQ4_has_comparison_value
+earthquake_model:PEQ4_has_comparison_value rdf:type owl:DatatypeProperty ;
+                                           rdfs:subPropertyOf owl:topDataProperty ;
+                                           rdfs:domain earthquake_model:EQ2_Comparison_Evaluation ;
+                                           rdfs:range rdfs:Literal .
+
+
+###  https://www.ics.forth.gr/earthquake_model/PEQ9_has_documented_uncertainty_factor
+earthquake_model:PEQ9_has_documented_uncertainty_factor rdf:type owl:DatatypeProperty ;
+                                                        rdfs:subPropertyOf owl:topDataProperty ;
+                                                        rdfs:domain cidoc-crm:E54_Dimension ;
+                                                        rdfs:range rdfs:Literal .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity
+cidoc-crm:E1_CRM_Entity rdf:type owl:Class ;
+                        rdfs:comment """This class comprises all things in the universe of discourse of the CIDOC Conceptual Reference Model.
+It is an abstract concept providing for three general properties:
+Identification by name or appellation, and in particular by a preferred identifier
+Classification by type, allowing further refinement of the specific subclass to which an instance belongs
+Attachment of free text and other unstructured data for the expression of anything not captured by formal properties
+All other classes within the CIDOC CRM are directly or indirectly specialisations of E1 CRM Entity."""@en ;
+                        rdfs:label "CRM Entity"@en ,
+                                   "CRM Entität"@de ,
+                                   "CRM Сущность"@ru ,
+                                   "CRM实体"@zh ,
+                                   "Entidade CRM"@pt ,
+                                   "Entité CRM"@fr ,
+                                   "Οντότητα CIDOC CRM"@el .
+
+
+###  http://www.cidoc-crm.org/cidoc-crm/E2_Temporal_Entity
+cidoc-crm:E2_Temporal_Entity rdf:type owl:Class ;
+                             rdfs:subClassOf cidoc-crm:E1_CRM_Entity ;
+                             rdfs:comment """This class comprises all phenomena, such as the instances of E4 Periods and E5 Events, which happen over a limited extent in time. This extent in time must be contiguous, i.e., without gaps. In case the defining kinds of phenomena for an instance of E2 Temporal Entity cease to happen, and occur later again at another time, we regard that the former instance of E2 Temporal Entity has ended and a new instance has come into existence. In more intuitive terms, the same event cannot happen twice.
+In some contexts, such phenomena are also called perdurants. This class is disjoint from E77 Persistent Item and is an abstract class that typically has no direct instances. E2 Temporal Entity is specialized into E4 Period, which applies to a particular geographic area (defined with a greater or lesser degree of precision), and E3 Condition State, which applies to instances of E18 Physical Thing."""@en ;
+                             rdfs:label "Entidade Temporal"@pt ,
+                                        "Entité temporelle"@fr ,
+                                        "Geschehendes"@de ,
+                                        "Temporal Entity"@en ,
+                                        "Έγχρονη Οντότητα"@el ,
+                                        "Временная Сущность"@ru ,
+                                        "时序实体"@zh .
+
+
+###  http://www.cidoc-crm.org/cidoc-crm/E4_Period
+cidoc-crm:E4_Period rdf:type owl:Class ;
+                    rdfs:subClassOf cidoc-crm:E2_Temporal_Entity ,
+                                    cidoc-crm:E92_Spacetime_Volume ;
+                    rdfs:comment """This class comprises sets of coherent phenomena or cultural manifestations occurring in time and space.
+It is the social or physical coherence of these phenomena that identify an instance of E4 Period and not the associated spatiotemporal extent. This extent is only the “ground” or space in an abstract physical sense that the actual process of growth, spread and retreat has covered. Consequently, different periods can overlap and coexist in time and space, such as when a nomadic culture exists in the same area and time as a sedentary culture. This also means that overlapping land use rights, common among first nations, amounts to overlapping periods.
+Often, this class is used to describe prehistoric or historic periods such as the “Neolithic Period”, the “Ming Dynasty” or the “McCarthy Era”, but also geopolitical units and activities of settlements are regarded as special cases of E4 Period. However, there are no assumptions about the scale of the associated phenomena. In particular all events are seen as synthetic processes consisting of coherent phenomena. Therefore, E4 Period is a superclass of E5 Event. For example, a modern clinical birth, an instance of E67 Birth, can be seen as both a single event, i.e. an instance of E5 Event, and as an extended period, i.e. an instance of E4 Period, that consists of multiple physical processes and complementary activities performed by multiple instances of E39 Actor.
+E4 Period is a subclass of E2 Temporal Entity and of E92 Spacetime Volume. The latter is intended as a phenomenal spacetime volume as defined in CIDOC CRMgeo (Doerr &amp; Hiebel, 2013). By virtue of this multiple inheritance, it is possible to discuss the physical extent of an instance of E4 Period without representing each instance of it together with an instance of its associated spacetime volume. This model combines two quite different kinds of substance: an instance of E4 Period is a phenomenon while an instance of E92 Spacetime Volume is an aggregation of points in spacetime. However, the real spatiotemporal extent of an instance of E4 Period is regarded to be unique to it due to all its details and fuzziness; its identity and existence depends uniquely on the identity of the instance of E4 Period. Therefore, this multiple inheritance is unambiguous and effective and furthermore corresponds to the intuitions of natural language.
+Typical use of this class in cultural heritage documentation is for documenting cultural and artistic periods. There are two different conceptualisations of ‘artistic style’, defined either by physical features or by historical context. For example, “Impressionism” can be viewed as a period in the European sphere of influence lasting from approximately 1870 to 1905 during which paintings with particular characteristics were produced by a group of artists that included (among others) Monet, Renoir, Pissarro, Sisley and Degas. Alternatively, it can be regarded as a style applicable to all paintings sharing the characteristics of the works produced by the Impressionist painters, regardless of historical context. The first interpretation is an instance of E4 Period, and the second defines morphological object types that fall under E55 Type.
+A geopolitical unit as a specific case of an instance of E4 Period is the set of activities and phenomena related to the claim of power, the consequences of belonging to a jurisdictional area and an administrative system that establishes a geopolitical unit. Examples from the modern period are countries or administrative areas of countries such as districts whose actions and structures define activities and phenomena in the area that they intend to govern. The borders of geopolitical units are often defined in contracts or treaties although they may deviate from the actual practice. The spatiotemporal properties of Geopolitical units can be modelled through the properties inherited from E92 Spacetime Volume.
+Another specific case of an instance of E4 Period is the actual extent of the set of activities and phenomena as evidenced by their physical traces that define a settlement, such as the populated period of Nineveh."""@en ;
+                    rdfs:label "Period"@en ,
+                               "Período"@pt ,
+                               "Phase"@de ,
+                               "Période"@fr ,
+                               "Περίοδος"@el ,
+                               "Период"@ru ,
+                               "时期"@zh .
+
+
+###  http://www.cidoc-crm.org/cidoc-crm/E52_Time-Span
+cidoc-crm:E52_Time-Span rdf:type owl:Class ;
+                        rdfs:subClassOf cidoc-crm:E1_CRM_Entity ;
+                        rdfs:comment """This class comprises abstract temporal extents, in the sense of Galilean physics, having a beginning, an end, and a duration.
+Instances of E52 Time-Span have no semantic connotations about phenomena happening within the temporal extent they represent. They do not convey any meaning other than a positioning on the “time-line” of chronology. The actual extent of an instance of E52 Time-Span can be approximated by properties of E52 Time-Span giving inner and outer bounds in the form of dates (instances of E61 Time Primitive). Comparing knowledge about time-spans is fundamental for chronological reasoning.
+Some instances of E52 Time-Span may be defined as the actual, in principle observable, temporal extent of instances of E2 Temporal Entity via the property P4 has time-span (is time-span of): E52 Time-Span. They constitute phenomenal time-spans as defined in CRMgeo (Doerr &amp; Hiebel 2013). Since our knowledge of history is imperfect and physical phenomena are fuzzy in nature, the extent of phenomenal time-spans can only be described in approximation. An extreme case of approximation, might, for example, define an instance of E52 Time-Span having unknown beginning, end and duration. It may, nevertheless, be associated with other descriptions by which people can infer knowledge about it, such as in relative chronologies.
+Some instances of E52 may be defined precisely as representing a declaration of a temporal extent, as, for instance, done in a business contract. They constitute declarative time-spans as defined in CRMgeo (Doerr &amp; Hiebel 2013) and can be described via the property E61 Time Primitive P170 defines time (time is defined by): E52 Time-Span.
+When used as a common E52 Time-Span for two events, it will nevertheless describe them as being simultaneous, even if nothing else is known."""@en ;
+                        rdfs:label "Intervalle temporel"@fr ,
+                                   "Período de Tempo"@pt ,
+                                   "Time-Span"@en ,
+                                   "Zeitspanne"@de ,
+                                   "Χρονικό Διάστημα"@el ,
+                                   "Интервал Времени"@ru ,
+                                   "时段"@zh .
+
+
+###  http://www.cidoc-crm.org/cidoc-crm/E53_Place
+cidoc-crm:E53_Place rdf:type owl:Class ;
+                    rdfs:subClassOf cidoc-crm:E1_CRM_Entity ;
+                    rdfs:comment """This class comprises extents in the natural space where people live, in particular on the surface of the Earth, in the pure sense of physics: independent from temporal phenomena and matter. They may serve describing the physical location of things or phenomena or other areas of interest. Geometrically, instances of E53 Place constitute single contiguous areas or a finite aggregation of disjoint areas in space which are each individually contiguous. They may have fuzzy boundaries.
+The instances of E53 Place are usually determined by reference to the position of “immobile” objects such as buildings, cities, mountains, rivers, or dedicated geodetic marks, but may also be determined by reference to mobile objects. A Place can be determined by combining a frame of reference and a location with respect to this frame.
+It is sometimes argued that instances of E53 Place are best identified by global coordinates or absolute reference systems. However, relative references are often more relevant in the context of cultural documentation and tend to be more precise. In particular, people are often interested in position in relation to large, mobile objects, such as ships. For example, the Place at which Nelson died is known with reference to a large mobile object, i.e. H.M.S Victory. A resolution of this Place in terms of absolute coordinates would require knowledge of the movements of the vessel and the precise time of death, either of which may be revised, and the result would lack historical and cultural relevance.
+Any instance of E18 Physical Thing can serve as a frame of reference for an instance of E53 Place. This may be documented using the property P157 is at rest relative to (provides reference space for)."""@en ;
+                    rdfs:label "Lieu"@fr ,
+                               "Local"@pt ,
+                               "Ort"@de ,
+                               "Place"@en ,
+                               "Τόπος"@el ,
+                               "Место"@ru ,
+                               "地点"@zh .
+
+
+###  http://www.cidoc-crm.org/cidoc-crm/E54_Dimension
+cidoc-crm:E54_Dimension rdf:type owl:Class ;
+                        rdfs:subClassOf cidoc-crm:E1_CRM_Entity ;
+                        rdfs:comment """This class comprises quantifiable properties that can be measured by some calibrated means and can be approximated by values, i.e. points or regions in a mathematical or conceptual space, such as natural or real numbers, RGB values, etc.
+An instance of E54 Dimension represents the empirical or theoretically derived quantity, including the precision tolerances resulting from the particular method or calculation. The identity of an instance of E54 Dimension depends on the method of its determination because each method may produce different values even when determining comparable qualities. For instance, the wingspan of a bird alive or dead is a different dimension. Thermoluminescence dating and Rehydroxylation [RHX] dating are different dimensions of temporal distance from now, even if they aim at dating the same object. The method of determination should be expressed using the property P2 has type (is type of). Note that simple terms such as “diameter” or “length” are normally insufficient to unambiguously describe a respective dimension. In contrast, “maximum linear extent” may be sufficient.
+The properties of the class E54 Dimension allow for expressing the numerical approximation of the values of instances of E54 Dimension adequate to the precision of the applied method of determination. If the respective quantity belongs to a non-discrete space according to the laws of physics, such as spatial distances, it is recommended to record them as approximations by intervals or regions of indeterminacy enclosing the assumed true values. For instance, a length of 5 cm may be recorded as 4.5-5.5 cm, according to the precision of the respective observation. Note, that comparability of values described in different units depends critically on the representation as value regions.
+Numerical approximations in archaic instances of E58 Measurement Unit used in historical records should be preserved. Equivalents corresponding to current knowledge should be recorded as additional instances of E54 Dimension, as appropriate."""@en ;
+                        rdfs:label "Dimension"@en ,
+                                   "Dimension"@fr ,
+                                   "Dimensão"@pt ,
+                                   "Maß"@de ,
+                                   "Μέγεθος"@el ,
+                                   "Величина"@ru ,
+                                   "度量规格"@zh .
+
+
+###  http://www.cidoc-crm.org/cidoc-crm/E5_Event
+cidoc-crm:E5_Event rdf:type owl:Class ;
+                   rdfs:subClassOf cidoc-crm:E4_Period ,
+                                   crmsci:S15_Observable_Entity ;
+                   rdfs:comment """This class comprises distinct, delimited and coherent processes and interactions of a material nature, in cultural, social or physical systems, involving and affecting instances of E77 Persistent Item in a way characteristic of the kind of process. Typical examples are meetings, births, deaths, actions of decision taking, making or inventing things, but also more complex and extended ones such as conferences, elections, building of a castle, or battles.
+While the continuous growth of a tree lacks the limits characteristic of an event, its germination from a seed does qualify as an event. Similarly, the blowing of the wind lacks the distinctness and limits of an event, but a hurricane, flood or earthquake would qualify as an event. Mental processes are considered as events, in cases where they are connected with the material externalization of their results; for example, the creation of a poem, a performance or a change of intention that becomes obvious from subsequent actions or declarations.
+The effects of an instance of E5 Event may not lead to relevant permanent changes of properties or relations of the items involved in it, for example an unrecorded performance. Of course, in order to be documented, some kind of evidence for an event must exist, be it witnesses, traces or products of the event.
+While instances of E4 Period always require some form of coherence between its constituent phenomena, in addition, the essential constituents of instances of E5 Event should contribute to an overall effect; for example, the statements made during a meeting and the listening of the audience.
+Viewed at a coarse level of detail, an instance of E5 Event may appear as if it had an ‘instantaneous’ overall effect, but any process or interaction of material nature in reality have an extent in time and space. At a fine level, instances of E5 Event may be analysed into component phenomena and phases within a space and timeframe, and as such can be seen as a period, regardless of the size of the phenomena. The reverse is not necessarily the case: not all instances of E4 Period give rise to a noteworthy overall effect and are thus not instances of E5 Event."""@en ;
+                   rdfs:label "Ereignis"@de ,
+                              "Event"@en ,
+                              "Evento"@pt ,
+                              "Évènement"@fr ,
+                              "Συμβάν"@el ,
+                              "Событие"@ru ,
+                              "事件"@zh .
+
+
+###  http://www.cidoc-crm.org/cidoc-crm/E7_Activity
+cidoc-crm:E7_Activity rdf:type owl:Class ;
+                      rdfs:subClassOf cidoc-crm:E5_Event ;
+                      rdfs:comment """This class comprises actions intentionally carried out by instances of E39 Actor that result in changes of state in the cultural, social, or physical systems documented.
+This notion includes complex, composite, and long-lasting actions such as the building of a settlement or a war, as well as simple, short-lived actions such as the opening of a door."""@en ;
+                      rdfs:label "Activity"@en ,
+                                 "Activité"@fr ,
+                                 "Atividade"@pt ,
+                                 "Handlung"@de ,
+                                 "Δράση"@el ,
+                                 "Деятельность"@ru ,
+                                 "活动"@zh .
+
+
+###  http://www.cidoc-crm.org/cidoc-crm/E92_Spacetime_Volume
+cidoc-crm:E92_Spacetime_Volume rdf:type owl:Class ;
+                               rdfs:subClassOf cidoc-crm:E1_CRM_Entity ;
+                               rdfs:comment "This class comprises 4-dimensional point sets (volumes) in physical spacetime (in contrast to mathematical models of it) regardless of their true geometric forms. They may derive their identity from being the extent of a material phenomenon or from being the interpretation of an expression defining an extent in spacetime. Intersections of instances of E92 Spacetime Volume, E53 Place, and E52 Time-Span are also regarded as instances of E92 Spacetime Volume. An instance of E92 Spacetime Volume is either contiguous or composed of a finite number of contiguous subsets. Its boundaries may be fuzzy due to the properties of the phenomena it derives from or due to the limited precision up to which defining expression can be identified with a real extent in spacetime. The duration of existence of an instance of E92 Spacetime Volume is its projection on time."@en ;
+                               rdfs:label "Spacetime Volume"@en ,
+                                          "Volume spatio-temporel"@fr .
+
+
+###  http://www.cidoc-crm.org/extensions/crminf/I1_Argumentation
+crminf:I1_Argumentation rdf:type owl:Class ;
+                        rdfs:subClassOf cidoc-crm:E7_Activity .
+
+
+###  http://www.cidoc-crm.org/extensions/crmsci/S15_Observable_Entity
+crmsci:S15_Observable_Entity rdf:type owl:Class ;
+                             rdfs:subClassOf cidoc-crm:E1_CRM_Entity ;
+                             rdfs:comment "This class comprises instances of E5 Event or S10 Material Substantial (i.e. items or phenomena, such as physical things, their behaviour, states and interactions or events), that can be observed by measurement or detection devices or by human sensory impression including when enhanced by tools. In order to be observable, instances of E5 Event must consist of some interaction or action of material substance. In some cases, the spatiotemporal confinement of the event itself, such as a flash, a car stopping etc. marks the limits of a documented observation of an event. In other cases, such as the situation of a car passing by a certain object, the spatiotemporal limits of the event of observing itself, as well as the direction of attention or the orientation of used instruments, may constrain the observed detail of a larger process, e.g., noticing the sight of a car passing by; a light emission, etc. Conceptual objects manifest through their carriers such as books, digital media, or even human memory. Attributes of conceptual objects, such as number of words, can be observed on their carriers. If the respective properties between carriers differ, either they carry different instances of conceptual objects or the difference can be attributed to accidental deficiencies in one of the carriers. In that sense even immaterial objects are observable. By this model we address the fact that frequently, the actually observed carriers of conceptual objects are not explicitly identified in documentation, i.e., they are assumed to have existed but they are unknown as individuals."@en ;
+                             rdfs:label "Observable Entity"@en .
+
+
+###  http://www.cidoc-crm.org/extensions/crmsci/S5_Inference_Making
+crmsci:S5_Inference_Making rdf:type owl:Class ;
+                           rdfs:subClassOf crminf:I1_Argumentation ;
+                           rdfs:comment "This class comprises the action of making propositions and statements about particular states of affairs in reality or in possible realities or categorical descriptions of reality by using inferences from other statements based on hypotheses and any form of formal or informal logic. It includes evaluations, calculations, and interpretations based on mathematical formulations and propositions."@en ;
+                           rdfs:label "Inference Making"@en .
+
+
+###  https://www.ics.forth.gr/earthquake_model/EQ1_Earthquake
+earthquake_model:EQ1_Earthquake rdf:type owl:Class ;
+                                rdfs:subClassOf cidoc-crm:E5_Event .
+
+
+###  https://www.ics.forth.gr/earthquake_model/EQ2_Comparison_Evaluation
+earthquake_model:EQ2_Comparison_Evaluation rdf:type owl:Class ;
+                                           rdfs:subClassOf crmsci:S5_Inference_Making .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
