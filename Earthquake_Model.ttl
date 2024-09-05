@@ -4,15 +4,10 @@
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix crminf: <file:/C:/Users/sifis/Desktop//http://www.cidoc-crm.org/extensions/crminf/> .
+@prefix crminf: <http://www.cidoc-crm.org/extensions/crminf/> .
 @prefix crmsci: <http://www.cidoc-crm.org/extensions/crmsci/> .
-@prefix crminf1: <http://www.cidoc-crm.org/extensions/crminf/> .
-@prefix crminf3: <http://www.cidoc-crm.org/http://www.cidoc-crm.org/extensions/crminf/> .
 @prefix cidoc-crm: <http://www.cidoc-crm.org/cidoc-crm/> .
-@prefix earthquake_model: <file:/C:/Users/sifis/Desktop/earthquake_model/> .
-@prefix earthquake_model1: <https://www.ics.forth.gr/earthquake_model/> .
-@prefix earthquake_model2: <http://www.cidoc-crm.org/cidoc-crm/earthquake_model/> .
-@prefix earthquake_model3: <https://www.ics.forth.gr/earthquake_model//> .
+@prefix earthquake_model: <https://www.ics.forth.gr/earthquake_model/> .
 @base <https://www.ics.forth.gr/earthquake_model/> .
 
 <https://www.ics.forth.gr/earthquake_model/> rdf:type owl:Ontology ;
@@ -4377,95 +4372,95 @@ cidoc-crm:P9i_forms_part_of rdf:type owl:ObjectProperty ;
 
 
 ###  http://www.cidoc-crm.org/extensions/crminf/J13_adopted_interpretation
-crminf1:J13_adopted_interpretation rdf:type owl:ObjectProperty ;
-                                   owl:inverseOf crminf1:J13i_was_concluded_by ;
-                                   rdfs:domain crminf1:I7_Belief_Adoption ;
-                                   rdfs:range crminf1:I12_Adopted_Belief .
+crminf:J13_adopted_interpretation rdf:type owl:ObjectProperty ;
+                                  owl:inverseOf crminf:J13i_was_concluded_by ;
+                                  rdfs:domain crminf:I7_Belief_Adoption ;
+                                  rdfs:range crminf:I12_Adopted_Belief .
 
 
 ###  http://www.cidoc-crm.org/extensions/crminf/J13i_was_concluded_by
-crminf1:J13i_was_concluded_by rdf:type owl:ObjectProperty ;
-                              rdfs:domain crminf1:I12_Adopted_Belief ;
-                              rdfs:range crminf1:I7_Belief_Adoption .
+crminf:J13i_was_concluded_by rdf:type owl:ObjectProperty ;
+                             rdfs:domain crminf:I12_Adopted_Belief ;
+                             rdfs:range crminf:I7_Belief_Adoption .
 
 
 ###  http://www.cidoc-crm.org/extensions/crminf/J14_adopted_interpretation_of
-crminf1:J14_adopted_interpretation_of rdf:type owl:ObjectProperty ;
-                                      rdfs:subPropertyOf owl:topObjectProperty ;
-                                      owl:inverseOf crminf1:J14i_has_adopted_interpretation ;
-                                      rdfs:domain crminf1:I12_Adopted_Belief ;
-                                      rdfs:range cidoc-crm:E73_Information_Object .
-
-
-###  http://www.cidoc-crm.org/extensions/crminf/J14i_has_adopted_interpretation
-crminf1:J14i_has_adopted_interpretation rdf:type owl:ObjectProperty ;
-                                        rdfs:domain cidoc-crm:E73_Information_Object ;
-                                        rdfs:range crminf1:I12_Adopted_Belief .
-
-
-###  http://www.cidoc-crm.org/extensions/crminf/J1_used_as_premise
-crminf1:J1_used_as_premise rdf:type owl:ObjectProperty ;
-                           owl:inverseOf crminf1:J1i_was_premise_of ;
-                           rdfs:domain crmsci:S5_Inference_Making ;
-                           rdfs:range crminf1:I2_Belief .
-
-
-###  http://www.cidoc-crm.org/extensions/crminf/J1i_was_premise_of
-crminf1:J1i_was_premise_of rdf:type owl:ObjectProperty ;
-                           rdfs:domain crminf1:I2_Belief ;
-                           rdfs:range crmsci:S5_Inference_Making .
-
-
-###  http://www.cidoc-crm.org/extensions/crminf/J20_is_about_the_provenance_of
-crminf1:J20_is_about_the_provenance_of rdf:type owl:ObjectProperty ;
-                                       owl:inverseOf crminf1:J20i_has_provenance_claim ;
-                                       rdfs:domain crminf1:I10_Provenance_Statement ;
-                                       rdfs:range cidoc-crm:E70_Thing .
-
-
-###  http://www.cidoc-crm.org/extensions/crminf/J20i_has_provenance_claim
-crminf1:J20i_has_provenance_claim rdf:type owl:ObjectProperty ;
-                                  rdfs:domain cidoc-crm:E70_Thing ;
-                                  rdfs:range crminf1:I10_Provenance_Statement .
-
-
-###  http://www.cidoc-crm.org/extensions/crminf/J2_concluded_that
-crminf1:J2_concluded_that rdf:type owl:ObjectProperty ;
-                          owl:inverseOf crminf1:J2i_was_concluded_by ;
-                          rdfs:domain crminf1:I1_Argumentation ;
-                          rdfs:range crminf1:I2_Belief .
-
-
-###  http://www.cidoc-crm.org/extensions/crminf/J2i_was_concluded_by
-crminf1:J2i_was_concluded_by rdf:type owl:ObjectProperty ;
-                             rdfs:domain crminf1:I2_Belief ;
-                             rdfs:range crminf1:I1_Argumentation .
-
-
-###  http://www.cidoc-crm.org/extensions/crminf/J4_that
-crminf1:J4_that rdf:type owl:ObjectProperty ;
-                owl:inverseOf crminf1:J4i_is_subject_of ;
-                rdfs:domain crminf1:I2_Belief ;
-                rdfs:range crminf1:I4_Proposition_Set .
-
-
-###  http://www.cidoc-crm.org/extensions/crminf/J4i_is_subject_of
-crminf1:J4i_is_subject_of rdf:type owl:ObjectProperty ;
-                          rdfs:domain crminf1:I4_Proposition_Set ;
-                          rdfs:range crminf1:I2_Belief .
-
-
-###  http://www.cidoc-crm.org/extensions/crminf/J7_is_based_on_evidence_from
-crminf1:J7_is_based_on_evidence_from rdf:type owl:ObjectProperty ;
-                                     owl:inverseOf crminf1:J7i_is_evidence_for ;
-                                     rdfs:domain crminf1:I7_Belief_Adoption ;
+crminf:J14_adopted_interpretation_of rdf:type owl:ObjectProperty ;
+                                     rdfs:subPropertyOf owl:topObjectProperty ;
+                                     owl:inverseOf crminf:J14i_has_adopted_interpretation ;
+                                     rdfs:domain crminf:I12_Adopted_Belief ;
                                      rdfs:range cidoc-crm:E73_Information_Object .
 
 
+###  http://www.cidoc-crm.org/extensions/crminf/J14i_has_adopted_interpretation
+crminf:J14i_has_adopted_interpretation rdf:type owl:ObjectProperty ;
+                                       rdfs:domain cidoc-crm:E73_Information_Object ;
+                                       rdfs:range crminf:I12_Adopted_Belief .
+
+
+###  http://www.cidoc-crm.org/extensions/crminf/J1_used_as_premise
+crminf:J1_used_as_premise rdf:type owl:ObjectProperty ;
+                          owl:inverseOf crminf:J1i_was_premise_of ;
+                          rdfs:domain crmsci:S5_Inference_Making ;
+                          rdfs:range crminf:I2_Belief .
+
+
+###  http://www.cidoc-crm.org/extensions/crminf/J1i_was_premise_of
+crminf:J1i_was_premise_of rdf:type owl:ObjectProperty ;
+                          rdfs:domain crminf:I2_Belief ;
+                          rdfs:range crmsci:S5_Inference_Making .
+
+
+###  http://www.cidoc-crm.org/extensions/crminf/J20_is_about_the_provenance_of
+crminf:J20_is_about_the_provenance_of rdf:type owl:ObjectProperty ;
+                                      owl:inverseOf crminf:J20i_has_provenance_claim ;
+                                      rdfs:domain crminf:I10_Provenance_Statement ;
+                                      rdfs:range cidoc-crm:E70_Thing .
+
+
+###  http://www.cidoc-crm.org/extensions/crminf/J20i_has_provenance_claim
+crminf:J20i_has_provenance_claim rdf:type owl:ObjectProperty ;
+                                 rdfs:domain cidoc-crm:E70_Thing ;
+                                 rdfs:range crminf:I10_Provenance_Statement .
+
+
+###  http://www.cidoc-crm.org/extensions/crminf/J2_concluded_that
+crminf:J2_concluded_that rdf:type owl:ObjectProperty ;
+                         owl:inverseOf crminf:J2i_was_concluded_by ;
+                         rdfs:domain crminf:I1_Argumentation ;
+                         rdfs:range crminf:I2_Belief .
+
+
+###  http://www.cidoc-crm.org/extensions/crminf/J2i_was_concluded_by
+crminf:J2i_was_concluded_by rdf:type owl:ObjectProperty ;
+                            rdfs:domain crminf:I2_Belief ;
+                            rdfs:range crminf:I1_Argumentation .
+
+
+###  http://www.cidoc-crm.org/extensions/crminf/J4_that
+crminf:J4_that rdf:type owl:ObjectProperty ;
+               owl:inverseOf crminf:J4i_is_subject_of ;
+               rdfs:domain crminf:I2_Belief ;
+               rdfs:range crminf:I4_Proposition_Set .
+
+
+###  http://www.cidoc-crm.org/extensions/crminf/J4i_is_subject_of
+crminf:J4i_is_subject_of rdf:type owl:ObjectProperty ;
+                         rdfs:domain crminf:I4_Proposition_Set ;
+                         rdfs:range crminf:I2_Belief .
+
+
+###  http://www.cidoc-crm.org/extensions/crminf/J7_is_based_on_evidence_from
+crminf:J7_is_based_on_evidence_from rdf:type owl:ObjectProperty ;
+                                    owl:inverseOf crminf:J7i_is_evidence_for ;
+                                    rdfs:domain crminf:I7_Belief_Adoption ;
+                                    rdfs:range cidoc-crm:E73_Information_Object .
+
+
 ###  http://www.cidoc-crm.org/extensions/crminf/J7i_is_evidence_for
-crminf1:J7i_is_evidence_for rdf:type owl:ObjectProperty ;
-                            rdfs:domain cidoc-crm:E73_Information_Object ;
-                            rdfs:range crminf1:I7_Belief_Adoption .
+crminf:J7i_is_evidence_for rdf:type owl:ObjectProperty ;
+                           rdfs:domain cidoc-crm:E73_Information_Object ;
+                           rdfs:range crminf:I7_Belief_Adoption .
 
 
 ###  http://www.cidoc-crm.org/extensions/crmsci/O10i_dimension_was_assigned_by
@@ -4931,89 +4926,89 @@ crmsci:observed_value rdf:type owl:ObjectProperty ;
 
 
 ###  https://www.ics.forth.gr/earthquake_model/PEQ2_checks_equality_of
-earthquake_model1:PEQ2_checks_equality_of rdf:type owl:ObjectProperty ;
-                                          owl:inverseOf earthquake_model1:PEQ2i__of_whom_equality_is_checked_in ;
-                                          rdfs:domain earthquake_model1:EQ2_Comparison_Evaluation ;
-                                          rdfs:range cidoc-crm:E1_CRM_Entity .
+earthquake_model:PEQ2_checks_equality_of rdf:type owl:ObjectProperty ;
+                                         owl:inverseOf earthquake_model:PEQ2i__of_whom_equality_is_checked_in ;
+                                         rdfs:domain earthquake_model:EQ2_Comparison_Evaluation ;
+                                         rdfs:range cidoc-crm:E1_CRM_Entity .
 
 
 ###  https://www.ics.forth.gr/earthquake_model/PEQ2i__of_whom_equality_is_checked_in
-earthquake_model1:PEQ2i__of_whom_equality_is_checked_in rdf:type owl:ObjectProperty ;
-                                                        rdfs:domain cidoc-crm:E1_CRM_Entity ;
-                                                        rdfs:range earthquake_model1:EQ2_Comparison_Evaluation .
+earthquake_model:PEQ2i__of_whom_equality_is_checked_in rdf:type owl:ObjectProperty ;
+                                                       rdfs:domain cidoc-crm:E1_CRM_Entity ;
+                                                       rdfs:range earthquake_model:EQ2_Comparison_Evaluation .
 
 
 ###  https://www.ics.forth.gr/earthquake_model/PEQ3_checks_equality_to
-earthquake_model1:PEQ3_checks_equality_to rdf:type owl:ObjectProperty ;
-                                          owl:inverseOf earthquake_model1:PEQ3i_to_whom_equality_is_checked_in ;
-                                          rdfs:domain earthquake_model1:EQ2_Comparison_Evaluation ;
-                                          rdfs:range cidoc-crm:E1_CRM_Entity .
+earthquake_model:PEQ3_checks_equality_to rdf:type owl:ObjectProperty ;
+                                         owl:inverseOf earthquake_model:PEQ3i_to_whom_equality_is_checked_in ;
+                                         rdfs:domain earthquake_model:EQ2_Comparison_Evaluation ;
+                                         rdfs:range cidoc-crm:E1_CRM_Entity .
 
 
 ###  https://www.ics.forth.gr/earthquake_model/PEQ3i_to_whom_equality_is_checked_in
-earthquake_model1:PEQ3i_to_whom_equality_is_checked_in rdf:type owl:ObjectProperty ;
-                                                       rdfs:domain cidoc-crm:E1_CRM_Entity ;
-                                                       rdfs:range earthquake_model1:EQ2_Comparison_Evaluation .
+earthquake_model:PEQ3i_to_whom_equality_is_checked_in rdf:type owl:ObjectProperty ;
+                                                      rdfs:domain cidoc-crm:E1_CRM_Entity ;
+                                                      rdfs:range earthquake_model:EQ2_Comparison_Evaluation .
 
 
 ###  https://www.ics.forth.gr/earthquake_model/PEQ5_has_documented_possible_timespan
-earthquake_model1:PEQ5_has_documented_possible_timespan rdf:type owl:ObjectProperty ;
-                                                        rdfs:subPropertyOf cidoc-crm:P4_has_time-span ;
-                                                        owl:inverseOf earthquake_model1:PEQ5i_is_documented_possible_timespan_of ;
-                                                        rdfs:domain earthquake_model1:EQ1_Earthquake ;
-                                                        rdfs:range cidoc-crm:E52_Time-Span .
+earthquake_model:PEQ5_has_documented_possible_timespan rdf:type owl:ObjectProperty ;
+                                                       rdfs:subPropertyOf cidoc-crm:P4_has_time-span ;
+                                                       owl:inverseOf earthquake_model:PEQ5i_is_documented_possible_timespan_of ;
+                                                       rdfs:domain earthquake_model:EQ1_Earthquake ;
+                                                       rdfs:range cidoc-crm:E52_Time-Span .
 
 
 ###  https://www.ics.forth.gr/earthquake_model/PEQ5i_is_documented_possible_timespan_of
-earthquake_model1:PEQ5i_is_documented_possible_timespan_of rdf:type owl:ObjectProperty ;
-                                                           rdfs:subPropertyOf cidoc-crm:P4i_is_time-span_of ;
-                                                           rdfs:domain cidoc-crm:E52_Time-Span ;
-                                                           rdfs:range earthquake_model1:EQ1_Earthquake .
+earthquake_model:PEQ5i_is_documented_possible_timespan_of rdf:type owl:ObjectProperty ;
+                                                          rdfs:subPropertyOf cidoc-crm:P4i_is_time-span_of ;
+                                                          rdfs:domain cidoc-crm:E52_Time-Span ;
+                                                          rdfs:range earthquake_model:EQ1_Earthquake .
 
 
 ###  https://www.ics.forth.gr/earthquake_model/PEQ6_has_documented_possible_place
-earthquake_model1:PEQ6_has_documented_possible_place rdf:type owl:ObjectProperty ;
-                                                     rdfs:subPropertyOf cidoc-crm:P7_took_place_at ;
-                                                     owl:inverseOf earthquake_model1:PEQ6i_is_documented_possible_place_of ;
-                                                     rdfs:domain earthquake_model1:EQ1_Earthquake ;
-                                                     rdfs:range cidoc-crm:E53_Place .
+earthquake_model:PEQ6_has_documented_possible_place rdf:type owl:ObjectProperty ;
+                                                    rdfs:subPropertyOf cidoc-crm:P7_took_place_at ;
+                                                    owl:inverseOf earthquake_model:PEQ6i_is_documented_possible_place_of ;
+                                                    rdfs:domain earthquake_model:EQ1_Earthquake ;
+                                                    rdfs:range cidoc-crm:E53_Place .
 
 
 ###  https://www.ics.forth.gr/earthquake_model/PEQ6i_is_documented_possible_place_of
-earthquake_model1:PEQ6i_is_documented_possible_place_of rdf:type owl:ObjectProperty ;
-                                                        rdfs:subPropertyOf cidoc-crm:P7i_witnessed ;
-                                                        rdfs:domain cidoc-crm:E53_Place ;
-                                                        rdfs:range earthquake_model1:EQ1_Earthquake .
+earthquake_model:PEQ6i_is_documented_possible_place_of rdf:type owl:ObjectProperty ;
+                                                       rdfs:subPropertyOf cidoc-crm:P7i_witnessed ;
+                                                       rdfs:domain cidoc-crm:E53_Place ;
+                                                       rdfs:range earthquake_model:EQ1_Earthquake .
 
 
 ###  https://www.ics.forth.gr/earthquake_model/PEQ7_has_documented_possible_epicenter_place
-earthquake_model1:PEQ7_has_documented_possible_epicenter_place rdf:type owl:ObjectProperty ;
-                                                               rdfs:subPropertyOf cidoc-crm:P7_took_place_at ;
-                                                               owl:inverseOf earthquake_model1:PEQ7i_is__documented_possible_epicenter_place_of ;
-                                                               rdfs:domain earthquake_model1:EQ1_Earthquake ;
-                                                               rdfs:range cidoc-crm:E53_Place .
+earthquake_model:PEQ7_has_documented_possible_epicenter_place rdf:type owl:ObjectProperty ;
+                                                              rdfs:subPropertyOf cidoc-crm:P7_took_place_at ;
+                                                              owl:inverseOf earthquake_model:PEQ7i_is__documented_possible_epicenter_place_of ;
+                                                              rdfs:domain earthquake_model:EQ1_Earthquake ;
+                                                              rdfs:range cidoc-crm:E53_Place .
 
 
 ###  https://www.ics.forth.gr/earthquake_model/PEQ7i_is__documented_possible_epicenter_place_of
-earthquake_model1:PEQ7i_is__documented_possible_epicenter_place_of rdf:type owl:ObjectProperty ;
-                                                                   rdfs:subPropertyOf cidoc-crm:P7i_witnessed ;
-                                                                   rdfs:domain cidoc-crm:E53_Place ;
-                                                                   rdfs:range earthquake_model1:EQ1_Earthquake .
+earthquake_model:PEQ7i_is__documented_possible_epicenter_place_of rdf:type owl:ObjectProperty ;
+                                                                  rdfs:subPropertyOf cidoc-crm:P7i_witnessed ;
+                                                                  rdfs:domain cidoc-crm:E53_Place ;
+                                                                  rdfs:range earthquake_model:EQ1_Earthquake .
 
 
 ###  https://www.ics.forth.gr/earthquake_model/PEQ8_has_documented_possible_dimension
-earthquake_model1:PEQ8_has_documented_possible_dimension rdf:type owl:ObjectProperty ;
-                                                         rdfs:subPropertyOf crmsci:O12_has_dimension ;
-                                                         owl:inverseOf earthquake_model1:PEQ8i_is_documented_possible_dimension__of ;
-                                                         rdfs:domain earthquake_model1:EQ1_Earthquake ;
-                                                         rdfs:range cidoc-crm:E54_Dimension .
+earthquake_model:PEQ8_has_documented_possible_dimension rdf:type owl:ObjectProperty ;
+                                                        rdfs:subPropertyOf crmsci:O12_has_dimension ;
+                                                        owl:inverseOf earthquake_model:PEQ8i_is_documented_possible_dimension__of ;
+                                                        rdfs:domain earthquake_model:EQ1_Earthquake ;
+                                                        rdfs:range cidoc-crm:E54_Dimension .
 
 
 ###  https://www.ics.forth.gr/earthquake_model/PEQ8i_is_documented_possible_dimension__of
-earthquake_model1:PEQ8i_is_documented_possible_dimension__of rdf:type owl:ObjectProperty ;
-                                                             rdfs:subPropertyOf crmsci:O12i_is_dimension_of ;
-                                                             rdfs:domain cidoc-crm:E54_Dimension ;
-                                                             rdfs:range earthquake_model1:EQ1_Earthquake .
+earthquake_model:PEQ8i_is_documented_possible_dimension__of rdf:type owl:ObjectProperty ;
+                                                            rdfs:subPropertyOf crmsci:O12i_is_dimension_of ;
+                                                            rdfs:domain cidoc-crm:E54_Dimension ;
+                                                            rdfs:range earthquake_model:EQ1_Earthquake .
 
 
 #################################################################
@@ -5254,10 +5249,10 @@ cidoc-crm:P90b_has_upper_value_limit rdf:type owl:DatatypeProperty ;
 
 
 ###  http://www.cidoc-crm.org/extensions/crminf/J5_holds_to_be
-crminf1:J5_holds_to_be rdf:type owl:DatatypeProperty ;
-                       rdfs:subPropertyOf owl:topDataProperty ;
-                       rdfs:domain crminf1:I2_Belief ;
-                       rdfs:range rdfs:Literal .
+crminf:J5_holds_to_be rdf:type owl:DatatypeProperty ;
+                      rdfs:subPropertyOf owl:topDataProperty ;
+                      rdfs:domain crminf:I2_Belief ;
+                      rdfs:range rdfs:Literal .
 
 
 ###  http://www.cidoc-crm.org/extensions/crmsci/O30_determined_position
@@ -5269,24 +5264,24 @@ crmsci:O30_determined_position rdf:type owl:DatatypeProperty ;
 
 
 ###  https://www.ics.forth.gr/earthquake_model/PEQ1_has_error_margin
-earthquake_model1:PEQ1_has_error_margin rdf:type owl:DatatypeProperty ;
-                                        rdfs:subPropertyOf owl:topDataProperty ;
-                                        rdfs:domain cidoc-crm:E54_Dimension ;
-                                        rdfs:range rdfs:Literal .
+earthquake_model:PEQ1_has_error_margin rdf:type owl:DatatypeProperty ;
+                                       rdfs:subPropertyOf owl:topDataProperty ;
+                                       rdfs:domain cidoc-crm:E54_Dimension ;
+                                       rdfs:range rdfs:Literal .
+
+
+###  https://www.ics.forth.gr/earthquake_model/PEQ4_has_comparison_value
+earthquake_model:PEQ4_has_comparison_value rdf:type owl:DatatypeProperty ;
+                                           rdfs:subPropertyOf owl:topDataProperty ;
+                                           rdfs:domain earthquake_model:EQ2_Comparison_Evaluation ;
+                                           rdfs:range rdfs:Literal .
 
 
 ###  https://www.ics.forth.gr/earthquake_model/PEQ9_has_documented_uncertainty_factor
-earthquake_model1:PEQ9_has_documented_uncertainty_factor rdf:type owl:DatatypeProperty ;
-                                                         rdfs:subPropertyOf owl:topDataProperty ;
-                                                         rdfs:domain cidoc-crm:E54_Dimension ;
-                                                         rdfs:range rdfs:Literal .
-
-
-###  https://www.ics.forth.gr/earthquake_model//PEQ4_has_comparison_value
-earthquake_model3:PEQ4_has_comparison_value rdf:type owl:DatatypeProperty ;
-                                            rdfs:subPropertyOf owl:topDataProperty ;
-                                            rdfs:domain earthquake_model1:EQ2_Comparison_Evaluation ;
-                                            rdfs:range rdfs:Literal .
+earthquake_model:PEQ9_has_documented_uncertainty_factor rdf:type owl:DatatypeProperty ;
+                                                        rdfs:subPropertyOf owl:topDataProperty ;
+                                                        rdfs:domain cidoc-crm:E54_Dimension ;
+                                                        rdfs:range rdfs:Literal .
 
 
 #################################################################
@@ -6378,33 +6373,33 @@ Note, that the class E9 Move inherits the property P7 took place at (witnessed):
 
 
 ###  http://www.cidoc-crm.org/extensions/crminf/I10_Provenance_Statement
-crminf1:I10_Provenance_Statement rdf:type owl:Class ;
-                                 rdfs:subClassOf crminf1:I4_Proposition_Set .
+crminf:I10_Provenance_Statement rdf:type owl:Class ;
+                                rdfs:subClassOf crminf:I4_Proposition_Set .
 
 
 ###  http://www.cidoc-crm.org/extensions/crminf/I12_Adopted_Belief
-crminf1:I12_Adopted_Belief rdf:type owl:Class ;
-                           rdfs:subClassOf crminf1:I2_Belief .
+crminf:I12_Adopted_Belief rdf:type owl:Class ;
+                          rdfs:subClassOf crminf:I2_Belief .
 
 
 ###  http://www.cidoc-crm.org/extensions/crminf/I1_Argumentation
-crminf1:I1_Argumentation rdf:type owl:Class ;
-                         rdfs:subClassOf cidoc-crm:E7_Activity .
+crminf:I1_Argumentation rdf:type owl:Class ;
+                        rdfs:subClassOf cidoc-crm:E7_Activity .
 
 
 ###  http://www.cidoc-crm.org/extensions/crminf/I2_Belief
-crminf1:I2_Belief rdf:type owl:Class ;
-                  rdfs:subClassOf cidoc-crm:E2_Temporal_Entity .
+crminf:I2_Belief rdf:type owl:Class ;
+                 rdfs:subClassOf cidoc-crm:E2_Temporal_Entity .
 
 
 ###  http://www.cidoc-crm.org/extensions/crminf/I4_Proposition_Set
-crminf1:I4_Proposition_Set rdf:type owl:Class ;
-                           rdfs:subClassOf cidoc-crm:E73_Information_Object .
+crminf:I4_Proposition_Set rdf:type owl:Class ;
+                          rdfs:subClassOf cidoc-crm:E73_Information_Object .
 
 
 ###  http://www.cidoc-crm.org/extensions/crminf/I7_Belief_Adoption
-crminf1:I7_Belief_Adoption rdf:type owl:Class ;
-                           rdfs:subClassOf crminf1:I1_Argumentation .
+crminf:I7_Belief_Adoption rdf:type owl:Class ;
+                          rdfs:subClassOf crminf:I1_Argumentation .
 
 
 ###  http://www.cidoc-crm.org/extensions/crmsci/S10_Material_Substantial
@@ -6534,7 +6529,7 @@ crmsci:S3_Measurement_by_Sampling rdf:type owl:Class ;
 ###  http://www.cidoc-crm.org/extensions/crmsci/S4_Observation
 crmsci:S4_Observation rdf:type owl:Class ;
                       rdfs:subClassOf cidoc-crm:E13_Attribute_Assignment ,
-                                      crminf1:I1_Argumentation ;
+                                      crminf:I1_Argumentation ;
                       rdfs:comment "This class comprises the activity of gaining scientific knowledge about particular states of physical reality through empirical evidence, experiments and measurements. We define observation in the sense of natural sciences, as a kind of human activity: at some place and within some time-span, certain physical things and their behavior and interactions are observed by human sensory impression, and often enhanced by tools and measurement devices. Observed situations or dimensions may pertain to properties confined to a single instance of S15 Observable Entity or pertain to constellations of multiple instances and relations between them, in particular distances between them. The output of the internal processes of measurement devices that do not require additional human interaction are in general regarded as part of the observation and not as additional inference. Primary data from measurement devices are regarded in this model to be results of observation and can be interpreted as propositions believed to be true within the (known) tolerances and degree of reliability of the device. Measurements and witnessing of events are special cases of observations. Observations result in a belief that certain propositions held at a time within the time-span of the observation. In this model, the degree of confidence in the observed properties is regarded to be “true” by default, but could be described differently by adding a property P3 has note to an instance of S4 Observation"@en ;
                       rdfs:label "Observation"@en .
 
@@ -6542,7 +6537,7 @@ crmsci:S4_Observation rdf:type owl:Class ;
 ###  http://www.cidoc-crm.org/extensions/crmsci/S5_Inference_Making
 crmsci:S5_Inference_Making rdf:type owl:Class ;
                            rdfs:subClassOf cidoc-crm:E13_Attribute_Assignment ,
-                                           crminf1:I1_Argumentation ;
+                                           crminf:I1_Argumentation ;
                            rdfs:comment "This class comprises the action of making propositions and statements about particular states of affairs in reality or in possible realities or categorical descriptions of reality by using inferences from other statements based on hypotheses and any form of formal or informal logic. It includes evaluations, calculations, and interpretations based on mathematical formulations and propositions."@en ;
                            rdfs:label "Inference Making"@en .
 
@@ -6576,13 +6571,13 @@ crmsci:S9_Property_Type rdf:type owl:Class ;
 
 
 ###  https://www.ics.forth.gr/earthquake_model/EQ1_Earthquake
-earthquake_model1:EQ1_Earthquake rdf:type owl:Class ;
-                                 rdfs:subClassOf cidoc-crm:E5_Event .
+earthquake_model:EQ1_Earthquake rdf:type owl:Class ;
+                                rdfs:subClassOf cidoc-crm:E5_Event .
 
 
 ###  https://www.ics.forth.gr/earthquake_model/EQ2_Comparison_Evaluation
-earthquake_model1:EQ2_Comparison_Evaluation rdf:type owl:Class ;
-                                            rdfs:subClassOf crmsci:S5_Inference_Making .
+earthquake_model:EQ2_Comparison_Evaluation rdf:type owl:Class ;
+                                           rdfs:subClassOf crmsci:S5_Inference_Making .
 
 
 ###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi

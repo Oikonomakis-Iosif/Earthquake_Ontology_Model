@@ -6,15 +6,10 @@
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:crminf="file:/C:/Users/sifis/Desktop//http://www.cidoc-crm.org/extensions/crminf/"
+     xmlns:crminf="http://www.cidoc-crm.org/extensions/crminf/"
      xmlns:crmsci="http://www.cidoc-crm.org/extensions/crmsci/"
-     xmlns:crminf1="http://www.cidoc-crm.org/extensions/crminf/"
-     xmlns:crminf3="http://www.cidoc-crm.org/http://www.cidoc-crm.org/extensions/crminf/"
      xmlns:cidoc-crm="http://www.cidoc-crm.org/cidoc-crm/"
-     xmlns:earthquake_model="file:/C:/Users/sifis/Desktop/earthquake_model/"
-     xmlns:earthquake_model1="https://www.ics.forth.gr/earthquake_model/"
-     xmlns:earthquake_model2="http://www.cidoc-crm.org/cidoc-crm/earthquake_model/"
-     xmlns:earthquake_model3="https://www.ics.forth.gr/earthquake_model//">
+     xmlns:earthquake_model="https://www.ics.forth.gr/earthquake_model/">
     <owl:Ontology rdf:about="https://www.ics.forth.gr/earthquake_model/">
         <rdfs:comment xml:lang="en">CIDOC CRM v7.1.3 implemented in RDFS
 
@@ -6484,9 +6479,9 @@ For a more complete description, objects may be decomposed into their components
     
 
 
-    <!-- https://www.ics.forth.gr/earthquake_model//PEQ4_has_comparison_value -->
+    <!-- https://www.ics.forth.gr/earthquake_model/PEQ4_has_comparison_value -->
 
-    <owl:DatatypeProperty rdf:about="https://www.ics.forth.gr/earthquake_model//PEQ4_has_comparison_value">
+    <owl:DatatypeProperty rdf:about="https://www.ics.forth.gr/earthquake_model/PEQ4_has_comparison_value">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
         <rdfs:domain rdf:resource="https://www.ics.forth.gr/earthquake_model/EQ2_Comparison_Evaluation"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
@@ -8350,8 +8345,8 @@ Note, that the class E9 Move inherits the property P7 took place at (witnessed):
 
     <owl:NamedIndividual rdf:about="https://www.ics.forth.gr/earthquake_model/The_earthquake_has_a_possible_intensity_of_8-9">
         <rdf:type rdf:resource="http://www.cidoc-crm.org/extensions/crminf/I12_Adopted_Belief"/>
-        <crminf1:J14_adopted_interpretation_of rdf:resource="https://www.ics.forth.gr/earthquake_model/Platakis_Book"/>
-        <crminf1:J5_holds_to_be rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Possible</crminf1:J5_holds_to_be>
+        <crminf:J14_adopted_interpretation_of rdf:resource="https://www.ics.forth.gr/earthquake_model/Platakis_Book"/>
+        <crminf:J5_holds_to_be rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Possible</crminf:J5_holds_to_be>
     </owl:NamedIndividual>
     
 
@@ -8360,7 +8355,7 @@ Note, that the class E9 Move inherits the property P7 took place at (witnessed):
 
     <owl:NamedIndividual rdf:about="https://www.ics.forth.gr/earthquake_model/The_earthquake_has_a_possible_intensity_of_9">
         <rdf:type rdf:resource="http://www.cidoc-crm.org/extensions/crminf/I12_Adopted_Belief"/>
-        <crminf1:J5_holds_to_be rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Possible</crminf1:J5_holds_to_be>
+        <crminf:J5_holds_to_be rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Possible</crminf:J5_holds_to_be>
     </owl:NamedIndividual>
     
 
@@ -8369,7 +8364,7 @@ Note, that the class E9 Move inherits the property P7 took place at (witnessed):
 
     <owl:NamedIndividual rdf:about="https://www.ics.forth.gr/earthquake_model/The_epicenter_of_the_earthquake_was_Southeast_of_Santorini">
         <rdf:type rdf:resource="http://www.cidoc-crm.org/extensions/crminf/I12_Adopted_Belief"/>
-        <crminf1:J5_holds_to_be rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">True</crminf1:J5_holds_to_be>
+        <crminf:J5_holds_to_be rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">True</crminf:J5_holds_to_be>
     </owl:NamedIndividual>
     
 
@@ -8410,7 +8405,7 @@ Note, that the class E9 Move inherits the property P7 took place at (witnessed):
         <crmsci:O12_has_dimension rdf:resource="https://www.ics.forth.gr/earthquake_model/e1_Ierapetra_intensity"/>
         <crmsci:O12_has_dimension rdf:resource="https://www.ics.forth.gr/earthquake_model/e1_Malia_duration"/>
         <crmsci:O12_has_dimension rdf:resource="https://www.ics.forth.gr/earthquake_model/e1_Malia_intensity"/>
-        <earthquake_model1:PEQ7_has_documented_possible_epicenter_place rdf:resource="https://www.ics.forth.gr/earthquake_model/Southeast_of_Santorini"/>
+        <earthquake_model:PEQ7_has_documented_possible_epicenter_place rdf:resource="https://www.ics.forth.gr/earthquake_model/Southeast_of_Santorini"/>
     </owl:NamedIndividual>
     
 
@@ -8569,7 +8564,7 @@ Note, that the class E9 Move inherits the property P7 took place at (witnessed):
         <crmsci:O11i_was_described_by rdf:resource="https://www.ics.forth.gr/earthquake_model/e2_data_evaluation"/>
         <crmsci:O12_has_dimension rdf:resource="https://www.ics.forth.gr/earthquake_model/e2_Chania_intensity"/>
         <crmsci:O13_triggered rdf:resource="https://www.ics.forth.gr/earthquake_model/Chania_Walls_Damage"/>
-        <earthquake_model1:PEQ8_has_documented_possible_dimension rdf:resource="https://www.ics.forth.gr/earthquake_model/e2_Chania_intensity"/>
+        <earthquake_model:PEQ8_has_documented_possible_dimension rdf:resource="https://www.ics.forth.gr/earthquake_model/e2_Chania_intensity"/>
     </owl:NamedIndividual>
     
 
@@ -8581,7 +8576,7 @@ Note, that the class E9 Move inherits the property P7 took place at (witnessed):
         <P2_has_type rdf:resource="https://www.ics.forth.gr/earthquake_model/intensity"/>
         <P91_has_unit rdf:resource="https://www.ics.forth.gr/earthquake_model/Rossi-Forel"/>
         <P90_has_value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9</P90_has_value>
-        <earthquake_model1:PEQ9_has_documented_uncertainty_factor rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Possible</earthquake_model1:PEQ9_has_documented_uncertainty_factor>
+        <earthquake_model:PEQ9_has_documented_uncertainty_factor rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Possible</earthquake_model:PEQ9_has_documented_uncertainty_factor>
     </owl:NamedIndividual>
     
 
@@ -8600,7 +8595,7 @@ Note, that the class E9 Move inherits the property P7 took place at (witnessed):
 
     <owl:NamedIndividual rdf:about="https://www.ics.forth.gr/earthquake_model/e2_intensity_Platakis_Belief">
         <rdf:type rdf:resource="http://www.cidoc-crm.org/extensions/crminf/I2_Belief"/>
-        <crminf1:J5_holds_to_be rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Possible</crminf1:J5_holds_to_be>
+        <crminf:J5_holds_to_be rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Possible</crminf:J5_holds_to_be>
     </owl:NamedIndividual>
     
 
@@ -8627,8 +8622,8 @@ Note, that the class E9 Move inherits the property P7 took place at (witnessed):
         <crmsci:O12_has_dimension rdf:resource="https://www.ics.forth.gr/earthquake_model/e3_Heraklion_intensity"/>
         <crmsci:O13_triggered rdf:resource="https://www.ics.forth.gr/earthquake_model/Cracked_Heraklion_Walls"/>
         <crmsci:O13_triggered rdf:resource="https://www.ics.forth.gr/earthquake_model/Destruction_of_Megalos_Koules"/>
-        <earthquake_model1:PEQ5_has_documented_possible_timespan rdf:resource="https://www.ics.forth.gr/earthquake_model/08-08-1303_(Julian)"/>
-        <earthquake_model1:PEQ8_has_documented_possible_dimension rdf:resource="https://www.ics.forth.gr/earthquake_model/e3_Heraklion_intensity"/>
+        <earthquake_model:PEQ5_has_documented_possible_timespan rdf:resource="https://www.ics.forth.gr/earthquake_model/08-08-1303_(Julian)"/>
+        <earthquake_model:PEQ8_has_documented_possible_dimension rdf:resource="https://www.ics.forth.gr/earthquake_model/e3_Heraklion_intensity"/>
     </owl:NamedIndividual>
     
 
@@ -8637,9 +8632,9 @@ Note, that the class E9 Move inherits the property P7 took place at (witnessed):
 
     <owl:NamedIndividual rdf:about="https://www.ics.forth.gr/earthquake_model/e3-e4_equality_evaluation">
         <rdf:type rdf:resource="https://www.ics.forth.gr/earthquake_model/EQ2_Comparison_Evaluation"/>
-        <earthquake_model1:PEQ2_checks_equality_of rdf:resource="https://www.ics.forth.gr/earthquake_model/e3"/>
-        <earthquake_model1:PEQ3_checks_equality_to rdf:resource="https://www.ics.forth.gr/earthquake_model/e4"/>
-        <earthquake_model3:PEQ4_has_comparison_value rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">equal</earthquake_model3:PEQ4_has_comparison_value>
+        <earthquake_model:PEQ2_checks_equality_of rdf:resource="https://www.ics.forth.gr/earthquake_model/e3"/>
+        <earthquake_model:PEQ3_checks_equality_to rdf:resource="https://www.ics.forth.gr/earthquake_model/e4"/>
+        <earthquake_model:PEQ4_has_comparison_value rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">equal</earthquake_model:PEQ4_has_comparison_value>
     </owl:NamedIndividual>
     
 
@@ -8653,7 +8648,7 @@ Note, that the class E9 Move inherits the property P7 took place at (witnessed):
         <P91_has_unit rdf:resource="https://www.ics.forth.gr/earthquake_model/Rossi-Forel"/>
         <P90a_has_lower_value_limit rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</P90a_has_lower_value_limit>
         <P90b_has_upper_value_limit rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9</P90b_has_upper_value_limit>
-        <earthquake_model1:PEQ9_has_documented_uncertainty_factor rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Possible</earthquake_model1:PEQ9_has_documented_uncertainty_factor>
+        <earthquake_model:PEQ9_has_documented_uncertainty_factor rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Possible</earthquake_model:PEQ9_has_documented_uncertainty_factor>
     </owl:NamedIndividual>
     
 
@@ -8662,8 +8657,8 @@ Note, that the class E9 Move inherits the property P7 took place at (witnessed):
 
     <owl:NamedIndividual rdf:about="https://www.ics.forth.gr/earthquake_model/e3_and_e4_are_probably_equal">
         <rdf:type rdf:resource="http://www.cidoc-crm.org/extensions/crminf/I12_Adopted_Belief"/>
-        <crminf1:J14_adopted_interpretation_of rdf:resource="https://www.ics.forth.gr/earthquake_model/Platakis_Book"/>
-        <crminf1:J5_holds_to_be rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Probable</crminf1:J5_holds_to_be>
+        <crminf:J14_adopted_interpretation_of rdf:resource="https://www.ics.forth.gr/earthquake_model/Platakis_Book"/>
+        <crminf:J5_holds_to_be rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Probable</crminf:J5_holds_to_be>
     </owl:NamedIndividual>
     
 
@@ -8694,7 +8689,7 @@ Note, that the class E9 Move inherits the property P7 took place at (witnessed):
     <owl:NamedIndividual rdf:about="https://www.ics.forth.gr/earthquake_model/e3_references_provenance_1">
         <rdf:type rdf:resource="http://www.cidoc-crm.org/extensions/crminf/I10_Provenance_Statement"/>
         <P67i_is_referred_to_by rdf:resource="https://www.ics.forth.gr/earthquake_model/Stavrakis_N._,_Statistiki_tou_plithismou_tis_Kritis_meta_diaforon_geografikon,_istorikon,_arxaiologiko,_ekklisiastikon_klp._Eidiseon_peri_tis_nisou,_1890,_p.107-111"/>
-        <crminf1:J20_is_about_the_provenance_of rdf:resource="https://www.ics.forth.gr/earthquake_model/Zabelios_S._,_Istorika_Skinografimata"/>
+        <crminf:J20_is_about_the_provenance_of rdf:resource="https://www.ics.forth.gr/earthquake_model/Zabelios_S._,_Istorika_Skinografimata"/>
     </owl:NamedIndividual>
     
 
@@ -8759,8 +8754,8 @@ Note, that the class E9 Move inherits the property P7 took place at (witnessed):
 
     <owl:NamedIndividual rdf:about="https://www.ics.forth.gr/earthquake_model/08-08-1303_(Julian_Calendar)_might_be_wrong_,probably_happened_in_1304">
         <rdf:type rdf:resource="http://www.cidoc-crm.org/extensions/crminf/I12_Adopted_Belief"/>
-        <crminf1:J14_adopted_interpretation_of rdf:resource="https://www.ics.forth.gr/earthquake_model/Platakis_Book"/>
-        <crminf1:J5_holds_to_be rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Maybe</crminf1:J5_holds_to_be>
+        <crminf:J14_adopted_interpretation_of rdf:resource="https://www.ics.forth.gr/earthquake_model/Platakis_Book"/>
+        <crminf:J5_holds_to_be rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Maybe</crminf:J5_holds_to_be>
     </owl:NamedIndividual>
     
 
@@ -8845,8 +8840,8 @@ Note, that the class E9 Move inherits the property P7 took place at (witnessed):
 
     <owl:NamedIndividual rdf:about="https://www.ics.forth.gr/earthquake_model/The_adoption_of_Platakis&apos;_belief_about_the_epicenter_of_e1.">
         <rdf:type rdf:resource="http://www.cidoc-crm.org/extensions/crminf/I7_Belief_Adoption"/>
-        <crminf1:J13_adopted_interpretation rdf:resource="https://www.ics.forth.gr/earthquake_model/The_epicenter_of_the_earthquake_was_Southeast_of_Santorini"/>
-        <crminf1:J7_is_based_on_evidence_from rdf:resource="https://www.ics.forth.gr/earthquake_model/Platakis_Book"/>
+        <crminf:J13_adopted_interpretation rdf:resource="https://www.ics.forth.gr/earthquake_model/The_epicenter_of_the_earthquake_was_Southeast_of_Santorini"/>
+        <crminf:J7_is_based_on_evidence_from rdf:resource="https://www.ics.forth.gr/earthquake_model/Platakis_Book"/>
     </owl:NamedIndividual>
     
 
@@ -8855,8 +8850,8 @@ Note, that the class E9 Move inherits the property P7 took place at (witnessed):
 
     <owl:NamedIndividual rdf:about="https://www.ics.forth.gr/earthquake_model/The_adoption_of_Platakis&apos;_belief_about_the_intensity_of_e2.">
         <rdf:type rdf:resource="http://www.cidoc-crm.org/extensions/crminf/I7_Belief_Adoption"/>
-        <crminf1:J13_adopted_interpretation rdf:resource="https://www.ics.forth.gr/earthquake_model/The_earthquake_has_a_possible_intensity_of_9"/>
-        <crminf1:J7_is_based_on_evidence_from rdf:resource="https://www.ics.forth.gr/earthquake_model/Platakis_Book"/>
+        <crminf:J13_adopted_interpretation rdf:resource="https://www.ics.forth.gr/earthquake_model/The_earthquake_has_a_possible_intensity_of_9"/>
+        <crminf:J7_is_based_on_evidence_from rdf:resource="https://www.ics.forth.gr/earthquake_model/Platakis_Book"/>
     </owl:NamedIndividual>
     
 
