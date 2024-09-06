@@ -1,6 +1,7 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="http://www.cidoc-crm.org/cidoc-crm/"
      xml:base="http://www.cidoc-crm.org/cidoc-crm/"
+     xmlns:cc="http://creativecommons.org/ns#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
@@ -8,9 +9,36 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:crminf="http://www.cidoc-crm.org/extensions/crminf/"
      xmlns:crmsci="http://www.cidoc-crm.org/extensions/crmsci/"
+     xmlns:dcterms="http://purl.org/dc/terms/"
      xmlns:cidoc-crm="http://www.cidoc-crm.org/cidoc-crm/"
      xmlns:earthquake_model="https://www.ics.forth.gr/earthquake_model/">
-    <owl:Ontology rdf:about="https://www.ics.forth.gr/earthquake_model/"/>
+    <owl:Ontology rdf:about="https://www.ics.forth.gr/earthquake_model/">
+        <cc:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+        <dcterms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://creativecommons.org/ns#license -->
+
+    <owl:AnnotationProperty rdf:about="http://creativecommons.org/ns#license"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
     
 
 

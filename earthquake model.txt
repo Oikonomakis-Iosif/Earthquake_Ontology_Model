@@ -23,18 +23,17 @@ EARTHQUAKE MODEL
 			S5 Inference Making
 			
 		Scope Note : This is used to compare two instances of the same entity . It is similar to a mathematical comparison. However, the comparison can be done both for entities 
-		that can not be measured, which means they are either equal or unequal, and for entities that can be measured.  Currently this can also be used to implement a logical XOR 
-		comparison, but it is subject to change in the future.
+		that can not be measured, which means they are either equal or unequal, and for entities that can be measured.
 		
 		
 	EQ3 Comparison Value
 		subclass of 
 			E59 Primitive Value
 			
-		Scope Note : These are the values that a comparison evaluation can have. Exclusive is subject to be removed in the future.
+		Scope Note : These are the values that a comparison evaluation can have.
 		
 		Constraint - Allowed values are (parentheses give the mathematical interpretation, not the value given) :
-			equal ( == ), unequal ( /= ), more than ( > ), less than ( < ), equal or more than ( >= ), equal or less than ( <= ), exclusive (XOR) .
+			equal ( == ), unequal ( /= ), more than ( > ), less than ( < ), equal or more than ( >= ), equal or less than ( <= ).
 	
 
 --- PROPERTIES ---
@@ -63,7 +62,7 @@ EARTHQUAKE MODEL
 		
 		Scope Note : Used for comparison evaluations, provides the left side of the comparison.
 		
-		Constraints: many to 1.  Requires usage of checks equality to. Both ranges must be the same class.
+		Constraints: Requires usage of checks equality to. Both ranges must be the same class.
 
 		
 	PEQ3 checks equality to ( to whom equality is checked in )
@@ -75,7 +74,7 @@ EARTHQUAKE MODEL
 		
 		Scope Note : Used for comparison evaluations, provides the right side of the comparison.
 		
-		Constraints: many to 1.  Requires usage of checks equality of. Both ranges must be the same class.
+		Constraints: Requires usage of checks equality of. Both ranges must be the same class.
 		
 	PEQ4 has comparison value (is comparison value of)
 	
@@ -126,7 +125,7 @@ EARTHQUAKE MODEL
 		subproperty of : "O12 has dimension"
 	
 		Domain : EQ1 Earthquake
-		Range : E54 Place
+		Range : E54 Dimension
 		
 		Quantification : Many to Many.
 		
@@ -134,7 +133,7 @@ EARTHQUAKE MODEL
 		
 	PEQ9 has documented uncertainty factor  ( is documented uncertainty factor  of )
 	
-		Domain : E54 Dimentsion
+		Domain : E54 Dimension
 		Range : I6 Belief Value
 		
 		Quantification : Many to Many.
