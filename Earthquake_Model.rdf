@@ -7,12 +7,15 @@
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:crminf="http://www.cidoc-crm.org/extensions/crminf/"
      xmlns:crmsci="http://www.cidoc-crm.org/extensions/crmsci/"
      xmlns:dcterms="http://purl.org/dc/terms/"
      xmlns:cidoc-crm="http://www.cidoc-crm.org/cidoc-crm/"
      xmlns:earthquake_model="https://crm-eq.ics.forth.gr/ontology/">
     <owl:Ontology rdf:about="https://crm-eq.ics.forth.gr/ontology/">
+        <owl:imports rdf:resource="http://www.cidoc-crm.org/cidoc-crm/"/>
+        <owl:imports rdf:resource="http://www.cidoc-crm.org/extensions/crmsci/"/>
         <cc:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
         <dcterms:license rdf:resource="http://purl.org/dc/terms/"/>
     </owl:Ontology>
@@ -42,6 +45,162 @@
     
 
 
+    <!-- http://www.cidoc-crm.org/cidoc-crm/P102_has_title -->
+
+    <owl:AnnotationProperty rdf:about="http://www.cidoc-crm.org/cidoc-crm/P102_has_title"/>
+    
+
+
+    <!-- http://www.cidoc-crm.org/cidoc-crm/P108_has_produced -->
+
+    <owl:AnnotationProperty rdf:about="http://www.cidoc-crm.org/cidoc-crm/P108_has_produced"/>
+    
+
+
+    <!-- http://www.cidoc-crm.org/cidoc-crm/P10i_contains -->
+
+    <owl:AnnotationProperty rdf:about="http://www.cidoc-crm.org/cidoc-crm/P10i_contains"/>
+    
+
+
+    <!-- http://www.cidoc-crm.org/cidoc-crm/P129i_is_subject_of -->
+
+    <owl:AnnotationProperty rdf:about="http://www.cidoc-crm.org/cidoc-crm/P129i_is_subject_of"/>
+    
+
+
+    <!-- http://www.cidoc-crm.org/cidoc-crm/P134i_was_continued_by -->
+
+    <owl:AnnotationProperty rdf:about="http://www.cidoc-crm.org/cidoc-crm/P134i_was_continued_by"/>
+    
+
+
+    <!-- http://www.cidoc-crm.org/cidoc-crm/P135i_was_created_by -->
+
+    <owl:AnnotationProperty rdf:about="http://www.cidoc-crm.org/cidoc-crm/P135i_was_created_by"/>
+    
+
+
+    <!-- http://www.cidoc-crm.org/cidoc-crm/P13_destroyed -->
+
+    <owl:AnnotationProperty rdf:about="http://www.cidoc-crm.org/cidoc-crm/P13_destroyed"/>
+    
+
+
+    <!-- http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by -->
+
+    <owl:AnnotationProperty rdf:about="http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by"/>
+    
+
+
+    <!-- http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by -->
+
+    <owl:AnnotationProperty rdf:about="http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by"/>
+    
+
+
+    <!-- http://www.cidoc-crm.org/cidoc-crm/P2_has_type -->
+
+    <owl:AnnotationProperty rdf:about="http://www.cidoc-crm.org/cidoc-crm/P2_has_type"/>
+    
+
+
+    <!-- http://www.cidoc-crm.org/cidoc-crm/P39i_was_measured_by -->
+
+    <owl:AnnotationProperty rdf:about="http://www.cidoc-crm.org/cidoc-crm/P39i_was_measured_by"/>
+    
+
+
+    <!-- http://www.cidoc-crm.org/cidoc-crm/P40_observed_dimension -->
+
+    <owl:AnnotationProperty rdf:about="http://www.cidoc-crm.org/cidoc-crm/P40_observed_dimension"/>
+    
+
+
+    <!-- http://www.cidoc-crm.org/cidoc-crm/P67_refers_to -->
+
+    <owl:AnnotationProperty rdf:about="http://www.cidoc-crm.org/cidoc-crm/P67_refers_to"/>
+    
+
+
+    <!-- http://www.cidoc-crm.org/cidoc-crm/P67i_is_referred_to_by -->
+
+    <owl:AnnotationProperty rdf:about="http://www.cidoc-crm.org/cidoc-crm/P67i_is_referred_to_by"/>
+    
+
+
+    <!-- http://www.cidoc-crm.org/cidoc-crm/P70i_is_documented_in -->
+
+    <owl:AnnotationProperty rdf:about="http://www.cidoc-crm.org/cidoc-crm/P70i_is_documented_in"/>
+    
+
+
+    <!-- http://www.cidoc-crm.org/cidoc-crm/P82_at_some_time_within -->
+
+    <owl:AnnotationProperty rdf:about="http://www.cidoc-crm.org/cidoc-crm/P82_at_some_time_within"/>
+    
+
+
+    <!-- http://www.cidoc-crm.org/cidoc-crm/P86_falls_within -->
+
+    <owl:AnnotationProperty rdf:about="http://www.cidoc-crm.org/cidoc-crm/P86_falls_within"/>
+    
+
+
+    <!-- http://www.cidoc-crm.org/cidoc-crm/P89_falls_within -->
+
+    <owl:AnnotationProperty rdf:about="http://www.cidoc-crm.org/cidoc-crm/P89_falls_within"/>
+    
+
+
+    <!-- http://www.cidoc-crm.org/cidoc-crm/P90_has_value -->
+
+    <owl:AnnotationProperty rdf:about="http://www.cidoc-crm.org/cidoc-crm/P90_has_value"/>
+    
+
+
+    <!-- http://www.cidoc-crm.org/cidoc-crm/P90a_has_lower_value_limit -->
+
+    <owl:AnnotationProperty rdf:about="http://www.cidoc-crm.org/cidoc-crm/P90a_has_lower_value_limit"/>
+    
+
+
+    <!-- http://www.cidoc-crm.org/cidoc-crm/P90b_has_upper_value_limit -->
+
+    <owl:AnnotationProperty rdf:about="http://www.cidoc-crm.org/cidoc-crm/P90b_has_upper_value_limit"/>
+    
+
+
+    <!-- http://www.cidoc-crm.org/cidoc-crm/P91_has_unit -->
+
+    <owl:AnnotationProperty rdf:about="http://www.cidoc-crm.org/cidoc-crm/P91_has_unit"/>
+    
+
+
+    <!-- http://www.cidoc-crm.org/cidoc-crm/P94i_was_created_by -->
+
+    <owl:AnnotationProperty rdf:about="http://www.cidoc-crm.org/cidoc-crm/P94i_was_created_by"/>
+    
+
+
+    <!-- http://www.cidoc-crm.org/extensions/crmsci/assigned_dimension -->
+
+    <owl:AnnotationProperty rdf:about="http://www.cidoc-crm.org/extensions/crmsci/assigned_dimension"/>
+    
+
+
+    <!-- http://www.cidoc-crm.org/extensions/crmsci/observed -->
+
+    <owl:AnnotationProperty rdf:about="http://www.cidoc-crm.org/extensions/crmsci/observed"/>
+    
+
+
+    <!-- http://www.cidoc-crm.org/extensions/crmsci/observed_value -->
+
+    <owl:AnnotationProperty rdf:about="http://www.cidoc-crm.org/extensions/crmsci/observed_value"/>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -53,95 +212,136 @@
     
 
 
-    <!-- http://www.cidoc-crm.org/cidoc-crm/P4_has_time-span -->
+    <!-- http://www.cidoc-crm.org/extensions/crminf/J13_adopted_interpretation -->
 
-    <owl:ObjectProperty rdf:about="http://www.cidoc-crm.org/cidoc-crm/P4_has_time-span">
-        <owl:inverseOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P4i_is_time-span_of"/>
-        <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E2_Temporal_Entity"/>
-        <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E52_Time-Span"/>
-        <rdfs:comment xml:lang="en">This property associates an instance of E2 Temporal Entity with the instance of E52 Time-Span during which it was on-going. The associated instance of E52 Time-Span is understood as the real time-span during which the phenomena making up the temporal entity instance were active. More than one instance of E2 Temporal Entity may share a common instance of E52 Time-Span only if they come into being and end being due to identical declarations or events.</rdfs:comment>
-        <rdfs:label xml:lang="fr">a pour intervalle temporel</rdfs:label>
-        <rdfs:label xml:lang="en">has time-span</rdfs:label>
-        <rdfs:label xml:lang="de">hat Zeitspanne</rdfs:label>
-        <rdfs:label xml:lang="pt">tem período de tempo</rdfs:label>
-        <rdfs:label xml:lang="el">βρισκόταν σε εξέλιξη</rdfs:label>
-        <rdfs:label xml:lang="ru">имеет временной отрезок</rdfs:label>
-        <rdfs:label xml:lang="zh">发生时段是</rdfs:label>
+    <owl:ObjectProperty rdf:about="http://www.cidoc-crm.org/extensions/crminf/J13_adopted_interpretation">
+        <owl:inverseOf rdf:resource="http://www.cidoc-crm.org/extensions/crminf/J13i_was_concluded_by"/>
+        <rdfs:domain rdf:resource="http://www.cidoc-crm.org/extensions/crminf/I7_Belief_Adoption"/>
+        <rdfs:range rdf:resource="http://www.cidoc-crm.org/extensions/crminf/I12_Adopted_Belief"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.cidoc-crm.org/cidoc-crm/P4i_is_time-span_of -->
+    <!-- http://www.cidoc-crm.org/extensions/crminf/J13i_was_concluded_by -->
 
-    <owl:ObjectProperty rdf:about="http://www.cidoc-crm.org/cidoc-crm/P4i_is_time-span_of">
-        <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E52_Time-Span"/>
-        <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E2_Temporal_Entity"/>
-        <rdfs:label xml:lang="fr">est l’intervalle temporel de</rdfs:label>
-        <rdfs:label xml:lang="en">is time-span of</rdfs:label>
-        <rdfs:label xml:lang="de">ist Zeitspanne von</rdfs:label>
-        <rdfs:label xml:lang="pt">é o período de tempo de</rdfs:label>
-        <rdfs:label xml:lang="el">είναι χρονικό διάστημα του/της</rdfs:label>
-        <rdfs:label xml:lang="ru">является временным отрезком для</rdfs:label>
-        <rdfs:label xml:lang="zh">是时段</rdfs:label>
+    <owl:ObjectProperty rdf:about="http://www.cidoc-crm.org/extensions/crminf/J13i_was_concluded_by">
+        <rdfs:domain rdf:resource="http://www.cidoc-crm.org/extensions/crminf/I12_Adopted_Belief"/>
+        <rdfs:range rdf:resource="http://www.cidoc-crm.org/extensions/crminf/I7_Belief_Adoption"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.cidoc-crm.org/cidoc-crm/P7_took_place_at -->
+    <!-- http://www.cidoc-crm.org/extensions/crminf/J14_adopted_interpretation_of -->
 
-    <owl:ObjectProperty rdf:about="http://www.cidoc-crm.org/cidoc-crm/P7_took_place_at">
-        <owl:inverseOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P7i_witnessed"/>
-        <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E4_Period"/>
-        <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E53_Place"/>
-        <rdfs:comment xml:lang="en">This property describes the spatial location of an instance of E4 Period.
-The related instance of E53 Place should be seen as a wider approximation of the geometric area within which the phenomena that characterise the period in question occurred, see below. P7 took place at (witnessed) does not convey any meaning other than spatial positioning (frequently on the surface of the earth). For example, the period “Révolution française” can be said to have taken place in “France in 1789”; the “Victorian” period may be said to have taken place in “Britain from 1837-1901” and its colonies, as well as other parts of Europe and North America. An instance of E4 Period can take place at multiple non-contiguous, non-overlapping locations.
-Any place where something happened includes the spatial projection of the happening given in the same geometric reference system. For instance, HMS Victory, as place of Lord Nelson&apos;s dying, includes the location of his body relative to the hull of HMS Victory at his time of death as the most precise location of his death. By the definition of P161 has spatial projection, an instance of E4 Period takes place on all its spatial projections to respective reference systems, that is, instances of E53 Place. Therefore, this property implies the more fully developed path from E4 Period through P161 has spatial projection, E53 Place, P89 falls within to E53 Place, where both places are defined in the same geometric reference system. The relation between an instance of E53 Place and its reference system can conveniently be documented via the property P157 is at rest relative to (provides reference space for).
-Something that has happened at a given place can also be considered to have happened at a smaller place within it: for example, it is reasonable to say Caesar’s murder took place in Rome, but also on the Forum Romanum, and more precisely in the Curia. It is characteristic for different historical sources to use varying precision in such statements, without being in contradiction with each other. This may be due to lack of knowledge or to the relevance of the precision for the purpose of the statement. In information integration, the more precise statement improves the overall knowledge.</rdfs:comment>
-        <rdfs:label xml:lang="fr">a eu lieu dans</rdfs:label>
-        <rdfs:label xml:lang="de">fand statt in</rdfs:label>
-        <rdfs:label xml:lang="pt">ocorreu em</rdfs:label>
-        <rdfs:label xml:lang="en">took place at</rdfs:label>
-        <rdfs:label xml:lang="el">έλαβε χώρα σε</rdfs:label>
-        <rdfs:label xml:lang="ru">совершался на</rdfs:label>
-        <rdfs:label xml:lang="zh">发生地在</rdfs:label>
+    <owl:ObjectProperty rdf:about="http://www.cidoc-crm.org/extensions/crminf/J14_adopted_interpretation_of">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.cidoc-crm.org/extensions/crminf/J14i_has_adopted_interpretation"/>
+        <rdfs:domain rdf:resource="http://www.cidoc-crm.org/extensions/crminf/I12_Adopted_Belief"/>
+        <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.cidoc-crm.org/cidoc-crm/P7i_witnessed -->
+    <!-- http://www.cidoc-crm.org/extensions/crminf/J14i_has_adopted_interpretation -->
 
-    <owl:ObjectProperty rdf:about="http://www.cidoc-crm.org/cidoc-crm/P7i_witnessed">
-        <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E53_Place"/>
-        <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E4_Period"/>
-        <rdfs:label xml:lang="fr">a été témoin de</rdfs:label>
-        <rdfs:label xml:lang="de">bezeugte</rdfs:label>
-        <rdfs:label xml:lang="pt">testemunhou</rdfs:label>
-        <rdfs:label xml:lang="en">witnessed</rdfs:label>
-        <rdfs:label xml:lang="el">υπήρξε τόπος του</rdfs:label>
-        <rdfs:label xml:lang="ru">был местом совершения</rdfs:label>
-        <rdfs:label xml:lang="zh">发生过</rdfs:label>
+    <owl:ObjectProperty rdf:about="http://www.cidoc-crm.org/extensions/crminf/J14i_has_adopted_interpretation">
+        <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object"/>
+        <rdfs:range rdf:resource="http://www.cidoc-crm.org/extensions/crminf/I12_Adopted_Belief"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.cidoc-crm.org/extensions/crmsci/O12_has_dimension -->
+    <!-- http://www.cidoc-crm.org/extensions/crminf/J1_used_as_premise -->
 
-    <owl:ObjectProperty rdf:about="http://www.cidoc-crm.org/extensions/crmsci/O12_has_dimension">
-        <owl:inverseOf rdf:resource="http://www.cidoc-crm.org/extensions/crmsci/O12i_is_dimension_of"/>
-        <rdfs:domain rdf:resource="http://www.cidoc-crm.org/extensions/crmsci/S15_Observable_Entity"/>
-        <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"/>
-        <rdfs:comment xml:lang="en">This property associates an instance of S15 Observable Entity with an instance of E54 Dimension that the observable entity has. It offers no information about how and when an E54 Dimension was established. In case the instance of S15 Observable Entity is more specifically an instance of E18 Physical Thing, using the property O12 has dimension (is dimension of) is equivalent to using the property P43 has dimension (is dimension of). In other words, using the one implies the other.</rdfs:comment>
-        <rdfs:label xml:lang="en">has dimension</rdfs:label>
+    <owl:ObjectProperty rdf:about="http://www.cidoc-crm.org/extensions/crminf/J1_used_as_premise">
+        <owl:inverseOf rdf:resource="http://www.cidoc-crm.org/extensions/crminf/J1i_was_premise_of"/>
+        <rdfs:domain rdf:resource="http://www.cidoc-crm.org/extensions/crmsci/S5_Inference_Making"/>
+        <rdfs:range rdf:resource="http://www.cidoc-crm.org/extensions/crminf/I2_Belief"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.cidoc-crm.org/extensions/crmsci/O12i_is_dimension_of -->
+    <!-- http://www.cidoc-crm.org/extensions/crminf/J1i_was_premise_of -->
 
-    <owl:ObjectProperty rdf:about="http://www.cidoc-crm.org/extensions/crmsci/O12i_is_dimension_of">
-        <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"/>
-        <rdfs:range rdf:resource="http://www.cidoc-crm.org/extensions/crmsci/S15_Observable_Entity"/>
-        <rdfs:label xml:lang="en">is dimension of</rdfs:label>
+    <owl:ObjectProperty rdf:about="http://www.cidoc-crm.org/extensions/crminf/J1i_was_premise_of">
+        <rdfs:domain rdf:resource="http://www.cidoc-crm.org/extensions/crminf/I2_Belief"/>
+        <rdfs:range rdf:resource="http://www.cidoc-crm.org/extensions/crmsci/S5_Inference_Making"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.cidoc-crm.org/extensions/crminf/J20_is_about_the_provenance_of -->
+
+    <owl:ObjectProperty rdf:about="http://www.cidoc-crm.org/extensions/crminf/J20_is_about_the_provenance_of">
+        <owl:inverseOf rdf:resource="http://www.cidoc-crm.org/extensions/crminf/J20i_has_provenance_claim"/>
+        <rdfs:domain rdf:resource="http://www.cidoc-crm.org/extensions/crminf/I10_Provenance_Statement"/>
+        <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E70_Thing"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.cidoc-crm.org/extensions/crminf/J20i_has_provenance_claim -->
+
+    <owl:ObjectProperty rdf:about="http://www.cidoc-crm.org/extensions/crminf/J20i_has_provenance_claim">
+        <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E70_Thing"/>
+        <rdfs:range rdf:resource="http://www.cidoc-crm.org/extensions/crminf/I10_Provenance_Statement"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.cidoc-crm.org/extensions/crminf/J2_concluded_that -->
+
+    <owl:ObjectProperty rdf:about="http://www.cidoc-crm.org/extensions/crminf/J2_concluded_that">
+        <owl:inverseOf rdf:resource="http://www.cidoc-crm.org/extensions/crminf/J2i_was_concluded_by"/>
+        <rdfs:domain rdf:resource="http://www.cidoc-crm.org/extensions/crminf/I1_Argumentation"/>
+        <rdfs:range rdf:resource="http://www.cidoc-crm.org/extensions/crminf/I2_Belief"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.cidoc-crm.org/extensions/crminf/J2i_was_concluded_by -->
+
+    <owl:ObjectProperty rdf:about="http://www.cidoc-crm.org/extensions/crminf/J2i_was_concluded_by">
+        <rdfs:domain rdf:resource="http://www.cidoc-crm.org/extensions/crminf/I2_Belief"/>
+        <rdfs:range rdf:resource="http://www.cidoc-crm.org/extensions/crminf/I1_Argumentation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.cidoc-crm.org/extensions/crminf/J4_that -->
+
+    <owl:ObjectProperty rdf:about="http://www.cidoc-crm.org/extensions/crminf/J4_that">
+        <owl:inverseOf rdf:resource="http://www.cidoc-crm.org/extensions/crminf/J4i_is_subject_of"/>
+        <rdfs:domain rdf:resource="http://www.cidoc-crm.org/extensions/crminf/I2_Belief"/>
+        <rdfs:range rdf:resource="http://www.cidoc-crm.org/extensions/crminf/I4_Proposition_Set"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.cidoc-crm.org/extensions/crminf/J4i_is_subject_of -->
+
+    <owl:ObjectProperty rdf:about="http://www.cidoc-crm.org/extensions/crminf/J4i_is_subject_of">
+        <rdfs:domain rdf:resource="http://www.cidoc-crm.org/extensions/crminf/I4_Proposition_Set"/>
+        <rdfs:range rdf:resource="http://www.cidoc-crm.org/extensions/crminf/I2_Belief"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.cidoc-crm.org/extensions/crminf/J7_is_based_on_evidence_from -->
+
+    <owl:ObjectProperty rdf:about="http://www.cidoc-crm.org/extensions/crminf/J7_is_based_on_evidence_from">
+        <owl:inverseOf rdf:resource="http://www.cidoc-crm.org/extensions/crminf/J7i_is_evidence_for"/>
+        <rdfs:domain rdf:resource="http://www.cidoc-crm.org/extensions/crminf/I7_Belief_Adoption"/>
+        <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.cidoc-crm.org/extensions/crminf/J7i_is_evidence_for -->
+
+    <owl:ObjectProperty rdf:about="http://www.cidoc-crm.org/extensions/crminf/J7i_is_evidence_for">
+        <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object"/>
+        <rdfs:range rdf:resource="http://www.cidoc-crm.org/extensions/crminf/I7_Belief_Adoption"/>
     </owl:ObjectProperty>
     
 
@@ -279,6 +479,16 @@ Something that has happened at a given place can also be considered to have happ
     
 
 
+    <!-- http://www.cidoc-crm.org/extensions/crminf/J5_holds_to_be -->
+
+    <owl:DatatypeProperty rdf:about="http://www.cidoc-crm.org/extensions/crminf/J5_holds_to_be">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.cidoc-crm.org/extensions/crminf/I2_Belief"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- https://crm-eq.ics.forth.gr/ontology/PEQ1_has_error_margin -->
 
     <owl:DatatypeProperty rdf:about="https://crm-eq.ics.forth.gr/ontology/PEQ1_has_error_margin">
@@ -320,169 +530,18 @@ Something that has happened at a given place can also be considered to have happ
     
 
 
-    <!-- http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity -->
+    <!-- http://www.cidoc-crm.org/extensions/crminf/I10_Provenance_Statement -->
 
-    <owl:Class rdf:about="http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity">
-        <rdfs:comment xml:lang="en">This class comprises all things in the universe of discourse of the CIDOC Conceptual Reference Model.
-It is an abstract concept providing for three general properties:
-Identification by name or appellation, and in particular by a preferred identifier
-Classification by type, allowing further refinement of the specific subclass to which an instance belongs
-Attachment of free text and other unstructured data for the expression of anything not captured by formal properties
-All other classes within the CIDOC CRM are directly or indirectly specialisations of E1 CRM Entity.</rdfs:comment>
-        <rdfs:label xml:lang="en">CRM Entity</rdfs:label>
-        <rdfs:label xml:lang="de">CRM Entität</rdfs:label>
-        <rdfs:label xml:lang="ru">CRM Сущность</rdfs:label>
-        <rdfs:label xml:lang="zh">CRM实体</rdfs:label>
-        <rdfs:label xml:lang="pt">Entidade CRM</rdfs:label>
-        <rdfs:label xml:lang="fr">Entité CRM</rdfs:label>
-        <rdfs:label xml:lang="el">Οντότητα CIDOC CRM</rdfs:label>
+    <owl:Class rdf:about="http://www.cidoc-crm.org/extensions/crminf/I10_Provenance_Statement">
+        <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/extensions/crminf/I4_Proposition_Set"/>
     </owl:Class>
     
 
 
-    <!-- http://www.cidoc-crm.org/cidoc-crm/E2_Temporal_Entity -->
+    <!-- http://www.cidoc-crm.org/extensions/crminf/I12_Adopted_Belief -->
 
-    <owl:Class rdf:about="http://www.cidoc-crm.org/cidoc-crm/E2_Temporal_Entity">
-        <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity"/>
-        <rdfs:comment xml:lang="en">This class comprises all phenomena, such as the instances of E4 Periods and E5 Events, which happen over a limited extent in time. This extent in time must be contiguous, i.e., without gaps. In case the defining kinds of phenomena for an instance of E2 Temporal Entity cease to happen, and occur later again at another time, we regard that the former instance of E2 Temporal Entity has ended and a new instance has come into existence. In more intuitive terms, the same event cannot happen twice.
-In some contexts, such phenomena are also called perdurants. This class is disjoint from E77 Persistent Item and is an abstract class that typically has no direct instances. E2 Temporal Entity is specialized into E4 Period, which applies to a particular geographic area (defined with a greater or lesser degree of precision), and E3 Condition State, which applies to instances of E18 Physical Thing.</rdfs:comment>
-        <rdfs:label xml:lang="pt">Entidade Temporal</rdfs:label>
-        <rdfs:label xml:lang="fr">Entité temporelle</rdfs:label>
-        <rdfs:label xml:lang="de">Geschehendes</rdfs:label>
-        <rdfs:label xml:lang="en">Temporal Entity</rdfs:label>
-        <rdfs:label xml:lang="el">Έγχρονη Οντότητα</rdfs:label>
-        <rdfs:label xml:lang="ru">Временная Сущность</rdfs:label>
-        <rdfs:label xml:lang="zh">时序实体</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.cidoc-crm.org/cidoc-crm/E4_Period -->
-
-    <owl:Class rdf:about="http://www.cidoc-crm.org/cidoc-crm/E4_Period">
-        <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E2_Temporal_Entity"/>
-        <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E92_Spacetime_Volume"/>
-        <rdfs:comment xml:lang="en">This class comprises sets of coherent phenomena or cultural manifestations occurring in time and space.
-It is the social or physical coherence of these phenomena that identify an instance of E4 Period and not the associated spatiotemporal extent. This extent is only the “ground” or space in an abstract physical sense that the actual process of growth, spread and retreat has covered. Consequently, different periods can overlap and coexist in time and space, such as when a nomadic culture exists in the same area and time as a sedentary culture. This also means that overlapping land use rights, common among first nations, amounts to overlapping periods.
-Often, this class is used to describe prehistoric or historic periods such as the “Neolithic Period”, the “Ming Dynasty” or the “McCarthy Era”, but also geopolitical units and activities of settlements are regarded as special cases of E4 Period. However, there are no assumptions about the scale of the associated phenomena. In particular all events are seen as synthetic processes consisting of coherent phenomena. Therefore, E4 Period is a superclass of E5 Event. For example, a modern clinical birth, an instance of E67 Birth, can be seen as both a single event, i.e. an instance of E5 Event, and as an extended period, i.e. an instance of E4 Period, that consists of multiple physical processes and complementary activities performed by multiple instances of E39 Actor.
-E4 Period is a subclass of E2 Temporal Entity and of E92 Spacetime Volume. The latter is intended as a phenomenal spacetime volume as defined in CIDOC CRMgeo (Doerr &amp;amp; Hiebel, 2013). By virtue of this multiple inheritance, it is possible to discuss the physical extent of an instance of E4 Period without representing each instance of it together with an instance of its associated spacetime volume. This model combines two quite different kinds of substance: an instance of E4 Period is a phenomenon while an instance of E92 Spacetime Volume is an aggregation of points in spacetime. However, the real spatiotemporal extent of an instance of E4 Period is regarded to be unique to it due to all its details and fuzziness; its identity and existence depends uniquely on the identity of the instance of E4 Period. Therefore, this multiple inheritance is unambiguous and effective and furthermore corresponds to the intuitions of natural language.
-Typical use of this class in cultural heritage documentation is for documenting cultural and artistic periods. There are two different conceptualisations of ‘artistic style’, defined either by physical features or by historical context. For example, “Impressionism” can be viewed as a period in the European sphere of influence lasting from approximately 1870 to 1905 during which paintings with particular characteristics were produced by a group of artists that included (among others) Monet, Renoir, Pissarro, Sisley and Degas. Alternatively, it can be regarded as a style applicable to all paintings sharing the characteristics of the works produced by the Impressionist painters, regardless of historical context. The first interpretation is an instance of E4 Period, and the second defines morphological object types that fall under E55 Type.
-A geopolitical unit as a specific case of an instance of E4 Period is the set of activities and phenomena related to the claim of power, the consequences of belonging to a jurisdictional area and an administrative system that establishes a geopolitical unit. Examples from the modern period are countries or administrative areas of countries such as districts whose actions and structures define activities and phenomena in the area that they intend to govern. The borders of geopolitical units are often defined in contracts or treaties although they may deviate from the actual practice. The spatiotemporal properties of Geopolitical units can be modelled through the properties inherited from E92 Spacetime Volume.
-Another specific case of an instance of E4 Period is the actual extent of the set of activities and phenomena as evidenced by their physical traces that define a settlement, such as the populated period of Nineveh.</rdfs:comment>
-        <rdfs:label xml:lang="en">Period</rdfs:label>
-        <rdfs:label xml:lang="pt">Período</rdfs:label>
-        <rdfs:label xml:lang="de">Phase</rdfs:label>
-        <rdfs:label xml:lang="fr">Période</rdfs:label>
-        <rdfs:label xml:lang="el">Περίοδος</rdfs:label>
-        <rdfs:label xml:lang="ru">Период</rdfs:label>
-        <rdfs:label xml:lang="zh">时期</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.cidoc-crm.org/cidoc-crm/E52_Time-Span -->
-
-    <owl:Class rdf:about="http://www.cidoc-crm.org/cidoc-crm/E52_Time-Span">
-        <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity"/>
-        <rdfs:comment xml:lang="en">This class comprises abstract temporal extents, in the sense of Galilean physics, having a beginning, an end, and a duration.
-Instances of E52 Time-Span have no semantic connotations about phenomena happening within the temporal extent they represent. They do not convey any meaning other than a positioning on the “time-line” of chronology. The actual extent of an instance of E52 Time-Span can be approximated by properties of E52 Time-Span giving inner and outer bounds in the form of dates (instances of E61 Time Primitive). Comparing knowledge about time-spans is fundamental for chronological reasoning.
-Some instances of E52 Time-Span may be defined as the actual, in principle observable, temporal extent of instances of E2 Temporal Entity via the property P4 has time-span (is time-span of): E52 Time-Span. They constitute phenomenal time-spans as defined in CRMgeo (Doerr &amp;amp; Hiebel 2013). Since our knowledge of history is imperfect and physical phenomena are fuzzy in nature, the extent of phenomenal time-spans can only be described in approximation. An extreme case of approximation, might, for example, define an instance of E52 Time-Span having unknown beginning, end and duration. It may, nevertheless, be associated with other descriptions by which people can infer knowledge about it, such as in relative chronologies.
-Some instances of E52 may be defined precisely as representing a declaration of a temporal extent, as, for instance, done in a business contract. They constitute declarative time-spans as defined in CRMgeo (Doerr &amp;amp; Hiebel 2013) and can be described via the property E61 Time Primitive P170 defines time (time is defined by): E52 Time-Span.
-When used as a common E52 Time-Span for two events, it will nevertheless describe them as being simultaneous, even if nothing else is known.</rdfs:comment>
-        <rdfs:label xml:lang="fr">Intervalle temporel</rdfs:label>
-        <rdfs:label xml:lang="pt">Período de Tempo</rdfs:label>
-        <rdfs:label xml:lang="en">Time-Span</rdfs:label>
-        <rdfs:label xml:lang="de">Zeitspanne</rdfs:label>
-        <rdfs:label xml:lang="el">Χρονικό Διάστημα</rdfs:label>
-        <rdfs:label xml:lang="ru">Интервал Времени</rdfs:label>
-        <rdfs:label xml:lang="zh">时段</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.cidoc-crm.org/cidoc-crm/E53_Place -->
-
-    <owl:Class rdf:about="http://www.cidoc-crm.org/cidoc-crm/E53_Place">
-        <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity"/>
-        <rdfs:comment xml:lang="en">This class comprises extents in the natural space where people live, in particular on the surface of the Earth, in the pure sense of physics: independent from temporal phenomena and matter. They may serve describing the physical location of things or phenomena or other areas of interest. Geometrically, instances of E53 Place constitute single contiguous areas or a finite aggregation of disjoint areas in space which are each individually contiguous. They may have fuzzy boundaries.
-The instances of E53 Place are usually determined by reference to the position of “immobile” objects such as buildings, cities, mountains, rivers, or dedicated geodetic marks, but may also be determined by reference to mobile objects. A Place can be determined by combining a frame of reference and a location with respect to this frame.
-It is sometimes argued that instances of E53 Place are best identified by global coordinates or absolute reference systems. However, relative references are often more relevant in the context of cultural documentation and tend to be more precise. In particular, people are often interested in position in relation to large, mobile objects, such as ships. For example, the Place at which Nelson died is known with reference to a large mobile object, i.e. H.M.S Victory. A resolution of this Place in terms of absolute coordinates would require knowledge of the movements of the vessel and the precise time of death, either of which may be revised, and the result would lack historical and cultural relevance.
-Any instance of E18 Physical Thing can serve as a frame of reference for an instance of E53 Place. This may be documented using the property P157 is at rest relative to (provides reference space for).</rdfs:comment>
-        <rdfs:label xml:lang="fr">Lieu</rdfs:label>
-        <rdfs:label xml:lang="pt">Local</rdfs:label>
-        <rdfs:label xml:lang="de">Ort</rdfs:label>
-        <rdfs:label xml:lang="en">Place</rdfs:label>
-        <rdfs:label xml:lang="el">Τόπος</rdfs:label>
-        <rdfs:label xml:lang="ru">Место</rdfs:label>
-        <rdfs:label xml:lang="zh">地点</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.cidoc-crm.org/cidoc-crm/E54_Dimension -->
-
-    <owl:Class rdf:about="http://www.cidoc-crm.org/cidoc-crm/E54_Dimension">
-        <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity"/>
-        <rdfs:comment xml:lang="en">This class comprises quantifiable properties that can be measured by some calibrated means and can be approximated by values, i.e. points or regions in a mathematical or conceptual space, such as natural or real numbers, RGB values, etc.
-An instance of E54 Dimension represents the empirical or theoretically derived quantity, including the precision tolerances resulting from the particular method or calculation. The identity of an instance of E54 Dimension depends on the method of its determination because each method may produce different values even when determining comparable qualities. For instance, the wingspan of a bird alive or dead is a different dimension. Thermoluminescence dating and Rehydroxylation [RHX] dating are different dimensions of temporal distance from now, even if they aim at dating the same object. The method of determination should be expressed using the property P2 has type (is type of). Note that simple terms such as “diameter” or “length” are normally insufficient to unambiguously describe a respective dimension. In contrast, “maximum linear extent” may be sufficient.
-The properties of the class E54 Dimension allow for expressing the numerical approximation of the values of instances of E54 Dimension adequate to the precision of the applied method of determination. If the respective quantity belongs to a non-discrete space according to the laws of physics, such as spatial distances, it is recommended to record them as approximations by intervals or regions of indeterminacy enclosing the assumed true values. For instance, a length of 5 cm may be recorded as 4.5-5.5 cm, according to the precision of the respective observation. Note, that comparability of values described in different units depends critically on the representation as value regions.
-Numerical approximations in archaic instances of E58 Measurement Unit used in historical records should be preserved. Equivalents corresponding to current knowledge should be recorded as additional instances of E54 Dimension, as appropriate.</rdfs:comment>
-        <rdfs:label xml:lang="en">Dimension</rdfs:label>
-        <rdfs:label xml:lang="fr">Dimension</rdfs:label>
-        <rdfs:label xml:lang="pt">Dimensão</rdfs:label>
-        <rdfs:label xml:lang="de">Maß</rdfs:label>
-        <rdfs:label xml:lang="el">Μέγεθος</rdfs:label>
-        <rdfs:label xml:lang="ru">Величина</rdfs:label>
-        <rdfs:label xml:lang="zh">度量规格</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.cidoc-crm.org/cidoc-crm/E5_Event -->
-
-    <owl:Class rdf:about="http://www.cidoc-crm.org/cidoc-crm/E5_Event">
-        <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E4_Period"/>
-        <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/extensions/crmsci/S15_Observable_Entity"/>
-        <rdfs:comment xml:lang="en">This class comprises distinct, delimited and coherent processes and interactions of a material nature, in cultural, social or physical systems, involving and affecting instances of E77 Persistent Item in a way characteristic of the kind of process. Typical examples are meetings, births, deaths, actions of decision taking, making or inventing things, but also more complex and extended ones such as conferences, elections, building of a castle, or battles.
-While the continuous growth of a tree lacks the limits characteristic of an event, its germination from a seed does qualify as an event. Similarly, the blowing of the wind lacks the distinctness and limits of an event, but a hurricane, flood or earthquake would qualify as an event. Mental processes are considered as events, in cases where they are connected with the material externalization of their results; for example, the creation of a poem, a performance or a change of intention that becomes obvious from subsequent actions or declarations.
-The effects of an instance of E5 Event may not lead to relevant permanent changes of properties or relations of the items involved in it, for example an unrecorded performance. Of course, in order to be documented, some kind of evidence for an event must exist, be it witnesses, traces or products of the event.
-While instances of E4 Period always require some form of coherence between its constituent phenomena, in addition, the essential constituents of instances of E5 Event should contribute to an overall effect; for example, the statements made during a meeting and the listening of the audience.
-Viewed at a coarse level of detail, an instance of E5 Event may appear as if it had an ‘instantaneous’ overall effect, but any process or interaction of material nature in reality have an extent in time and space. At a fine level, instances of E5 Event may be analysed into component phenomena and phases within a space and timeframe, and as such can be seen as a period, regardless of the size of the phenomena. The reverse is not necessarily the case: not all instances of E4 Period give rise to a noteworthy overall effect and are thus not instances of E5 Event.</rdfs:comment>
-        <rdfs:label xml:lang="de">Ereignis</rdfs:label>
-        <rdfs:label xml:lang="en">Event</rdfs:label>
-        <rdfs:label xml:lang="pt">Evento</rdfs:label>
-        <rdfs:label xml:lang="fr">Évènement</rdfs:label>
-        <rdfs:label xml:lang="el">Συμβάν</rdfs:label>
-        <rdfs:label xml:lang="ru">Событие</rdfs:label>
-        <rdfs:label xml:lang="zh">事件</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.cidoc-crm.org/cidoc-crm/E7_Activity -->
-
-    <owl:Class rdf:about="http://www.cidoc-crm.org/cidoc-crm/E7_Activity">
-        <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E5_Event"/>
-        <rdfs:comment xml:lang="en">This class comprises actions intentionally carried out by instances of E39 Actor that result in changes of state in the cultural, social, or physical systems documented.
-This notion includes complex, composite, and long-lasting actions such as the building of a settlement or a war, as well as simple, short-lived actions such as the opening of a door.</rdfs:comment>
-        <rdfs:label xml:lang="en">Activity</rdfs:label>
-        <rdfs:label xml:lang="fr">Activité</rdfs:label>
-        <rdfs:label xml:lang="pt">Atividade</rdfs:label>
-        <rdfs:label xml:lang="de">Handlung</rdfs:label>
-        <rdfs:label xml:lang="el">Δράση</rdfs:label>
-        <rdfs:label xml:lang="ru">Деятельность</rdfs:label>
-        <rdfs:label xml:lang="zh">活动</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.cidoc-crm.org/cidoc-crm/E92_Spacetime_Volume -->
-
-    <owl:Class rdf:about="http://www.cidoc-crm.org/cidoc-crm/E92_Spacetime_Volume">
-        <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity"/>
-        <rdfs:comment xml:lang="en">This class comprises 4-dimensional point sets (volumes) in physical spacetime (in contrast to mathematical models of it) regardless of their true geometric forms. They may derive their identity from being the extent of a material phenomenon or from being the interpretation of an expression defining an extent in spacetime. Intersections of instances of E92 Spacetime Volume, E53 Place, and E52 Time-Span are also regarded as instances of E92 Spacetime Volume. An instance of E92 Spacetime Volume is either contiguous or composed of a finite number of contiguous subsets. Its boundaries may be fuzzy due to the properties of the phenomena it derives from or due to the limited precision up to which defining expression can be identified with a real extent in spacetime. The duration of existence of an instance of E92 Spacetime Volume is its projection on time.</rdfs:comment>
-        <rdfs:label xml:lang="en">Spacetime Volume</rdfs:label>
-        <rdfs:label xml:lang="fr">Volume spatio-temporel</rdfs:label>
+    <owl:Class rdf:about="http://www.cidoc-crm.org/extensions/crminf/I12_Adopted_Belief">
+        <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/extensions/crminf/I2_Belief"/>
     </owl:Class>
     
 
@@ -495,22 +554,26 @@ This notion includes complex, composite, and long-lasting actions such as the bu
     
 
 
-    <!-- http://www.cidoc-crm.org/extensions/crmsci/S15_Observable_Entity -->
+    <!-- http://www.cidoc-crm.org/extensions/crminf/I2_Belief -->
 
-    <owl:Class rdf:about="http://www.cidoc-crm.org/extensions/crmsci/S15_Observable_Entity">
-        <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity"/>
-        <rdfs:comment xml:lang="en">This class comprises instances of E5 Event or S10 Material Substantial (i.e. items or phenomena, such as physical things, their behaviour, states and interactions or events), that can be observed by measurement or detection devices or by human sensory impression including when enhanced by tools. In order to be observable, instances of E5 Event must consist of some interaction or action of material substance. In some cases, the spatiotemporal confinement of the event itself, such as a flash, a car stopping etc. marks the limits of a documented observation of an event. In other cases, such as the situation of a car passing by a certain object, the spatiotemporal limits of the event of observing itself, as well as the direction of attention or the orientation of used instruments, may constrain the observed detail of a larger process, e.g., noticing the sight of a car passing by; a light emission, etc. Conceptual objects manifest through their carriers such as books, digital media, or even human memory. Attributes of conceptual objects, such as number of words, can be observed on their carriers. If the respective properties between carriers differ, either they carry different instances of conceptual objects or the difference can be attributed to accidental deficiencies in one of the carriers. In that sense even immaterial objects are observable. By this model we address the fact that frequently, the actually observed carriers of conceptual objects are not explicitly identified in documentation, i.e., they are assumed to have existed but they are unknown as individuals.</rdfs:comment>
-        <rdfs:label xml:lang="en">Observable Entity</rdfs:label>
+    <owl:Class rdf:about="http://www.cidoc-crm.org/extensions/crminf/I2_Belief">
+        <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E2_Temporal_Entity"/>
     </owl:Class>
     
 
 
-    <!-- http://www.cidoc-crm.org/extensions/crmsci/S5_Inference_Making -->
+    <!-- http://www.cidoc-crm.org/extensions/crminf/I4_Proposition_Set -->
 
-    <owl:Class rdf:about="http://www.cidoc-crm.org/extensions/crmsci/S5_Inference_Making">
+    <owl:Class rdf:about="http://www.cidoc-crm.org/extensions/crminf/I4_Proposition_Set">
+        <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cidoc-crm.org/extensions/crminf/I7_Belief_Adoption -->
+
+    <owl:Class rdf:about="http://www.cidoc-crm.org/extensions/crminf/I7_Belief_Adoption">
         <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/extensions/crminf/I1_Argumentation"/>
-        <rdfs:comment xml:lang="en">This class comprises the action of making propositions and statements about particular states of affairs in reality or in possible realities or categorical descriptions of reality by using inferences from other statements based on hypotheses and any form of formal or informal logic. It includes evaluations, calculations, and interpretations based on mathematical formulations and propositions.</rdfs:comment>
-        <rdfs:label xml:lang="en">Inference Making</rdfs:label>
     </owl:Class>
     
 
@@ -532,5 +595,5 @@ This notion includes complex, composite, and long-lasting actions such as the bu
 
 
 
-<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
 
