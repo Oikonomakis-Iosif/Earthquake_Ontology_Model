@@ -7,14 +7,15 @@
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:crm-eq="https://crm-eq.ics.forth.gr/"
      xmlns:crminf="http://www.cidoc-crm.org/extensions/crminf/"
      xmlns:crmsci="http://www.cidoc-crm.org/extensions/crmsci/"
      xmlns:dcterms="http://purl.org/dc/terms/"
      xmlns:cidoc-crm="http://www.cidoc-crm.org/cidoc-crm/"
-     xmlns:earthquake_model="https://www.ics.forth.gr/earthquake_model/">
-    <owl:Ontology rdf:about="https://www.ics.forth.gr/earthquake_model/">
+     xmlns:earthquake_model="https://crm-eq.ics.forth.gr/ontology/">
+    <owl:Ontology rdf:about="https://crm-eq.ics.forth.gr/ontology/">
         <cc:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
-        <dcterms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+        <dcterms:license rdf:resource="http://purl.org/dc/terms/"/>
     </owl:Ontology>
     
 
@@ -5815,124 +5816,124 @@ This property is transitive and asymmetric.</rdfs:comment>
     
 
 
-    <!-- https://www.ics.forth.gr/earthquake_model/PEQ2_checks_equality_of -->
+    <!-- https://crm-eq.ics.forth.gr/ontology/PEQ2_checks_equality_of -->
 
-    <owl:ObjectProperty rdf:about="https://www.ics.forth.gr/earthquake_model/PEQ2_checks_equality_of">
-        <owl:inverseOf rdf:resource="https://www.ics.forth.gr/earthquake_model/PEQ2i__of_whom_equality_is_checked_in"/>
-        <rdfs:domain rdf:resource="https://www.ics.forth.gr/earthquake_model/EQ2_Comparison_Evaluation"/>
+    <owl:ObjectProperty rdf:about="https://crm-eq.ics.forth.gr/ontology/PEQ2_checks_equality_of">
+        <owl:inverseOf rdf:resource="https://crm-eq.ics.forth.gr/ontology/PEQ2i__of_whom_equality_is_checked_in"/>
+        <rdfs:domain rdf:resource="https://crm-eq.ics.forth.gr/ontology/EQ2_Comparison_Evaluation"/>
         <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://www.ics.forth.gr/earthquake_model/PEQ2i__of_whom_equality_is_checked_in -->
+    <!-- https://crm-eq.ics.forth.gr/ontology/PEQ2i__of_whom_equality_is_checked_in -->
 
-    <owl:ObjectProperty rdf:about="https://www.ics.forth.gr/earthquake_model/PEQ2i__of_whom_equality_is_checked_in">
+    <owl:ObjectProperty rdf:about="https://crm-eq.ics.forth.gr/ontology/PEQ2i__of_whom_equality_is_checked_in">
         <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity"/>
-        <rdfs:range rdf:resource="https://www.ics.forth.gr/earthquake_model/EQ2_Comparison_Evaluation"/>
+        <rdfs:range rdf:resource="https://crm-eq.ics.forth.gr/ontology/EQ2_Comparison_Evaluation"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://www.ics.forth.gr/earthquake_model/PEQ3_checks_equality_to -->
+    <!-- https://crm-eq.ics.forth.gr/ontology/PEQ3_checks_equality_to -->
 
-    <owl:ObjectProperty rdf:about="https://www.ics.forth.gr/earthquake_model/PEQ3_checks_equality_to">
-        <owl:inverseOf rdf:resource="https://www.ics.forth.gr/earthquake_model/PEQ3i_to_whom_equality_is_checked_in"/>
-        <rdfs:domain rdf:resource="https://www.ics.forth.gr/earthquake_model/EQ2_Comparison_Evaluation"/>
+    <owl:ObjectProperty rdf:about="https://crm-eq.ics.forth.gr/ontology/PEQ3_checks_equality_to">
+        <owl:inverseOf rdf:resource="https://crm-eq.ics.forth.gr/ontology/PEQ3i_to_whom_equality_is_checked_in"/>
+        <rdfs:domain rdf:resource="https://crm-eq.ics.forth.gr/ontology/EQ2_Comparison_Evaluation"/>
         <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://www.ics.forth.gr/earthquake_model/PEQ3i_to_whom_equality_is_checked_in -->
+    <!-- https://crm-eq.ics.forth.gr/ontology/PEQ3i_to_whom_equality_is_checked_in -->
 
-    <owl:ObjectProperty rdf:about="https://www.ics.forth.gr/earthquake_model/PEQ3i_to_whom_equality_is_checked_in">
+    <owl:ObjectProperty rdf:about="https://crm-eq.ics.forth.gr/ontology/PEQ3i_to_whom_equality_is_checked_in">
         <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity"/>
-        <rdfs:range rdf:resource="https://www.ics.forth.gr/earthquake_model/EQ2_Comparison_Evaluation"/>
+        <rdfs:range rdf:resource="https://crm-eq.ics.forth.gr/ontology/EQ2_Comparison_Evaluation"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://www.ics.forth.gr/earthquake_model/PEQ5_has_documented_possible_timespan -->
+    <!-- https://crm-eq.ics.forth.gr/ontology/PEQ5_has_documented_possible_timespan -->
 
-    <owl:ObjectProperty rdf:about="https://www.ics.forth.gr/earthquake_model/PEQ5_has_documented_possible_timespan">
+    <owl:ObjectProperty rdf:about="https://crm-eq.ics.forth.gr/ontology/PEQ5_has_documented_possible_timespan">
         <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P4_has_time-span"/>
-        <owl:inverseOf rdf:resource="https://www.ics.forth.gr/earthquake_model/PEQ5i_is_documented_possible_timespan_of"/>
-        <rdfs:domain rdf:resource="https://www.ics.forth.gr/earthquake_model/EQ1_Earthquake"/>
+        <owl:inverseOf rdf:resource="https://crm-eq.ics.forth.gr/ontology/PEQ5i_is_documented_possible_timespan_of"/>
+        <rdfs:domain rdf:resource="https://crm-eq.ics.forth.gr/ontology/EQ1_Earthquake"/>
         <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E52_Time-Span"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://www.ics.forth.gr/earthquake_model/PEQ5i_is_documented_possible_timespan_of -->
+    <!-- https://crm-eq.ics.forth.gr/ontology/PEQ5i_is_documented_possible_timespan_of -->
 
-    <owl:ObjectProperty rdf:about="https://www.ics.forth.gr/earthquake_model/PEQ5i_is_documented_possible_timespan_of">
+    <owl:ObjectProperty rdf:about="https://crm-eq.ics.forth.gr/ontology/PEQ5i_is_documented_possible_timespan_of">
         <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P4i_is_time-span_of"/>
         <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E52_Time-Span"/>
-        <rdfs:range rdf:resource="https://www.ics.forth.gr/earthquake_model/EQ1_Earthquake"/>
+        <rdfs:range rdf:resource="https://crm-eq.ics.forth.gr/ontology/EQ1_Earthquake"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://www.ics.forth.gr/earthquake_model/PEQ6_has_documented_possible_place -->
+    <!-- https://crm-eq.ics.forth.gr/ontology/PEQ6_has_documented_possible_place -->
 
-    <owl:ObjectProperty rdf:about="https://www.ics.forth.gr/earthquake_model/PEQ6_has_documented_possible_place">
+    <owl:ObjectProperty rdf:about="https://crm-eq.ics.forth.gr/ontology/PEQ6_has_documented_possible_place">
         <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P7_took_place_at"/>
-        <owl:inverseOf rdf:resource="https://www.ics.forth.gr/earthquake_model/PEQ6i_is_documented_possible_place_of"/>
-        <rdfs:domain rdf:resource="https://www.ics.forth.gr/earthquake_model/EQ1_Earthquake"/>
+        <owl:inverseOf rdf:resource="https://crm-eq.ics.forth.gr/ontology/PEQ6i_is_documented_possible_place_of"/>
+        <rdfs:domain rdf:resource="https://crm-eq.ics.forth.gr/ontology/EQ1_Earthquake"/>
         <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E53_Place"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://www.ics.forth.gr/earthquake_model/PEQ6i_is_documented_possible_place_of -->
+    <!-- https://crm-eq.ics.forth.gr/ontology/PEQ6i_is_documented_possible_place_of -->
 
-    <owl:ObjectProperty rdf:about="https://www.ics.forth.gr/earthquake_model/PEQ6i_is_documented_possible_place_of">
+    <owl:ObjectProperty rdf:about="https://crm-eq.ics.forth.gr/ontology/PEQ6i_is_documented_possible_place_of">
         <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P7i_witnessed"/>
         <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E53_Place"/>
-        <rdfs:range rdf:resource="https://www.ics.forth.gr/earthquake_model/EQ1_Earthquake"/>
+        <rdfs:range rdf:resource="https://crm-eq.ics.forth.gr/ontology/EQ1_Earthquake"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://www.ics.forth.gr/earthquake_model/PEQ7_has_documented_possible_epicenter_place -->
+    <!-- https://crm-eq.ics.forth.gr/ontology/PEQ7_has_documented_possible_epicenter_place -->
 
-    <owl:ObjectProperty rdf:about="https://www.ics.forth.gr/earthquake_model/PEQ7_has_documented_possible_epicenter_place">
+    <owl:ObjectProperty rdf:about="https://crm-eq.ics.forth.gr/ontology/PEQ7_has_documented_possible_epicenter_place">
         <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P7_took_place_at"/>
-        <owl:inverseOf rdf:resource="https://www.ics.forth.gr/earthquake_model/PEQ7i_is__documented_possible_epicenter_place_of"/>
-        <rdfs:domain rdf:resource="https://www.ics.forth.gr/earthquake_model/EQ1_Earthquake"/>
+        <owl:inverseOf rdf:resource="https://crm-eq.ics.forth.gr/ontology/PEQ7i_is__documented_possible_epicenter_place_of"/>
+        <rdfs:domain rdf:resource="https://crm-eq.ics.forth.gr/ontology/EQ1_Earthquake"/>
         <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E53_Place"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://www.ics.forth.gr/earthquake_model/PEQ7i_is__documented_possible_epicenter_place_of -->
+    <!-- https://crm-eq.ics.forth.gr/ontology/PEQ7i_is__documented_possible_epicenter_place_of -->
 
-    <owl:ObjectProperty rdf:about="https://www.ics.forth.gr/earthquake_model/PEQ7i_is__documented_possible_epicenter_place_of">
+    <owl:ObjectProperty rdf:about="https://crm-eq.ics.forth.gr/ontology/PEQ7i_is__documented_possible_epicenter_place_of">
         <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P7i_witnessed"/>
         <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E53_Place"/>
-        <rdfs:range rdf:resource="https://www.ics.forth.gr/earthquake_model/EQ1_Earthquake"/>
+        <rdfs:range rdf:resource="https://crm-eq.ics.forth.gr/ontology/EQ1_Earthquake"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://www.ics.forth.gr/earthquake_model/PEQ8_has_documented_possible_dimension -->
+    <!-- https://crm-eq.ics.forth.gr/ontology/PEQ8_has_documented_possible_dimension -->
 
-    <owl:ObjectProperty rdf:about="https://www.ics.forth.gr/earthquake_model/PEQ8_has_documented_possible_dimension">
+    <owl:ObjectProperty rdf:about="https://crm-eq.ics.forth.gr/ontology/PEQ8_has_documented_possible_dimension">
         <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/extensions/crmsci/O12_has_dimension"/>
-        <owl:inverseOf rdf:resource="https://www.ics.forth.gr/earthquake_model/PEQ8i_is_documented_possible_dimension__of"/>
-        <rdfs:domain rdf:resource="https://www.ics.forth.gr/earthquake_model/EQ1_Earthquake"/>
+        <owl:inverseOf rdf:resource="https://crm-eq.ics.forth.gr/ontology/PEQ8i_is_documented_possible_dimension__of"/>
+        <rdfs:domain rdf:resource="https://crm-eq.ics.forth.gr/ontology/EQ1_Earthquake"/>
         <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://www.ics.forth.gr/earthquake_model/PEQ8i_is_documented_possible_dimension__of -->
+    <!-- https://crm-eq.ics.forth.gr/ontology/PEQ8i_is_documented_possible_dimension__of -->
 
-    <owl:ObjectProperty rdf:about="https://www.ics.forth.gr/earthquake_model/PEQ8i_is_documented_possible_dimension__of">
+    <owl:ObjectProperty rdf:about="https://crm-eq.ics.forth.gr/ontology/PEQ8i_is_documented_possible_dimension__of">
         <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/extensions/crmsci/O12i_is_dimension_of"/>
         <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"/>
-        <rdfs:range rdf:resource="https://www.ics.forth.gr/earthquake_model/EQ1_Earthquake"/>
+        <rdfs:range rdf:resource="https://crm-eq.ics.forth.gr/ontology/EQ1_Earthquake"/>
     </owl:ObjectProperty>
     
 
@@ -6259,9 +6260,9 @@ For a more complete description, objects may be decomposed into their components
     
 
 
-    <!-- https://www.ics.forth.gr/earthquake_model/PEQ1_has_error_margin -->
+    <!-- https://crm-eq.ics.forth.gr/ontology/PEQ1_has_error_margin -->
 
-    <owl:DatatypeProperty rdf:about="https://www.ics.forth.gr/earthquake_model/PEQ1_has_error_margin">
+    <owl:DatatypeProperty rdf:about="https://crm-eq.ics.forth.gr/ontology/PEQ1_has_error_margin">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
         <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
@@ -6269,19 +6270,19 @@ For a more complete description, objects may be decomposed into their components
     
 
 
-    <!-- https://www.ics.forth.gr/earthquake_model/PEQ4_has_comparison_value -->
+    <!-- https://crm-eq.ics.forth.gr/ontology/PEQ4_has_comparison_value -->
 
-    <owl:DatatypeProperty rdf:about="https://www.ics.forth.gr/earthquake_model/PEQ4_has_comparison_value">
+    <owl:DatatypeProperty rdf:about="https://crm-eq.ics.forth.gr/ontology/PEQ4_has_comparison_value">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
-        <rdfs:domain rdf:resource="https://www.ics.forth.gr/earthquake_model/EQ2_Comparison_Evaluation"/>
+        <rdfs:domain rdf:resource="https://crm-eq.ics.forth.gr/ontology/EQ2_Comparison_Evaluation"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- https://www.ics.forth.gr/earthquake_model/PEQ9_has_documented_uncertainty_factor -->
+    <!-- https://crm-eq.ics.forth.gr/ontology/PEQ9_has_documented_uncertainty_factor -->
 
-    <owl:DatatypeProperty rdf:about="https://www.ics.forth.gr/earthquake_model/PEQ9_has_documented_uncertainty_factor">
+    <owl:DatatypeProperty rdf:about="https://crm-eq.ics.forth.gr/ontology/PEQ9_has_documented_uncertainty_factor">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
         <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
@@ -7897,17 +7898,17 @@ Note, that the class E9 Move inherits the property P7 took place at (witnessed):
     
 
 
-    <!-- https://www.ics.forth.gr/earthquake_model/EQ1_Earthquake -->
+    <!-- https://crm-eq.ics.forth.gr/ontology/EQ1_Earthquake -->
 
-    <owl:Class rdf:about="https://www.ics.forth.gr/earthquake_model/EQ1_Earthquake">
+    <owl:Class rdf:about="https://crm-eq.ics.forth.gr/ontology/EQ1_Earthquake">
         <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E5_Event"/>
     </owl:Class>
     
 
 
-    <!-- https://www.ics.forth.gr/earthquake_model/EQ2_Comparison_Evaluation -->
+    <!-- https://crm-eq.ics.forth.gr/ontology/EQ2_Comparison_Evaluation -->
 
-    <owl:Class rdf:about="https://www.ics.forth.gr/earthquake_model/EQ2_Comparison_Evaluation">
+    <owl:Class rdf:about="https://crm-eq.ics.forth.gr/ontology/EQ2_Comparison_Evaluation">
         <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/extensions/crmsci/S5_Inference_Making"/>
     </owl:Class>
     
@@ -7924,767 +7925,767 @@ Note, that the class E9 Move inherits the property P7 took place at (witnessed):
     
 
 
-    <!-- https://www.ics.forth.gr/earthquake_model/A_Seismic_History_Of_Crete -->
+    <!-- https://crm-eq.ics.forth.gr/ontology/1246 -->
 
-    <owl:NamedIndividual rdf:about="https://www.ics.forth.gr/earthquake_model/A_Seismic_History_Of_Crete">
-        <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E35_Title"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://www.ics.forth.gr/earthquake_model/Asteroskopeio_Athinon -->
-
-    <owl:NamedIndividual rdf:about="https://www.ics.forth.gr/earthquake_model/Asteroskopeio_Athinon">
-        <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E74_Group"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://www.ics.forth.gr/earthquake_model/Chania -->
-
-    <owl:NamedIndividual rdf:about="https://www.ics.forth.gr/earthquake_model/Chania">
-        <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E53_Place"/>
-        <P89_falls_within rdf:resource="https://www.ics.forth.gr/earthquake_model/Crete"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://www.ics.forth.gr/earthquake_model/Chania_Walls -->
-
-    <owl:NamedIndividual rdf:about="https://www.ics.forth.gr/earthquake_model/Chania_Walls">
-        <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E24_Physical_Human-Made_Thing"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://www.ics.forth.gr/earthquake_model/Chania_Walls_Damage -->
-
-    <owl:NamedIndividual rdf:about="https://www.ics.forth.gr/earthquake_model/Chania_Walls_Damage">
-        <rdf:type rdf:resource="http://www.cidoc-crm.org/extensions/crmsci/S18_Alteration"/>
-        <crmsci:O18_altered rdf:resource="https://www.ics.forth.gr/earthquake_model/Chania_Walls"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://www.ics.forth.gr/earthquake_model/Cracked_Heraklion_Walls -->
-
-    <owl:NamedIndividual rdf:about="https://www.ics.forth.gr/earthquake_model/Cracked_Heraklion_Walls">
-        <rdf:type rdf:resource="http://www.cidoc-crm.org/extensions/crmsci/S18_Alteration"/>
-        <crmsci:O18_altered rdf:resource="https://www.ics.forth.gr/earthquake_model/Heraklion_Walls"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://www.ics.forth.gr/earthquake_model/Crete -->
-
-    <owl:NamedIndividual rdf:about="https://www.ics.forth.gr/earthquake_model/Crete">
-        <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E53_Place"/>
-        <P10i_contains rdf:resource="https://www.ics.forth.gr/earthquake_model/Chania"/>
-        <P10i_contains rdf:resource="https://www.ics.forth.gr/earthquake_model/Malia"/>
-        <crmsci:O25_contains rdf:resource="https://www.ics.forth.gr/earthquake_model/Heraklion"/>
-        <crmsci:O25_contains rdf:resource="https://www.ics.forth.gr/earthquake_model/Ierapetra"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://www.ics.forth.gr/earthquake_model/Death_of_4000_people -->
-
-    <owl:NamedIndividual rdf:about="https://www.ics.forth.gr/earthquake_model/Death_of_4000_people">
-        <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E69_Death"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://www.ics.forth.gr/earthquake_model/Destruction_of_Megalos_Koules -->
-
-    <owl:NamedIndividual rdf:about="https://www.ics.forth.gr/earthquake_model/Destruction_of_Megalos_Koules">
-        <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E6_Destruction"/>
-        <P134i_was_continued_by rdf:resource="https://www.ics.forth.gr/earthquake_model/Rebuilding_of_Megalos_Koules"/>
-        <P13_destroyed rdf:resource="https://www.ics.forth.gr/earthquake_model/Megalos_Koules"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://www.ics.forth.gr/earthquake_model/Heraklion -->
-
-    <owl:NamedIndividual rdf:about="https://www.ics.forth.gr/earthquake_model/Heraklion">
-        <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E53_Place"/>
-        <P89_falls_within rdf:resource="https://www.ics.forth.gr/earthquake_model/Crete"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://www.ics.forth.gr/earthquake_model/Heraklion_Walls -->
-
-    <owl:NamedIndividual rdf:about="https://www.ics.forth.gr/earthquake_model/Heraklion_Walls">
-        <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E24_Physical_Human-Made_Thing"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://www.ics.forth.gr/earthquake_model/Hieronymous_Donatus -->
-
-    <owl:NamedIndividual rdf:about="https://www.ics.forth.gr/earthquake_model/Hieronymous_Donatus">
-        <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://www.ics.forth.gr/earthquake_model/Ierapetra -->
-
-    <owl:NamedIndividual rdf:about="https://www.ics.forth.gr/earthquake_model/Ierapetra">
-        <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E53_Place"/>
-        <P86_falls_within rdf:resource="https://www.ics.forth.gr/earthquake_model/Crete"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://www.ics.forth.gr/earthquake_model/Malia -->
-
-    <owl:NamedIndividual rdf:about="https://www.ics.forth.gr/earthquake_model/Malia">
-        <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E53_Place"/>
-        <P89_falls_within rdf:resource="https://www.ics.forth.gr/earthquake_model/Crete"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://www.ics.forth.gr/earthquake_model/Megalos_Koules -->
-
-    <owl:NamedIndividual rdf:about="https://www.ics.forth.gr/earthquake_model/Megalos_Koules">
-        <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E24_Physical_Human-Made_Thing"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://www.ics.forth.gr/earthquake_model/PAPADOPOULOS_A._GERASIMOS -->
-
-    <owl:NamedIndividual rdf:about="https://www.ics.forth.gr/earthquake_model/PAPADOPOULOS_A._GERASIMOS">
-        <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E21_Person"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://www.ics.forth.gr/earthquake_model/PLATAKIS_ELEYTHERIOS -->
-
-    <owl:NamedIndividual rdf:about="https://www.ics.forth.gr/earthquake_model/PLATAKIS_ELEYTHERIOS">
-        <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E21_Person"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://www.ics.forth.gr/earthquake_model/Papadopoulos_Book -->
-
-    <owl:NamedIndividual rdf:about="https://www.ics.forth.gr/earthquake_model/Papadopoulos_Book">
-        <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E31_Document"/>
-        <P102_has_title rdf:resource="https://www.ics.forth.gr/earthquake_model/A_Seismic_History_Of_Crete"/>
-        <P135i_was_created_by rdf:resource="https://www.ics.forth.gr/earthquake_model/Writing_of__&apos;A_Seismic_History_of_Crete&apos;"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://www.ics.forth.gr/earthquake_model/Perceivable -->
-
-    <owl:NamedIndividual rdf:about="https://www.ics.forth.gr/earthquake_model/Perceivable">
-        <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://www.ics.forth.gr/earthquake_model/Platakis_Book -->
-
-    <owl:NamedIndividual rdf:about="https://www.ics.forth.gr/earthquake_model/Platakis_Book">
-        <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E31_Document"/>
-        <P102_has_title rdf:resource="https://www.ics.forth.gr/earthquake_model/ΟΙ_ΣΕΙΣΜΟΙ_ΤΗΣ_ΚΡΗΤΗΣ_ΑΠΟ_ΤΩΝ_ΑΡΧΑΙΟΤΑΤΩΝ_ΜΕΧΡΙ_ΤΩΝ_ΚΑΘ&apos;_ΗΜΑΣ_ΧΡΟΝΩΝ"/>
-        <P94i_was_created_by rdf:resource="https://www.ics.forth.gr/earthquake_model/Writing_of_ΟΙ_ΣΕΙΣΜΟΙ_ΤΗΣ_ΚΡΗΤΗΣ_ΑΠΟ_ΤΩΝ_ΑΡΧΑΙΟΤΑΤΩΝ_ΜΕΧΡΙ_ΤΩΝ_ΚΑΘ&apos;_ΗΜΑΣ_ΧΡΟΝΩΝ"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://www.ics.forth.gr/earthquake_model/Rebuilding_of_Megalos_Koules -->
-
-    <owl:NamedIndividual rdf:about="https://www.ics.forth.gr/earthquake_model/Rebuilding_of_Megalos_Koules">
-        <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E12_Production"/>
-        <P108_has_produced rdf:resource="https://www.ics.forth.gr/earthquake_model/Megalos_Koules(reconstructed)"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://www.ics.forth.gr/earthquake_model/Rossi-Forel -->
-
-    <owl:NamedIndividual rdf:about="https://www.ics.forth.gr/earthquake_model/Rossi-Forel">
-        <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E58_Measurement_Unit"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://www.ics.forth.gr/earthquake_model/Seconds -->
-
-    <owl:NamedIndividual rdf:about="https://www.ics.forth.gr/earthquake_model/Seconds">
-        <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E58_Measurement_Unit"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://www.ics.forth.gr/earthquake_model/Southeast -->
-
-    <owl:NamedIndividual rdf:about="https://www.ics.forth.gr/earthquake_model/Southeast">
-        <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://www.ics.forth.gr/earthquake_model/Southeast_of_Santorini -->
-
-    <owl:NamedIndividual rdf:about="https://www.ics.forth.gr/earthquake_model/Southeast_of_Santorini">
-        <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E53_Place"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://www.ics.forth.gr/earthquake_model/The_earthquake_has_a_possible_intensity_of_8-9 -->
-
-    <owl:NamedIndividual rdf:about="https://www.ics.forth.gr/earthquake_model/The_earthquake_has_a_possible_intensity_of_8-9">
-        <rdf:type rdf:resource="http://www.cidoc-crm.org/extensions/crminf/I12_Adopted_Belief"/>
-        <crminf:J14_adopted_interpretation_of rdf:resource="https://www.ics.forth.gr/earthquake_model/Platakis_Book"/>
-        <crminf:J5_holds_to_be rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Possible</crminf:J5_holds_to_be>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://www.ics.forth.gr/earthquake_model/The_earthquake_has_a_possible_intensity_of_9 -->
-
-    <owl:NamedIndividual rdf:about="https://www.ics.forth.gr/earthquake_model/The_earthquake_has_a_possible_intensity_of_9">
-        <rdf:type rdf:resource="http://www.cidoc-crm.org/extensions/crminf/I12_Adopted_Belief"/>
-        <crminf:J5_holds_to_be rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Possible</crminf:J5_holds_to_be>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://www.ics.forth.gr/earthquake_model/The_epicenter_of_the_earthquake_was_Southeast_of_Santorini -->
-
-    <owl:NamedIndividual rdf:about="https://www.ics.forth.gr/earthquake_model/The_epicenter_of_the_earthquake_was_Southeast_of_Santorini">
-        <rdf:type rdf:resource="http://www.cidoc-crm.org/extensions/crminf/I12_Adopted_Belief"/>
-        <crminf:J5_holds_to_be rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">True</crminf:J5_holds_to_be>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://www.ics.forth.gr/earthquake_model/West -->
-
-    <owl:NamedIndividual rdf:about="https://www.ics.forth.gr/earthquake_model/West">
-        <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://www.ics.forth.gr/earthquake_model/duration -->
-
-    <owl:NamedIndividual rdf:about="https://www.ics.forth.gr/earthquake_model/duration">
-        <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://www.ics.forth.gr/earthquake_model/e1 -->
-
-    <owl:NamedIndividual rdf:about="https://www.ics.forth.gr/earthquake_model/e1">
-        <rdf:type rdf:resource="https://www.ics.forth.gr/earthquake_model/EQ1_Earthquake"/>
-        <P129i_is_subject_of rdf:resource="https://www.ics.forth.gr/earthquake_model/e1_list_of_references"/>
-        <P39i_was_measured_by rdf:resource="https://www.ics.forth.gr/earthquake_model/e1_Epicenter_Measurement"/>
-        <P39i_was_measured_by rdf:resource="https://www.ics.forth.gr/earthquake_model/e1_Heraklion_Intensity_Measurement"/>
-        <P39i_was_measured_by rdf:resource="https://www.ics.forth.gr/earthquake_model/e1_Ierapetra_Measurement"/>
-        <P39i_was_measured_by rdf:resource="https://www.ics.forth.gr/earthquake_model/e1_Ierapetra_Quake_Direction_Measurement"/>
-        <P39i_was_measured_by rdf:resource="https://www.ics.forth.gr/earthquake_model/e1_Malia_Measurement"/>
-        <P39i_was_measured_by rdf:resource="https://www.ics.forth.gr/earthquake_model/e1_Malia_Quake_Direction_Measurement"/>
-        <P4_has_time-span rdf:resource="https://www.ics.forth.gr/earthquake_model/13-08-1922_00:10_GMT+00"/>
-        <P70i_is_documented_in rdf:resource="https://www.ics.forth.gr/earthquake_model/Platakis_Book"/>
-        <P7_took_place_at rdf:resource="https://www.ics.forth.gr/earthquake_model/Heraklion"/>
-        <P7_took_place_at rdf:resource="https://www.ics.forth.gr/earthquake_model/Ierapetra"/>
-        <P7_took_place_at rdf:resource="https://www.ics.forth.gr/earthquake_model/Malia"/>
-        <crmsci:O12_has_dimension rdf:resource="https://www.ics.forth.gr/earthquake_model/e1_Ierapetra_duration"/>
-        <crmsci:O12_has_dimension rdf:resource="https://www.ics.forth.gr/earthquake_model/e1_Ierapetra_intensity"/>
-        <crmsci:O12_has_dimension rdf:resource="https://www.ics.forth.gr/earthquake_model/e1_Malia_duration"/>
-        <crmsci:O12_has_dimension rdf:resource="https://www.ics.forth.gr/earthquake_model/e1_Malia_intensity"/>
-        <earthquake_model:PEQ7_has_documented_possible_epicenter_place rdf:resource="https://www.ics.forth.gr/earthquake_model/Southeast_of_Santorini"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://www.ics.forth.gr/earthquake_model/e1_Epicenter_Measurement -->
-
-    <owl:NamedIndividual rdf:about="https://www.ics.forth.gr/earthquake_model/e1_Epicenter_Measurement">
-        <rdf:type rdf:resource="http://www.cidoc-crm.org/extensions/crmsci/S21_Measurement"/>
-        <P14_carried_out_by rdf:resource="https://www.ics.forth.gr/earthquake_model/Asteroskopeio_Athinon"/>
-        <crmsci:observed_value rdf:resource="https://www.ics.forth.gr/earthquake_model/Southeast_of_Santorini"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://www.ics.forth.gr/earthquake_model/e1_Heraklion_Intensity_Measurement -->
-
-    <owl:NamedIndividual rdf:about="https://www.ics.forth.gr/earthquake_model/e1_Heraklion_Intensity_Measurement">
-        <rdf:type rdf:resource="http://www.cidoc-crm.org/extensions/crmsci/S21_Measurement"/>
-        <P14_carried_out_by rdf:resource="https://www.ics.forth.gr/earthquake_model/Asteroskopeio_Athinon"/>
-        <P7_took_place_at rdf:resource="https://www.ics.forth.gr/earthquake_model/Heraklion"/>
-        <crmsci:observed_value rdf:resource="https://www.ics.forth.gr/earthquake_model/Perceivable"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://www.ics.forth.gr/earthquake_model/e1_Ierapetra_Measurement -->
-
-    <owl:NamedIndividual rdf:about="https://www.ics.forth.gr/earthquake_model/e1_Ierapetra_Measurement">
-        <rdf:type rdf:resource="http://www.cidoc-crm.org/extensions/crmsci/S21_Measurement"/>
-        <P14_carried_out_by rdf:resource="https://www.ics.forth.gr/earthquake_model/Asteroskopeio_Athinon"/>
-        <P40_observed_dimension rdf:resource="https://www.ics.forth.gr/earthquake_model/e1_Ierapetra_duration"/>
-        <P40_observed_dimension rdf:resource="https://www.ics.forth.gr/earthquake_model/e1_Ierapetra_intensity"/>
-        <P7_took_place_at rdf:resource="https://www.ics.forth.gr/earthquake_model/Ierapetra"/>
-        <crmsci:observed rdf:resource="https://www.ics.forth.gr/earthquake_model/e1_Ierapetra_quake_movement_type"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://www.ics.forth.gr/earthquake_model/e1_Ierapetra_Quake_Direction_Measurement -->
-
-    <owl:NamedIndividual rdf:about="https://www.ics.forth.gr/earthquake_model/e1_Ierapetra_Quake_Direction_Measurement">
-        <rdf:type rdf:resource="http://www.cidoc-crm.org/extensions/crmsci/S21_Measurement"/>
-        <P14_carried_out_by rdf:resource="https://www.ics.forth.gr/earthquake_model/Asteroskopeio_Athinon"/>
-        <P7_took_place_at rdf:resource="https://www.ics.forth.gr/earthquake_model/Ierapetra"/>
-        <crmsci:observed_value rdf:resource="https://www.ics.forth.gr/earthquake_model/Southeast"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://www.ics.forth.gr/earthquake_model/e1_Ierapetra_duration -->
-
-    <owl:NamedIndividual rdf:about="https://www.ics.forth.gr/earthquake_model/e1_Ierapetra_duration">
-        <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"/>
-        <P2_has_type rdf:resource="https://www.ics.forth.gr/earthquake_model/duration"/>
-        <P91_has_unit rdf:resource="https://www.ics.forth.gr/earthquake_model/Seconds"/>
-        <P90_has_value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">10.0</P90_has_value>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://www.ics.forth.gr/earthquake_model/e1_Ierapetra_intensity -->
-
-    <owl:NamedIndividual rdf:about="https://www.ics.forth.gr/earthquake_model/e1_Ierapetra_intensity">
-        <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"/>
-        <P2_has_type rdf:resource="https://www.ics.forth.gr/earthquake_model/intensity"/>
-        <P91_has_unit rdf:resource="https://www.ics.forth.gr/earthquake_model/Rossi-Forel"/>
-        <P90_has_value rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">4</P90_has_value>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://www.ics.forth.gr/earthquake_model/e1_Ierapetra_quake_movement_type -->
-
-    <owl:NamedIndividual rdf:about="https://www.ics.forth.gr/earthquake_model/e1_Ierapetra_quake_movement_type">
-        <rdf:type rdf:resource="http://www.cidoc-crm.org/extensions/crmsci/S15_Observable_Entity"/>
-        <P2_has_type rdf:resource="https://www.ics.forth.gr/earthquake_model/wave"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://www.ics.forth.gr/earthquake_model/e1_Malia_Measurement -->
-
-    <owl:NamedIndividual rdf:about="https://www.ics.forth.gr/earthquake_model/e1_Malia_Measurement">
-        <rdf:type rdf:resource="http://www.cidoc-crm.org/extensions/crmsci/S21_Measurement"/>
-        <P14_carried_out_by rdf:resource="https://www.ics.forth.gr/earthquake_model/Asteroskopeio_Athinon"/>
-        <P40_observed_dimension rdf:resource="https://www.ics.forth.gr/earthquake_model/e1_Malia_duration"/>
-        <P40_observed_dimension rdf:resource="https://www.ics.forth.gr/earthquake_model/e1_Malia_intensity"/>
-        <P7_took_place_at rdf:resource="https://www.ics.forth.gr/earthquake_model/Malia"/>
-        <crmsci:observed rdf:resource="https://www.ics.forth.gr/earthquake_model/e1_Malia_quake_movement_type"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://www.ics.forth.gr/earthquake_model/e1_Malia_Quake_Direction_Measurement -->
-
-    <owl:NamedIndividual rdf:about="https://www.ics.forth.gr/earthquake_model/e1_Malia_Quake_Direction_Measurement">
-        <rdf:type rdf:resource="http://www.cidoc-crm.org/extensions/crmsci/S21_Measurement"/>
-        <P14_carried_out_by rdf:resource="https://www.ics.forth.gr/earthquake_model/Asteroskopeio_Athinon"/>
-        <P7_took_place_at rdf:resource="https://www.ics.forth.gr/earthquake_model/Malia"/>
-        <crmsci:observed_value rdf:resource="https://www.ics.forth.gr/earthquake_model/West"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://www.ics.forth.gr/earthquake_model/e1_Malia_duration -->
-
-    <owl:NamedIndividual rdf:about="https://www.ics.forth.gr/earthquake_model/e1_Malia_duration">
-        <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"/>
-        <P2_has_type rdf:resource="https://www.ics.forth.gr/earthquake_model/duration"/>
-        <P2_has_type rdf:resource="https://www.ics.forth.gr/earthquake_model/ranged_value"/>
-        <P91_has_unit rdf:resource="https://www.ics.forth.gr/earthquake_model/Seconds"/>
-        <P90a_has_lower_value_limit rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2.0</P90a_has_lower_value_limit>
-        <P90b_has_upper_value_limit rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</P90b_has_upper_value_limit>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://www.ics.forth.gr/earthquake_model/e1_Malia_intensity -->
-
-    <owl:NamedIndividual rdf:about="https://www.ics.forth.gr/earthquake_model/e1_Malia_intensity">
-        <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"/>
-        <P2_has_type rdf:resource="https://www.ics.forth.gr/earthquake_model/intensity"/>
-        <P91_has_unit rdf:resource="https://www.ics.forth.gr/earthquake_model/Rossi-Forel"/>
-        <P90_has_value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</P90_has_value>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://www.ics.forth.gr/earthquake_model/e1_Malia_quake_movement_type -->
-
-    <owl:NamedIndividual rdf:about="https://www.ics.forth.gr/earthquake_model/e1_Malia_quake_movement_type">
-        <rdf:type rdf:resource="http://www.cidoc-crm.org/extensions/crmsci/S15_Observable_Entity"/>
-        <P2_has_type rdf:resource="https://www.ics.forth.gr/earthquake_model/wave"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://www.ics.forth.gr/earthquake_model/e1_list_of_references -->
-
-    <owl:NamedIndividual rdf:about="https://www.ics.forth.gr/earthquake_model/e1_list_of_references">
-        <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object"/>
-        <P67_refers_to rdf:resource="https://www.ics.forth.gr/earthquake_model/Asteroskopeio_Athinon_,_Annales_des_l&apos;Observatoires_de&apos;Athenes"/>
-        <P70i_is_documented_in rdf:resource="https://www.ics.forth.gr/earthquake_model/Platakis_Book"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://www.ics.forth.gr/earthquake_model/e2 -->
-
-    <owl:NamedIndividual rdf:about="https://www.ics.forth.gr/earthquake_model/e2">
-        <rdf:type rdf:resource="https://www.ics.forth.gr/earthquake_model/EQ1_Earthquake"/>
-        <P129i_is_subject_of rdf:resource="https://www.ics.forth.gr/earthquake_model/e2_list_of_references"/>
-        <P4_has_time-span rdf:resource="https://www.ics.forth.gr/earthquake_model/1246"/>
-        <P70i_is_documented_in rdf:resource="https://www.ics.forth.gr/earthquake_model/Platakis_Book"/>
-        <P7_took_place_at rdf:resource="https://www.ics.forth.gr/earthquake_model/Chania"/>
-        <crmsci:O11i_was_described_by rdf:resource="https://www.ics.forth.gr/earthquake_model/e2_data_evaluation"/>
-        <crmsci:O12_has_dimension rdf:resource="https://www.ics.forth.gr/earthquake_model/e2_Chania_intensity"/>
-        <crmsci:O13_triggered rdf:resource="https://www.ics.forth.gr/earthquake_model/Chania_Walls_Damage"/>
-        <earthquake_model:PEQ8_has_documented_possible_dimension rdf:resource="https://www.ics.forth.gr/earthquake_model/e2_Chania_intensity"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://www.ics.forth.gr/earthquake_model/e2_Chania_intensity -->
-
-    <owl:NamedIndividual rdf:about="https://www.ics.forth.gr/earthquake_model/e2_Chania_intensity">
-        <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"/>
-        <P2_has_type rdf:resource="https://www.ics.forth.gr/earthquake_model/intensity"/>
-        <P91_has_unit rdf:resource="https://www.ics.forth.gr/earthquake_model/Rossi-Forel"/>
-        <P90_has_value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9</P90_has_value>
-        <earthquake_model:PEQ9_has_documented_uncertainty_factor rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Possible</earthquake_model:PEQ9_has_documented_uncertainty_factor>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://www.ics.forth.gr/earthquake_model/e2_data_evaluation -->
-
-    <owl:NamedIndividual rdf:about="https://www.ics.forth.gr/earthquake_model/e2_data_evaluation">
-        <rdf:type rdf:resource="http://www.cidoc-crm.org/extensions/crmsci/S6_Data_Evaluation"/>
-        <P14_carried_out_by rdf:resource="https://www.ics.forth.gr/earthquake_model/PLATAKIS_ELEYTHERIOS"/>
-        <crmsci:assigned_dimension rdf:resource="https://www.ics.forth.gr/earthquake_model/e2_Chania_intensity"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://www.ics.forth.gr/earthquake_model/e2_intensity_Platakis_Belief -->
-
-    <owl:NamedIndividual rdf:about="https://www.ics.forth.gr/earthquake_model/e2_intensity_Platakis_Belief">
-        <rdf:type rdf:resource="http://www.cidoc-crm.org/extensions/crminf/I2_Belief"/>
-        <crminf:J5_holds_to_be rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Possible</crminf:J5_holds_to_be>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://www.ics.forth.gr/earthquake_model/e2_list_of_references -->
-
-    <owl:NamedIndividual rdf:about="https://www.ics.forth.gr/earthquake_model/e2_list_of_references">
-        <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object"/>
-        <P67_refers_to rdf:resource="https://www.ics.forth.gr/earthquake_model/Rauliv_V._,_Déscription_physique_de_l&apos;île_da_Créte"/>
-        <P70i_is_documented_in rdf:resource="https://www.ics.forth.gr/earthquake_model/Platakis_Book"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://www.ics.forth.gr/earthquake_model/e3 -->
-
-    <owl:NamedIndividual rdf:about="https://www.ics.forth.gr/earthquake_model/e3">
-        <rdf:type rdf:resource="https://www.ics.forth.gr/earthquake_model/EQ1_Earthquake"/>
-        <P129i_is_subject_of rdf:resource="https://www.ics.forth.gr/earthquake_model/e3_list_of_references"/>
-        <P4_has_time-span rdf:resource="https://www.ics.forth.gr/earthquake_model/08-08-1303_(Julian)"/>
-        <P70i_is_documented_in rdf:resource="https://www.ics.forth.gr/earthquake_model/Platakis_Book"/>
-        <P7_took_place_at rdf:resource="https://www.ics.forth.gr/earthquake_model/Heraklion"/>
-        <crmsci:O11i_was_described_by rdf:resource="https://www.ics.forth.gr/earthquake_model/e3_intensity_evaluation"/>
-        <crmsci:O12_has_dimension rdf:resource="https://www.ics.forth.gr/earthquake_model/e3_Heraklion_intensity"/>
-        <crmsci:O13_triggered rdf:resource="https://www.ics.forth.gr/earthquake_model/Cracked_Heraklion_Walls"/>
-        <crmsci:O13_triggered rdf:resource="https://www.ics.forth.gr/earthquake_model/Destruction_of_Megalos_Koules"/>
-        <earthquake_model:PEQ5_has_documented_possible_timespan rdf:resource="https://www.ics.forth.gr/earthquake_model/08-08-1303_(Julian)"/>
-        <earthquake_model:PEQ8_has_documented_possible_dimension rdf:resource="https://www.ics.forth.gr/earthquake_model/e3_Heraklion_intensity"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://www.ics.forth.gr/earthquake_model/e3-e4_equality_evaluation -->
-
-    <owl:NamedIndividual rdf:about="https://www.ics.forth.gr/earthquake_model/e3-e4_equality_evaluation">
-        <rdf:type rdf:resource="https://www.ics.forth.gr/earthquake_model/EQ2_Comparison_Evaluation"/>
-        <earthquake_model:PEQ2_checks_equality_of rdf:resource="https://www.ics.forth.gr/earthquake_model/e3"/>
-        <earthquake_model:PEQ3_checks_equality_to rdf:resource="https://www.ics.forth.gr/earthquake_model/e4"/>
-        <earthquake_model:PEQ4_has_comparison_value rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">equal</earthquake_model:PEQ4_has_comparison_value>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://www.ics.forth.gr/earthquake_model/e3_Heraklion_intensity -->
-
-    <owl:NamedIndividual rdf:about="https://www.ics.forth.gr/earthquake_model/e3_Heraklion_intensity">
-        <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"/>
-        <P2_has_type rdf:resource="https://www.ics.forth.gr/earthquake_model/intensity"/>
-        <P2_has_type rdf:resource="https://www.ics.forth.gr/earthquake_model/ranged_value"/>
-        <P91_has_unit rdf:resource="https://www.ics.forth.gr/earthquake_model/Rossi-Forel"/>
-        <P90a_has_lower_value_limit rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</P90a_has_lower_value_limit>
-        <P90b_has_upper_value_limit rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9</P90b_has_upper_value_limit>
-        <earthquake_model:PEQ9_has_documented_uncertainty_factor rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Possible</earthquake_model:PEQ9_has_documented_uncertainty_factor>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://www.ics.forth.gr/earthquake_model/e3_and_e4_are_probably_equal -->
-
-    <owl:NamedIndividual rdf:about="https://www.ics.forth.gr/earthquake_model/e3_and_e4_are_probably_equal">
-        <rdf:type rdf:resource="http://www.cidoc-crm.org/extensions/crminf/I12_Adopted_Belief"/>
-        <crminf:J14_adopted_interpretation_of rdf:resource="https://www.ics.forth.gr/earthquake_model/Platakis_Book"/>
-        <crminf:J5_holds_to_be rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Probable</crminf:J5_holds_to_be>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://www.ics.forth.gr/earthquake_model/e3_intensity_evaluation -->
-
-    <owl:NamedIndividual rdf:about="https://www.ics.forth.gr/earthquake_model/e3_intensity_evaluation">
-        <rdf:type rdf:resource="http://www.cidoc-crm.org/extensions/crmsci/S6_Data_Evaluation"/>
-        <crmsci:assigned_dimension rdf:resource="https://www.ics.forth.gr/earthquake_model/e3_Heraklion_intensity"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://www.ics.forth.gr/earthquake_model/e3_list_of_references -->
-
-    <owl:NamedIndividual rdf:about="https://www.ics.forth.gr/earthquake_model/e3_list_of_references">
-        <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object"/>
-        <P67_refers_to rdf:resource="https://www.ics.forth.gr/earthquake_model/e3_references_provenance_1"/>
-        <P67_refers_to rdf:resource="https://www.ics.forth.gr/earthquake_model/Stavrakis_N._,_Statistiki_tou_plithismou_tis_Kritis_meta_diaforon_geografikon,_istorikon,_arxaiologiko,_ekklisiastikon_klp._Eidiseon_peri_tis_nisou,_1890,_p.107-111"/>
-        <P67_refers_to rdf:resource="https://www.ics.forth.gr/earthquake_model/Zabelios_S._,_Istorika_Skinografimata"/>
-        <P70i_is_documented_in rdf:resource="https://www.ics.forth.gr/earthquake_model/Platakis_Book"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://www.ics.forth.gr/earthquake_model/e3_references_provenance_1 -->
-
-    <owl:NamedIndividual rdf:about="https://www.ics.forth.gr/earthquake_model/e3_references_provenance_1">
-        <rdf:type rdf:resource="http://www.cidoc-crm.org/extensions/crminf/I10_Provenance_Statement"/>
-        <P67i_is_referred_to_by rdf:resource="https://www.ics.forth.gr/earthquake_model/Stavrakis_N._,_Statistiki_tou_plithismou_tis_Kritis_meta_diaforon_geografikon,_istorikon,_arxaiologiko,_ekklisiastikon_klp._Eidiseon_peri_tis_nisou,_1890,_p.107-111"/>
-        <crminf:J20_is_about_the_provenance_of rdf:resource="https://www.ics.forth.gr/earthquake_model/Zabelios_S._,_Istorika_Skinografimata"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://www.ics.forth.gr/earthquake_model/e4 -->
-
-    <owl:NamedIndividual rdf:about="https://www.ics.forth.gr/earthquake_model/e4">
-        <rdf:type rdf:resource="https://www.ics.forth.gr/earthquake_model/EQ1_Earthquake"/>
-        <P129i_is_subject_of rdf:resource="https://www.ics.forth.gr/earthquake_model/e4_list_of_references"/>
-        <P4_has_time-span rdf:resource="https://www.ics.forth.gr/earthquake_model/Morning_of_08-08-1304_(Julian_Calendar)"/>
-        <P70i_is_documented_in rdf:resource="https://www.ics.forth.gr/earthquake_model/Platakis_Book"/>
-        <crmsci:O13_triggered rdf:resource="https://www.ics.forth.gr/earthquake_model/Death_of_4000_people"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://www.ics.forth.gr/earthquake_model/e4_list_of_references -->
-
-    <owl:NamedIndividual rdf:about="https://www.ics.forth.gr/earthquake_model/e4_list_of_references">
-        <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object"/>
-        <P67_refers_to rdf:resource="https://www.ics.forth.gr/earthquake_model/Hieronymous_Donatus"/>
-        <P70i_is_documented_in rdf:resource="https://www.ics.forth.gr/earthquake_model/Platakis_Book"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://www.ics.forth.gr/earthquake_model/intensity -->
-
-    <owl:NamedIndividual rdf:about="https://www.ics.forth.gr/earthquake_model/intensity">
-        <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://www.ics.forth.gr/earthquake_model/ranged_value -->
-
-    <owl:NamedIndividual rdf:about="https://www.ics.forth.gr/earthquake_model/ranged_value">
-        <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://www.ics.forth.gr/earthquake_model/wave -->
-
-    <owl:NamedIndividual rdf:about="https://www.ics.forth.gr/earthquake_model/wave">
-        <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://www.ics.forth.gr/earthquake_model/08-08-1303_(Julian) -->
-
-    <owl:NamedIndividual rdf:about="https://www.ics.forth.gr/earthquake_model/08-08-1303_(Julian)">
-        <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E52_Time-Span"/>
-        <P1_is_identified_by rdf:resource="https://www.ics.forth.gr/earthquake_model/21-08-1303_(Gregorian)"/>
-        <P82_at_some_time_within rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1303</P82_at_some_time_within>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://www.ics.forth.gr/earthquake_model/08-08-1303_(Julian_Calendar)_might_be_wrong_,probably_happened_in_1304 -->
-
-    <owl:NamedIndividual rdf:about="https://www.ics.forth.gr/earthquake_model/08-08-1303_(Julian_Calendar)_might_be_wrong_,probably_happened_in_1304">
-        <rdf:type rdf:resource="http://www.cidoc-crm.org/extensions/crminf/I12_Adopted_Belief"/>
-        <crminf:J14_adopted_interpretation_of rdf:resource="https://www.ics.forth.gr/earthquake_model/Platakis_Book"/>
-        <crminf:J5_holds_to_be rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Maybe</crminf:J5_holds_to_be>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://www.ics.forth.gr/earthquake_model/1246 -->
-
-    <owl:NamedIndividual rdf:about="https://www.ics.forth.gr/earthquake_model/1246">
+    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology/1246">
         <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E52_Time-Span"/>
         <P82_at_some_time_within rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1246</P82_at_some_time_within>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://www.ics.forth.gr/earthquake_model/13-08-1922_00:10_GMT+00 -->
+    <!-- https://crm-eq.ics.forth.gr/ontology/A_Seismic_History_Of_Crete -->
 
-    <owl:NamedIndividual rdf:about="https://www.ics.forth.gr/earthquake_model/13-08-1922_00:10_GMT+00">
+    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology/A_Seismic_History_Of_Crete">
+        <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E35_Title"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://crm-eq.ics.forth.gr/ontology/Asteroskopeio_Athinon -->
+
+    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology/Asteroskopeio_Athinon">
+        <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E74_Group"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://crm-eq.ics.forth.gr/ontology/Chania -->
+
+    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology/Chania">
+        <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E53_Place"/>
+        <P89_falls_within rdf:resource="https://crm-eq.ics.forth.gr/ontology/Crete"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://crm-eq.ics.forth.gr/ontology/Chania_Walls -->
+
+    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology/Chania_Walls">
+        <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E24_Physical_Human-Made_Thing"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://crm-eq.ics.forth.gr/ontology/Chania_Walls_Damage -->
+
+    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology/Chania_Walls_Damage">
+        <rdf:type rdf:resource="http://www.cidoc-crm.org/extensions/crmsci/S18_Alteration"/>
+        <crmsci:O18_altered rdf:resource="https://crm-eq.ics.forth.gr/ontology/Chania_Walls"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://crm-eq.ics.forth.gr/ontology/Cracked_Heraklion_Walls -->
+
+    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology/Cracked_Heraklion_Walls">
+        <rdf:type rdf:resource="http://www.cidoc-crm.org/extensions/crmsci/S18_Alteration"/>
+        <crmsci:O18_altered rdf:resource="https://crm-eq.ics.forth.gr/ontology/Heraklion_Walls"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://crm-eq.ics.forth.gr/ontology/Crete -->
+
+    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology/Crete">
+        <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E53_Place"/>
+        <P10i_contains rdf:resource="https://crm-eq.ics.forth.gr/ontology/Chania"/>
+        <P10i_contains rdf:resource="https://crm-eq.ics.forth.gr/ontology/Malia"/>
+        <crmsci:O25_contains rdf:resource="https://crm-eq.ics.forth.gr/ontology/Heraklion"/>
+        <crmsci:O25_contains rdf:resource="https://crm-eq.ics.forth.gr/ontology/Ierapetra"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://crm-eq.ics.forth.gr/ontology/Death_of_4000_people -->
+
+    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology/Death_of_4000_people">
+        <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E69_Death"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://crm-eq.ics.forth.gr/ontology/Destruction_of_Megalos_Koules -->
+
+    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology/Destruction_of_Megalos_Koules">
+        <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E6_Destruction"/>
+        <P134i_was_continued_by rdf:resource="https://crm-eq.ics.forth.gr/ontology/Rebuilding_of_Megalos_Koules"/>
+        <P13_destroyed rdf:resource="https://crm-eq.ics.forth.gr/ontology/Megalos_Koules"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://crm-eq.ics.forth.gr/ontology/Heraklion -->
+
+    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology/Heraklion">
+        <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E53_Place"/>
+        <P89_falls_within rdf:resource="https://crm-eq.ics.forth.gr/ontology/Crete"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://crm-eq.ics.forth.gr/ontology/Heraklion_Walls -->
+
+    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology/Heraklion_Walls">
+        <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E24_Physical_Human-Made_Thing"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://crm-eq.ics.forth.gr/ontology/Hieronymous_Donatus -->
+
+    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology/Hieronymous_Donatus">
+        <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://crm-eq.ics.forth.gr/ontology/Ierapetra -->
+
+    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology/Ierapetra">
+        <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E53_Place"/>
+        <P86_falls_within rdf:resource="https://crm-eq.ics.forth.gr/ontology/Crete"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://crm-eq.ics.forth.gr/ontology/Malia -->
+
+    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology/Malia">
+        <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E53_Place"/>
+        <P89_falls_within rdf:resource="https://crm-eq.ics.forth.gr/ontology/Crete"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://crm-eq.ics.forth.gr/ontology/Megalos_Koules -->
+
+    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology/Megalos_Koules">
+        <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E24_Physical_Human-Made_Thing"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://crm-eq.ics.forth.gr/ontology/PAPADOPOULOS_A._GERASIMOS -->
+
+    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology/PAPADOPOULOS_A._GERASIMOS">
+        <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E21_Person"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://crm-eq.ics.forth.gr/ontology/PLATAKIS_ELEYTHERIOS -->
+
+    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology/PLATAKIS_ELEYTHERIOS">
+        <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E21_Person"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://crm-eq.ics.forth.gr/ontology/Papadopoulos_Book -->
+
+    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology/Papadopoulos_Book">
+        <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E31_Document"/>
+        <P102_has_title rdf:resource="https://crm-eq.ics.forth.gr/ontology/A_Seismic_History_Of_Crete"/>
+        <P135i_was_created_by rdf:resource="https://crm-eq.ics.forth.gr/ontology/Writing_of__&apos;A_Seismic_History_of_Crete&apos;"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://crm-eq.ics.forth.gr/ontology/Perceivable -->
+
+    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology/Perceivable">
+        <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://crm-eq.ics.forth.gr/ontology/Platakis_Book -->
+
+    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology/Platakis_Book">
+        <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E31_Document"/>
+        <P102_has_title rdf:resource="https://crm-eq.ics.forth.gr/ontology/ΟΙ_ΣΕΙΣΜΟΙ_ΤΗΣ_ΚΡΗΤΗΣ_ΑΠΟ_ΤΩΝ_ΑΡΧΑΙΟΤΑΤΩΝ_ΜΕΧΡΙ_ΤΩΝ_ΚΑΘ&apos;_ΗΜΑΣ_ΧΡΟΝΩΝ"/>
+        <P94i_was_created_by rdf:resource="https://crm-eq.ics.forth.gr/ontology/Writing_of_ΟΙ_ΣΕΙΣΜΟΙ_ΤΗΣ_ΚΡΗΤΗΣ_ΑΠΟ_ΤΩΝ_ΑΡΧΑΙΟΤΑΤΩΝ_ΜΕΧΡΙ_ΤΩΝ_ΚΑΘ&apos;_ΗΜΑΣ_ΧΡΟΝΩΝ"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://crm-eq.ics.forth.gr/ontology/Rebuilding_of_Megalos_Koules -->
+
+    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology/Rebuilding_of_Megalos_Koules">
+        <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E12_Production"/>
+        <P108_has_produced rdf:resource="https://crm-eq.ics.forth.gr/ontology/Megalos_Koules(reconstructed)"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://crm-eq.ics.forth.gr/ontology/Rossi-Forel -->
+
+    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology/Rossi-Forel">
+        <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E58_Measurement_Unit"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://crm-eq.ics.forth.gr/ontology/Seconds -->
+
+    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology/Seconds">
+        <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E58_Measurement_Unit"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://crm-eq.ics.forth.gr/ontology/Southeast -->
+
+    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology/Southeast">
+        <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://crm-eq.ics.forth.gr/ontology/Southeast_of_Santorini -->
+
+    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology/Southeast_of_Santorini">
+        <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E53_Place"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://crm-eq.ics.forth.gr/ontology/The_earthquake_has_a_possible_intensity_of_8-9 -->
+
+    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology/The_earthquake_has_a_possible_intensity_of_8-9">
+        <rdf:type rdf:resource="http://www.cidoc-crm.org/extensions/crminf/I12_Adopted_Belief"/>
+        <crminf:J14_adopted_interpretation_of rdf:resource="https://crm-eq.ics.forth.gr/ontology/Platakis_Book"/>
+        <crminf:J5_holds_to_be rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Possible</crminf:J5_holds_to_be>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://crm-eq.ics.forth.gr/ontology/The_earthquake_has_a_possible_intensity_of_9 -->
+
+    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology/The_earthquake_has_a_possible_intensity_of_9">
+        <rdf:type rdf:resource="http://www.cidoc-crm.org/extensions/crminf/I12_Adopted_Belief"/>
+        <crminf:J5_holds_to_be rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Possible</crminf:J5_holds_to_be>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://crm-eq.ics.forth.gr/ontology/The_epicenter_of_the_earthquake_was_Southeast_of_Santorini -->
+
+    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology/The_epicenter_of_the_earthquake_was_Southeast_of_Santorini">
+        <rdf:type rdf:resource="http://www.cidoc-crm.org/extensions/crminf/I12_Adopted_Belief"/>
+        <crminf:J5_holds_to_be rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">True</crminf:J5_holds_to_be>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://crm-eq.ics.forth.gr/ontology/West -->
+
+    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology/West">
+        <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://crm-eq.ics.forth.gr/ontology/duration -->
+
+    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology/duration">
+        <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://crm-eq.ics.forth.gr/ontology/e1 -->
+
+    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology/e1">
+        <rdf:type rdf:resource="https://crm-eq.ics.forth.gr/ontology/EQ1_Earthquake"/>
+        <P129i_is_subject_of rdf:resource="https://crm-eq.ics.forth.gr/ontology/e1_list_of_references"/>
+        <P39i_was_measured_by rdf:resource="https://crm-eq.ics.forth.gr/ontology/e1_Epicenter_Measurement"/>
+        <P39i_was_measured_by rdf:resource="https://crm-eq.ics.forth.gr/ontology/e1_Heraklion_Intensity_Measurement"/>
+        <P39i_was_measured_by rdf:resource="https://crm-eq.ics.forth.gr/ontology/e1_Ierapetra_Measurement"/>
+        <P39i_was_measured_by rdf:resource="https://crm-eq.ics.forth.gr/ontology/e1_Ierapetra_Quake_Direction_Measurement"/>
+        <P39i_was_measured_by rdf:resource="https://crm-eq.ics.forth.gr/ontology/e1_Malia_Measurement"/>
+        <P39i_was_measured_by rdf:resource="https://crm-eq.ics.forth.gr/ontology/e1_Malia_Quake_Direction_Measurement"/>
+        <P4_has_time-span rdf:resource="https://crm-eq.ics.forth.gr/ontology/13-08-1922_00:10_GMT+00"/>
+        <P70i_is_documented_in rdf:resource="https://crm-eq.ics.forth.gr/ontology/Platakis_Book"/>
+        <P7_took_place_at rdf:resource="https://crm-eq.ics.forth.gr/ontology/Heraklion"/>
+        <P7_took_place_at rdf:resource="https://crm-eq.ics.forth.gr/ontology/Ierapetra"/>
+        <P7_took_place_at rdf:resource="https://crm-eq.ics.forth.gr/ontology/Malia"/>
+        <crmsci:O12_has_dimension rdf:resource="https://crm-eq.ics.forth.gr/ontology/e1_Ierapetra_duration"/>
+        <crmsci:O12_has_dimension rdf:resource="https://crm-eq.ics.forth.gr/ontology/e1_Ierapetra_intensity"/>
+        <crmsci:O12_has_dimension rdf:resource="https://crm-eq.ics.forth.gr/ontology/e1_Malia_duration"/>
+        <crmsci:O12_has_dimension rdf:resource="https://crm-eq.ics.forth.gr/ontology/e1_Malia_intensity"/>
+        <crm-eq:ontologyPEQ7_has_documented_possible_epicenter_place rdf:resource="https://crm-eq.ics.forth.gr/ontology/Southeast_of_Santorini"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://crm-eq.ics.forth.gr/ontology/e1_Epicenter_Measurement -->
+
+    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology/e1_Epicenter_Measurement">
+        <rdf:type rdf:resource="http://www.cidoc-crm.org/extensions/crmsci/S21_Measurement"/>
+        <P14_carried_out_by rdf:resource="https://crm-eq.ics.forth.gr/ontology/Asteroskopeio_Athinon"/>
+        <crmsci:observed_value rdf:resource="https://crm-eq.ics.forth.gr/ontology/Southeast_of_Santorini"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://crm-eq.ics.forth.gr/ontology/e1_Heraklion_Intensity_Measurement -->
+
+    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology/e1_Heraklion_Intensity_Measurement">
+        <rdf:type rdf:resource="http://www.cidoc-crm.org/extensions/crmsci/S21_Measurement"/>
+        <P14_carried_out_by rdf:resource="https://crm-eq.ics.forth.gr/ontology/Asteroskopeio_Athinon"/>
+        <P7_took_place_at rdf:resource="https://crm-eq.ics.forth.gr/ontology/Heraklion"/>
+        <crmsci:observed_value rdf:resource="https://crm-eq.ics.forth.gr/ontology/Perceivable"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://crm-eq.ics.forth.gr/ontology/e1_Ierapetra_Measurement -->
+
+    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology/e1_Ierapetra_Measurement">
+        <rdf:type rdf:resource="http://www.cidoc-crm.org/extensions/crmsci/S21_Measurement"/>
+        <P14_carried_out_by rdf:resource="https://crm-eq.ics.forth.gr/ontology/Asteroskopeio_Athinon"/>
+        <P40_observed_dimension rdf:resource="https://crm-eq.ics.forth.gr/ontology/e1_Ierapetra_duration"/>
+        <P40_observed_dimension rdf:resource="https://crm-eq.ics.forth.gr/ontology/e1_Ierapetra_intensity"/>
+        <P7_took_place_at rdf:resource="https://crm-eq.ics.forth.gr/ontology/Ierapetra"/>
+        <crmsci:observed rdf:resource="https://crm-eq.ics.forth.gr/ontology/e1_Ierapetra_quake_movement_type"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://crm-eq.ics.forth.gr/ontology/e1_Ierapetra_Quake_Direction_Measurement -->
+
+    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology/e1_Ierapetra_Quake_Direction_Measurement">
+        <rdf:type rdf:resource="http://www.cidoc-crm.org/extensions/crmsci/S21_Measurement"/>
+        <P14_carried_out_by rdf:resource="https://crm-eq.ics.forth.gr/ontology/Asteroskopeio_Athinon"/>
+        <P7_took_place_at rdf:resource="https://crm-eq.ics.forth.gr/ontology/Ierapetra"/>
+        <crmsci:observed_value rdf:resource="https://crm-eq.ics.forth.gr/ontology/Southeast"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://crm-eq.ics.forth.gr/ontology/e1_Ierapetra_duration -->
+
+    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology/e1_Ierapetra_duration">
+        <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"/>
+        <P2_has_type rdf:resource="https://crm-eq.ics.forth.gr/ontology/duration"/>
+        <P91_has_unit rdf:resource="https://crm-eq.ics.forth.gr/ontology/Seconds"/>
+        <P90_has_value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">10.0</P90_has_value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://crm-eq.ics.forth.gr/ontology/e1_Ierapetra_intensity -->
+
+    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology/e1_Ierapetra_intensity">
+        <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"/>
+        <P2_has_type rdf:resource="https://crm-eq.ics.forth.gr/ontology/intensity"/>
+        <P91_has_unit rdf:resource="https://crm-eq.ics.forth.gr/ontology/Rossi-Forel"/>
+        <P90_has_value rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">4</P90_has_value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://crm-eq.ics.forth.gr/ontology/e1_Ierapetra_quake_movement_type -->
+
+    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology/e1_Ierapetra_quake_movement_type">
+        <rdf:type rdf:resource="http://www.cidoc-crm.org/extensions/crmsci/S15_Observable_Entity"/>
+        <P2_has_type rdf:resource="https://crm-eq.ics.forth.gr/ontology/wave"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://crm-eq.ics.forth.gr/ontology/e1_Malia_Measurement -->
+
+    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology/e1_Malia_Measurement">
+        <rdf:type rdf:resource="http://www.cidoc-crm.org/extensions/crmsci/S21_Measurement"/>
+        <P14_carried_out_by rdf:resource="https://crm-eq.ics.forth.gr/ontology/Asteroskopeio_Athinon"/>
+        <P40_observed_dimension rdf:resource="https://crm-eq.ics.forth.gr/ontology/e1_Malia_duration"/>
+        <P40_observed_dimension rdf:resource="https://crm-eq.ics.forth.gr/ontology/e1_Malia_intensity"/>
+        <P7_took_place_at rdf:resource="https://crm-eq.ics.forth.gr/ontology/Malia"/>
+        <crmsci:observed rdf:resource="https://crm-eq.ics.forth.gr/ontology/e1_Malia_quake_movement_type"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://crm-eq.ics.forth.gr/ontology/e1_Malia_Quake_Direction_Measurement -->
+
+    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology/e1_Malia_Quake_Direction_Measurement">
+        <rdf:type rdf:resource="http://www.cidoc-crm.org/extensions/crmsci/S21_Measurement"/>
+        <P14_carried_out_by rdf:resource="https://crm-eq.ics.forth.gr/ontology/Asteroskopeio_Athinon"/>
+        <P7_took_place_at rdf:resource="https://crm-eq.ics.forth.gr/ontology/Malia"/>
+        <crmsci:observed_value rdf:resource="https://crm-eq.ics.forth.gr/ontology/West"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://crm-eq.ics.forth.gr/ontology/e1_Malia_duration -->
+
+    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology/e1_Malia_duration">
+        <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"/>
+        <P2_has_type rdf:resource="https://crm-eq.ics.forth.gr/ontology/duration"/>
+        <P2_has_type rdf:resource="https://crm-eq.ics.forth.gr/ontology/ranged_value"/>
+        <P91_has_unit rdf:resource="https://crm-eq.ics.forth.gr/ontology/Seconds"/>
+        <P90a_has_lower_value_limit rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2.0</P90a_has_lower_value_limit>
+        <P90b_has_upper_value_limit rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</P90b_has_upper_value_limit>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://crm-eq.ics.forth.gr/ontology/e1_Malia_intensity -->
+
+    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology/e1_Malia_intensity">
+        <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"/>
+        <P2_has_type rdf:resource="https://crm-eq.ics.forth.gr/ontology/intensity"/>
+        <P91_has_unit rdf:resource="https://crm-eq.ics.forth.gr/ontology/Rossi-Forel"/>
+        <P90_has_value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</P90_has_value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://crm-eq.ics.forth.gr/ontology/e1_Malia_quake_movement_type -->
+
+    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology/e1_Malia_quake_movement_type">
+        <rdf:type rdf:resource="http://www.cidoc-crm.org/extensions/crmsci/S15_Observable_Entity"/>
+        <P2_has_type rdf:resource="https://crm-eq.ics.forth.gr/ontology/wave"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://crm-eq.ics.forth.gr/ontology/e1_list_of_references -->
+
+    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology/e1_list_of_references">
+        <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object"/>
+        <P67_refers_to rdf:resource="https://crm-eq.ics.forth.gr/ontology/Asteroskopeio_Athinon_,_Annales_des_l&apos;Observatoires_de&apos;Athenes"/>
+        <P70i_is_documented_in rdf:resource="https://crm-eq.ics.forth.gr/ontology/Platakis_Book"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://crm-eq.ics.forth.gr/ontology/e2 -->
+
+    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology/e2">
+        <rdf:type rdf:resource="https://crm-eq.ics.forth.gr/ontology/EQ1_Earthquake"/>
+        <P129i_is_subject_of rdf:resource="https://crm-eq.ics.forth.gr/ontology/e2_list_of_references"/>
+        <P4_has_time-span rdf:resource="https://crm-eq.ics.forth.gr/ontology/1246"/>
+        <P70i_is_documented_in rdf:resource="https://crm-eq.ics.forth.gr/ontology/Platakis_Book"/>
+        <P7_took_place_at rdf:resource="https://crm-eq.ics.forth.gr/ontology/Chania"/>
+        <crmsci:O11i_was_described_by rdf:resource="https://crm-eq.ics.forth.gr/ontology/e2_data_evaluation"/>
+        <crmsci:O12_has_dimension rdf:resource="https://crm-eq.ics.forth.gr/ontology/e2_Chania_intensity"/>
+        <crmsci:O13_triggered rdf:resource="https://crm-eq.ics.forth.gr/ontology/Chania_Walls_Damage"/>
+        <crm-eq:ontologyPEQ8_has_documented_possible_dimension rdf:resource="https://crm-eq.ics.forth.gr/ontology/e2_Chania_intensity"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://crm-eq.ics.forth.gr/ontology/e2_Chania_intensity -->
+
+    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology/e2_Chania_intensity">
+        <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"/>
+        <P2_has_type rdf:resource="https://crm-eq.ics.forth.gr/ontology/intensity"/>
+        <P91_has_unit rdf:resource="https://crm-eq.ics.forth.gr/ontology/Rossi-Forel"/>
+        <P90_has_value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9</P90_has_value>
+        <crm-eq:ontologyPEQ9_has_documented_uncertainty_factor rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Possible</crm-eq:ontologyPEQ9_has_documented_uncertainty_factor>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://crm-eq.ics.forth.gr/ontology/e2_data_evaluation -->
+
+    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology/e2_data_evaluation">
+        <rdf:type rdf:resource="http://www.cidoc-crm.org/extensions/crmsci/S6_Data_Evaluation"/>
+        <P14_carried_out_by rdf:resource="https://crm-eq.ics.forth.gr/ontology/PLATAKIS_ELEYTHERIOS"/>
+        <crmsci:assigned_dimension rdf:resource="https://crm-eq.ics.forth.gr/ontology/e2_Chania_intensity"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://crm-eq.ics.forth.gr/ontology/e2_intensity_Platakis_Belief -->
+
+    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology/e2_intensity_Platakis_Belief">
+        <rdf:type rdf:resource="http://www.cidoc-crm.org/extensions/crminf/I2_Belief"/>
+        <crminf:J5_holds_to_be rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Possible</crminf:J5_holds_to_be>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://crm-eq.ics.forth.gr/ontology/e2_list_of_references -->
+
+    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology/e2_list_of_references">
+        <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object"/>
+        <P67_refers_to rdf:resource="https://crm-eq.ics.forth.gr/ontology/Rauliv_V._,_Déscription_physique_de_l&apos;île_da_Créte"/>
+        <P70i_is_documented_in rdf:resource="https://crm-eq.ics.forth.gr/ontology/Platakis_Book"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://crm-eq.ics.forth.gr/ontology/e3 -->
+
+    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology/e3">
+        <rdf:type rdf:resource="https://crm-eq.ics.forth.gr/ontology/EQ1_Earthquake"/>
+        <P129i_is_subject_of rdf:resource="https://crm-eq.ics.forth.gr/ontology/e3_list_of_references"/>
+        <P4_has_time-span rdf:resource="https://crm-eq.ics.forth.gr/ontology/08-08-1303_(Julian)"/>
+        <P70i_is_documented_in rdf:resource="https://crm-eq.ics.forth.gr/ontology/Platakis_Book"/>
+        <P7_took_place_at rdf:resource="https://crm-eq.ics.forth.gr/ontology/Heraklion"/>
+        <crmsci:O11i_was_described_by rdf:resource="https://crm-eq.ics.forth.gr/ontology/e3_intensity_evaluation"/>
+        <crmsci:O12_has_dimension rdf:resource="https://crm-eq.ics.forth.gr/ontology/e3_Heraklion_intensity"/>
+        <crmsci:O13_triggered rdf:resource="https://crm-eq.ics.forth.gr/ontology/Cracked_Heraklion_Walls"/>
+        <crmsci:O13_triggered rdf:resource="https://crm-eq.ics.forth.gr/ontology/Destruction_of_Megalos_Koules"/>
+        <crm-eq:ontologyPEQ5_has_documented_possible_timespan rdf:resource="https://crm-eq.ics.forth.gr/ontology/08-08-1303_(Julian)"/>
+        <crm-eq:ontologyPEQ8_has_documented_possible_dimension rdf:resource="https://crm-eq.ics.forth.gr/ontology/e3_Heraklion_intensity"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://crm-eq.ics.forth.gr/ontology/e3-e4_equality_evaluation -->
+
+    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology/e3-e4_equality_evaluation">
+        <rdf:type rdf:resource="https://crm-eq.ics.forth.gr/ontology/EQ2_Comparison_Evaluation"/>
+        <crm-eq:ontologyPEQ2_checks_equality_of rdf:resource="https://crm-eq.ics.forth.gr/ontology/e3"/>
+        <crm-eq:ontologyPEQ3_checks_equality_to rdf:resource="https://crm-eq.ics.forth.gr/ontology/e4"/>
+        <crm-eq:ontologyPEQ4_has_comparison_value rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">equal</crm-eq:ontologyPEQ4_has_comparison_value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://crm-eq.ics.forth.gr/ontology/e3_Heraklion_intensity -->
+
+    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology/e3_Heraklion_intensity">
+        <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"/>
+        <P2_has_type rdf:resource="https://crm-eq.ics.forth.gr/ontology/intensity"/>
+        <P2_has_type rdf:resource="https://crm-eq.ics.forth.gr/ontology/ranged_value"/>
+        <P91_has_unit rdf:resource="https://crm-eq.ics.forth.gr/ontology/Rossi-Forel"/>
+        <P90a_has_lower_value_limit rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</P90a_has_lower_value_limit>
+        <P90b_has_upper_value_limit rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9</P90b_has_upper_value_limit>
+        <crm-eq:ontologyPEQ9_has_documented_uncertainty_factor rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Possible</crm-eq:ontologyPEQ9_has_documented_uncertainty_factor>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://crm-eq.ics.forth.gr/ontology/e3_and_e4_are_probably_equal -->
+
+    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology/e3_and_e4_are_probably_equal">
+        <rdf:type rdf:resource="http://www.cidoc-crm.org/extensions/crminf/I12_Adopted_Belief"/>
+        <crminf:J14_adopted_interpretation_of rdf:resource="https://crm-eq.ics.forth.gr/ontology/Platakis_Book"/>
+        <crminf:J5_holds_to_be rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Probable</crminf:J5_holds_to_be>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://crm-eq.ics.forth.gr/ontology/e3_intensity_evaluation -->
+
+    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology/e3_intensity_evaluation">
+        <rdf:type rdf:resource="http://www.cidoc-crm.org/extensions/crmsci/S6_Data_Evaluation"/>
+        <crmsci:assigned_dimension rdf:resource="https://crm-eq.ics.forth.gr/ontology/e3_Heraklion_intensity"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://crm-eq.ics.forth.gr/ontology/e3_list_of_references -->
+
+    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology/e3_list_of_references">
+        <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object"/>
+        <P67_refers_to rdf:resource="https://crm-eq.ics.forth.gr/ontology/e3_references_provenance_1"/>
+        <P67_refers_to rdf:resource="https://crm-eq.ics.forth.gr/ontology/Stavrakis_N._,_Statistiki_tou_plithismou_tis_Kritis_meta_diaforon_geografikon,_istorikon,_arxaiologiko,_ekklisiastikon_klp._Eidiseon_peri_tis_nisou,_1890,_p.107-111"/>
+        <P67_refers_to rdf:resource="https://crm-eq.ics.forth.gr/ontology/Zabelios_S._,_Istorika_Skinografimata"/>
+        <P70i_is_documented_in rdf:resource="https://crm-eq.ics.forth.gr/ontology/Platakis_Book"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://crm-eq.ics.forth.gr/ontology/e3_references_provenance_1 -->
+
+    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology/e3_references_provenance_1">
+        <rdf:type rdf:resource="http://www.cidoc-crm.org/extensions/crminf/I10_Provenance_Statement"/>
+        <P67i_is_referred_to_by rdf:resource="https://crm-eq.ics.forth.gr/ontology/Stavrakis_N._,_Statistiki_tou_plithismou_tis_Kritis_meta_diaforon_geografikon,_istorikon,_arxaiologiko,_ekklisiastikon_klp._Eidiseon_peri_tis_nisou,_1890,_p.107-111"/>
+        <crminf:J20_is_about_the_provenance_of rdf:resource="https://crm-eq.ics.forth.gr/ontology/Zabelios_S._,_Istorika_Skinografimata"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://crm-eq.ics.forth.gr/ontology/e4 -->
+
+    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology/e4">
+        <rdf:type rdf:resource="https://crm-eq.ics.forth.gr/ontology/EQ1_Earthquake"/>
+        <P129i_is_subject_of rdf:resource="https://crm-eq.ics.forth.gr/ontology/e4_list_of_references"/>
+        <P4_has_time-span rdf:resource="https://crm-eq.ics.forth.gr/ontology/Morning_of_08-08-1304_(Julian_Calendar)"/>
+        <P70i_is_documented_in rdf:resource="https://crm-eq.ics.forth.gr/ontology/Platakis_Book"/>
+        <crmsci:O13_triggered rdf:resource="https://crm-eq.ics.forth.gr/ontology/Death_of_4000_people"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://crm-eq.ics.forth.gr/ontology/e4_list_of_references -->
+
+    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology/e4_list_of_references">
+        <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object"/>
+        <P67_refers_to rdf:resource="https://crm-eq.ics.forth.gr/ontology/Hieronymous_Donatus"/>
+        <P70i_is_documented_in rdf:resource="https://crm-eq.ics.forth.gr/ontology/Platakis_Book"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://crm-eq.ics.forth.gr/ontology/intensity -->
+
+    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology/intensity">
+        <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://crm-eq.ics.forth.gr/ontology/ranged_value -->
+
+    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology/ranged_value">
+        <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://crm-eq.ics.forth.gr/ontology/wave -->
+
+    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology/wave">
+        <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://crm-eq.ics.forth.gr/ontology/08-08-1303_(Julian) -->
+
+    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology/08-08-1303_(Julian)">
+        <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E52_Time-Span"/>
+        <P1_is_identified_by rdf:resource="https://crm-eq.ics.forth.gr/ontology/21-08-1303_(Gregorian)"/>
+        <P82_at_some_time_within rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1303</P82_at_some_time_within>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://crm-eq.ics.forth.gr/ontology/08-08-1303_(Julian_Calendar)_might_be_wrong_,probably_happened_in_1304 -->
+
+    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology/08-08-1303_(Julian_Calendar)_might_be_wrong_,probably_happened_in_1304">
+        <rdf:type rdf:resource="http://www.cidoc-crm.org/extensions/crminf/I12_Adopted_Belief"/>
+        <crminf:J14_adopted_interpretation_of rdf:resource="https://crm-eq.ics.forth.gr/ontology/Platakis_Book"/>
+        <crminf:J5_holds_to_be rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Maybe</crminf:J5_holds_to_be>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://crm-eq.ics.forth.gr/ontology/13-08-1922_00:10_GMT+00 -->
+
+    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology/13-08-1922_00:10_GMT+00">
         <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E52_Time-Span"/>
         <P82_at_some_time_within rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1922</P82_at_some_time_within>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://www.ics.forth.gr/earthquake_model/21-08-1303_(Gregorian) -->
+    <!-- https://crm-eq.ics.forth.gr/ontology/21-08-1303_(Gregorian) -->
 
-    <owl:NamedIndividual rdf:about="https://www.ics.forth.gr/earthquake_model/21-08-1303_(Gregorian)">
+    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology/21-08-1303_(Gregorian)">
         <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E41_Appellation"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://www.ics.forth.gr/earthquake_model/Asteroskopeio_Athinon_,_Annales_des_l&apos;Observatoires_de&apos;Athenes -->
+    <!-- https://crm-eq.ics.forth.gr/ontology/Asteroskopeio_Athinon_,_Annales_des_l&apos;Observatoires_de&apos;Athenes -->
 
-    <owl:NamedIndividual rdf:about="https://www.ics.forth.gr/earthquake_model/Asteroskopeio_Athinon_,_Annales_des_l&apos;Observatoires_de&apos;Athenes">
+    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology/Asteroskopeio_Athinon_,_Annales_des_l&apos;Observatoires_de&apos;Athenes">
         <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://www.ics.forth.gr/earthquake_model/Megalos_Koules(reconstructed) -->
+    <!-- https://crm-eq.ics.forth.gr/ontology/Megalos_Koules(reconstructed) -->
 
-    <owl:NamedIndividual rdf:about="https://www.ics.forth.gr/earthquake_model/Megalos_Koules(reconstructed)">
+    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology/Megalos_Koules(reconstructed)">
         <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E24_Physical_Human-Made_Thing"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://www.ics.forth.gr/earthquake_model/Morning_of_08-08-1304_(Julian_Calendar) -->
+    <!-- https://crm-eq.ics.forth.gr/ontology/Morning_of_08-08-1304_(Julian_Calendar) -->
 
-    <owl:NamedIndividual rdf:about="https://www.ics.forth.gr/earthquake_model/Morning_of_08-08-1304_(Julian_Calendar)">
+    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology/Morning_of_08-08-1304_(Julian_Calendar)">
         <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E52_Time-Span"/>
-        <P1_is_identified_by rdf:resource="https://www.ics.forth.gr/earthquake_model/Morning_of_21-08-1304_(Gregorian_Calendar)"/>
+        <P1_is_identified_by rdf:resource="https://crm-eq.ics.forth.gr/ontology/Morning_of_21-08-1304_(Gregorian_Calendar)"/>
         <P82_at_some_time_within rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1304</P82_at_some_time_within>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://www.ics.forth.gr/earthquake_model/Morning_of_21-08-1304_(Gregorian_Calendar) -->
+    <!-- https://crm-eq.ics.forth.gr/ontology/Morning_of_21-08-1304_(Gregorian_Calendar) -->
 
-    <owl:NamedIndividual rdf:about="https://www.ics.forth.gr/earthquake_model/Morning_of_21-08-1304_(Gregorian_Calendar)">
+    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology/Morning_of_21-08-1304_(Gregorian_Calendar)">
         <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E41_Appellation"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://www.ics.forth.gr/earthquake_model/Rauliv_V._,_Déscription_physique_de_l&apos;île_da_Créte -->
+    <!-- https://crm-eq.ics.forth.gr/ontology/Rauliv_V._,_Déscription_physique_de_l&apos;île_da_Créte -->
 
-    <owl:NamedIndividual rdf:about="https://www.ics.forth.gr/earthquake_model/Rauliv_V._,_Déscription_physique_de_l&apos;île_da_Créte">
+    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology/Rauliv_V._,_Déscription_physique_de_l&apos;île_da_Créte">
         <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://www.ics.forth.gr/earthquake_model/Stavrakis_N._,_Statistiki_tou_plithismou_tis_Kritis_meta_diaforon_geografikon,_istorikon,_arxaiologiko,_ekklisiastikon_klp._Eidiseon_peri_tis_nisou,_1890,_p.107-111 -->
+    <!-- https://crm-eq.ics.forth.gr/ontology/Stavrakis_N._,_Statistiki_tou_plithismou_tis_Kritis_meta_diaforon_geografikon,_istorikon,_arxaiologiko,_ekklisiastikon_klp._Eidiseon_peri_tis_nisou,_1890,_p.107-111 -->
 
-    <owl:NamedIndividual rdf:about="https://www.ics.forth.gr/earthquake_model/Stavrakis_N._,_Statistiki_tou_plithismou_tis_Kritis_meta_diaforon_geografikon,_istorikon,_arxaiologiko,_ekklisiastikon_klp._Eidiseon_peri_tis_nisou,_1890,_p.107-111">
+    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology/Stavrakis_N._,_Statistiki_tou_plithismou_tis_Kritis_meta_diaforon_geografikon,_istorikon,_arxaiologiko,_ekklisiastikon_klp._Eidiseon_peri_tis_nisou,_1890,_p.107-111">
         <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://www.ics.forth.gr/earthquake_model/The_adoption_of_Platakis&apos;_belief_about_the_epicenter_of_e1. -->
+    <!-- https://crm-eq.ics.forth.gr/ontology/The_adoption_of_Platakis&apos;_belief_about_the_epicenter_of_e1. -->
 
-    <owl:NamedIndividual rdf:about="https://www.ics.forth.gr/earthquake_model/The_adoption_of_Platakis&apos;_belief_about_the_epicenter_of_e1.">
+    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology/The_adoption_of_Platakis&apos;_belief_about_the_epicenter_of_e1.">
         <rdf:type rdf:resource="http://www.cidoc-crm.org/extensions/crminf/I7_Belief_Adoption"/>
-        <crminf:J13_adopted_interpretation rdf:resource="https://www.ics.forth.gr/earthquake_model/The_epicenter_of_the_earthquake_was_Southeast_of_Santorini"/>
-        <crminf:J7_is_based_on_evidence_from rdf:resource="https://www.ics.forth.gr/earthquake_model/Platakis_Book"/>
+        <crminf:J13_adopted_interpretation rdf:resource="https://crm-eq.ics.forth.gr/ontology/The_epicenter_of_the_earthquake_was_Southeast_of_Santorini"/>
+        <crminf:J7_is_based_on_evidence_from rdf:resource="https://crm-eq.ics.forth.gr/ontology/Platakis_Book"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://www.ics.forth.gr/earthquake_model/The_adoption_of_Platakis&apos;_belief_about_the_intensity_of_e2. -->
+    <!-- https://crm-eq.ics.forth.gr/ontology/The_adoption_of_Platakis&apos;_belief_about_the_intensity_of_e2. -->
 
-    <owl:NamedIndividual rdf:about="https://www.ics.forth.gr/earthquake_model/The_adoption_of_Platakis&apos;_belief_about_the_intensity_of_e2.">
+    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology/The_adoption_of_Platakis&apos;_belief_about_the_intensity_of_e2.">
         <rdf:type rdf:resource="http://www.cidoc-crm.org/extensions/crminf/I7_Belief_Adoption"/>
-        <crminf:J13_adopted_interpretation rdf:resource="https://www.ics.forth.gr/earthquake_model/The_earthquake_has_a_possible_intensity_of_9"/>
-        <crminf:J7_is_based_on_evidence_from rdf:resource="https://www.ics.forth.gr/earthquake_model/Platakis_Book"/>
+        <crminf:J13_adopted_interpretation rdf:resource="https://crm-eq.ics.forth.gr/ontology/The_earthquake_has_a_possible_intensity_of_9"/>
+        <crminf:J7_is_based_on_evidence_from rdf:resource="https://crm-eq.ics.forth.gr/ontology/Platakis_Book"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://www.ics.forth.gr/earthquake_model/Writing_of__&apos;A_Seismic_History_of_Crete&apos; -->
+    <!-- https://crm-eq.ics.forth.gr/ontology/Writing_of__&apos;A_Seismic_History_of_Crete&apos; -->
 
-    <owl:NamedIndividual rdf:about="https://www.ics.forth.gr/earthquake_model/Writing_of__&apos;A_Seismic_History_of_Crete&apos;">
+    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology/Writing_of__&apos;A_Seismic_History_of_Crete&apos;">
         <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E65_Creation"/>
-        <P14_carried_out_by rdf:resource="https://www.ics.forth.gr/earthquake_model/PAPADOPOULOS_A._GERASIMOS"/>
+        <P14_carried_out_by rdf:resource="https://crm-eq.ics.forth.gr/ontology/PAPADOPOULOS_A._GERASIMOS"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://www.ics.forth.gr/earthquake_model/Writing_of_ΟΙ_ΣΕΙΣΜΟΙ_ΤΗΣ_ΚΡΗΤΗΣ_ΑΠΟ_ΤΩΝ_ΑΡΧΑΙΟΤΑΤΩΝ_ΜΕΧΡΙ_ΤΩΝ_ΚΑΘ&apos;_ΗΜΑΣ_ΧΡΟΝΩΝ -->
+    <!-- https://crm-eq.ics.forth.gr/ontology/Writing_of_ΟΙ_ΣΕΙΣΜΟΙ_ΤΗΣ_ΚΡΗΤΗΣ_ΑΠΟ_ΤΩΝ_ΑΡΧΑΙΟΤΑΤΩΝ_ΜΕΧΡΙ_ΤΩΝ_ΚΑΘ&apos;_ΗΜΑΣ_ΧΡΟΝΩΝ -->
 
-    <owl:NamedIndividual rdf:about="https://www.ics.forth.gr/earthquake_model/Writing_of_ΟΙ_ΣΕΙΣΜΟΙ_ΤΗΣ_ΚΡΗΤΗΣ_ΑΠΟ_ΤΩΝ_ΑΡΧΑΙΟΤΑΤΩΝ_ΜΕΧΡΙ_ΤΩΝ_ΚΑΘ&apos;_ΗΜΑΣ_ΧΡΟΝΩΝ">
+    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology/Writing_of_ΟΙ_ΣΕΙΣΜΟΙ_ΤΗΣ_ΚΡΗΤΗΣ_ΑΠΟ_ΤΩΝ_ΑΡΧΑΙΟΤΑΤΩΝ_ΜΕΧΡΙ_ΤΩΝ_ΚΑΘ&apos;_ΗΜΑΣ_ΧΡΟΝΩΝ">
         <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E65_Creation"/>
-        <P14_carried_out_by rdf:resource="https://www.ics.forth.gr/earthquake_model/PLATAKIS_ELEYTHERIOS"/>
+        <P14_carried_out_by rdf:resource="https://crm-eq.ics.forth.gr/ontology/PLATAKIS_ELEYTHERIOS"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://www.ics.forth.gr/earthquake_model/Zabelios_S._,_Istorika_Skinografimata -->
+    <!-- https://crm-eq.ics.forth.gr/ontology/Zabelios_S._,_Istorika_Skinografimata -->
 
-    <owl:NamedIndividual rdf:about="https://www.ics.forth.gr/earthquake_model/Zabelios_S._,_Istorika_Skinografimata">
+    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology/Zabelios_S._,_Istorika_Skinografimata">
         <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://www.ics.forth.gr/earthquake_model/ΟΙ_ΣΕΙΣΜΟΙ_ΤΗΣ_ΚΡΗΤΗΣ_ΑΠΟ_ΤΩΝ_ΑΡΧΑΙΟΤΑΤΩΝ_ΜΕΧΡΙ_ΤΩΝ_ΚΑΘ&apos;_ΗΜΑΣ_ΧΡΟΝΩΝ -->
+    <!-- https://crm-eq.ics.forth.gr/ontology/ΟΙ_ΣΕΙΣΜΟΙ_ΤΗΣ_ΚΡΗΤΗΣ_ΑΠΟ_ΤΩΝ_ΑΡΧΑΙΟΤΑΤΩΝ_ΜΕΧΡΙ_ΤΩΝ_ΚΑΘ&apos;_ΗΜΑΣ_ΧΡΟΝΩΝ -->
 
-    <owl:NamedIndividual rdf:about="https://www.ics.forth.gr/earthquake_model/ΟΙ_ΣΕΙΣΜΟΙ_ΤΗΣ_ΚΡΗΤΗΣ_ΑΠΟ_ΤΩΝ_ΑΡΧΑΙΟΤΑΤΩΝ_ΜΕΧΡΙ_ΤΩΝ_ΚΑΘ&apos;_ΗΜΑΣ_ΧΡΟΝΩΝ">
+    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology/ΟΙ_ΣΕΙΣΜΟΙ_ΤΗΣ_ΚΡΗΤΗΣ_ΑΠΟ_ΤΩΝ_ΑΡΧΑΙΟΤΑΤΩΝ_ΜΕΧΡΙ_ΤΩΝ_ΚΑΘ&apos;_ΗΜΑΣ_ΧΡΟΝΩΝ">
         <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E35_Title"/>
     </owl:NamedIndividual>
 </rdf:RDF>
