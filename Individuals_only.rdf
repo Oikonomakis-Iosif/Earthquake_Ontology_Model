@@ -11,8 +11,8 @@
      xmlns:crmsci="http://www.cidoc-crm.org/extensions/crmsci/"
      xmlns:dcterms="http://purl.org/dc/terms/"
      xmlns:cidoc-crm="http://www.cidoc-crm.org/cidoc-crm/"
-     xmlns:earthquake_model="https://crm-eq.ics.forth.gr/ontology/">
-    <owl:Ontology rdf:about="https://crm-eq.ics.forth.gr/ontology/">
+     xmlns:earthquake_model="https://crm-eq.ics.forth.gr/ontology#">
+    <owl:Ontology rdf:about="https://crm-eq.ics.forth.gr/ontology#">
         <cc:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
         <dcterms:license rdf:resource="http://purl.org/dc/terms/"/>
     </owl:Ontology>
@@ -53,471 +53,471 @@
     
 
 
-    <!-- https://crm-eq.ics.forth.gr/ontology/A_Seismic_History_Of_Crete -->
+    <!-- https://crm-eq.ics.forth.gr/ontology#A_Seismic_History_Of_Crete -->
 
-    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology/A_Seismic_History_Of_Crete"/>
+    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology#A_Seismic_History_Of_Crete"/>
     
 
 
-    <!-- https://crm-eq.ics.forth.gr/ontology/Asteroskopeio_Athinon -->
+    <!-- https://crm-eq.ics.forth.gr/ontology#Asteroskopeio_Athinon -->
 
-    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology/Asteroskopeio_Athinon"/>
+    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology#Asteroskopeio_Athinon"/>
     
 
 
-    <!-- https://crm-eq.ics.forth.gr/ontology/Chania -->
+    <!-- https://crm-eq.ics.forth.gr/ontology#Chania -->
 
-    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology/Chania"/>
+    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology#Chania"/>
     
 
 
-    <!-- https://crm-eq.ics.forth.gr/ontology/Chania_Walls -->
+    <!-- https://crm-eq.ics.forth.gr/ontology#Chania_Walls -->
 
-    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology/Chania_Walls"/>
+    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology#Chania_Walls"/>
     
 
 
-    <!-- https://crm-eq.ics.forth.gr/ontology/Chania_Walls_Damage -->
+    <!-- https://crm-eq.ics.forth.gr/ontology#Chania_Walls_Damage -->
 
-    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology/Chania_Walls_Damage"/>
+    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology#Chania_Walls_Damage"/>
     
 
 
-    <!-- https://crm-eq.ics.forth.gr/ontology/Cracked_Heraklion_Walls -->
+    <!-- https://crm-eq.ics.forth.gr/ontology#Cracked_Heraklion_Walls -->
 
-    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology/Cracked_Heraklion_Walls"/>
+    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology#Cracked_Heraklion_Walls"/>
     
 
 
-    <!-- https://crm-eq.ics.forth.gr/ontology/Crete -->
+    <!-- https://crm-eq.ics.forth.gr/ontology#Crete -->
 
-    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology/Crete"/>
+    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology#Crete"/>
     
 
 
-    <!-- https://crm-eq.ics.forth.gr/ontology/Death_of_4000_people -->
+    <!-- https://crm-eq.ics.forth.gr/ontology#Death_of_4000_people -->
 
-    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology/Death_of_4000_people"/>
+    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology#Death_of_4000_people"/>
     
 
 
-    <!-- https://crm-eq.ics.forth.gr/ontology/Destruction_of_Megalos_Koules -->
+    <!-- https://crm-eq.ics.forth.gr/ontology#Destruction_of_Megalos_Koules -->
 
-    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology/Destruction_of_Megalos_Koules"/>
+    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology#Destruction_of_Megalos_Koules"/>
     
 
 
-    <!-- https://crm-eq.ics.forth.gr/ontology/Heraklion -->
+    <!-- https://crm-eq.ics.forth.gr/ontology#Heraklion -->
 
-    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology/Heraklion"/>
+    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology#Heraklion"/>
     
 
 
-    <!-- https://crm-eq.ics.forth.gr/ontology/Heraklion_Walls -->
+    <!-- https://crm-eq.ics.forth.gr/ontology#Heraklion_Walls -->
 
-    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology/Heraklion_Walls"/>
+    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology#Heraklion_Walls"/>
     
 
 
-    <!-- https://crm-eq.ics.forth.gr/ontology/Hieronymous_Donatus -->
+    <!-- https://crm-eq.ics.forth.gr/ontology#Hieronymous_Donatus -->
 
-    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology/Hieronymous_Donatus"/>
+    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology#Hieronymous_Donatus"/>
     
 
 
-    <!-- https://crm-eq.ics.forth.gr/ontology/Ierapetra -->
+    <!-- https://crm-eq.ics.forth.gr/ontology#Ierapetra -->
 
-    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology/Ierapetra"/>
+    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology#Ierapetra"/>
     
 
 
-    <!-- https://crm-eq.ics.forth.gr/ontology/Malia -->
+    <!-- https://crm-eq.ics.forth.gr/ontology#Malia -->
 
-    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology/Malia"/>
+    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology#Malia"/>
     
 
 
-    <!-- https://crm-eq.ics.forth.gr/ontology/Megalos_Koules -->
+    <!-- https://crm-eq.ics.forth.gr/ontology#Megalos_Koules -->
 
-    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology/Megalos_Koules"/>
+    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology#Megalos_Koules"/>
     
 
 
-    <!-- https://crm-eq.ics.forth.gr/ontology/PAPADOPOULOS_A._GERASIMOS -->
+    <!-- https://crm-eq.ics.forth.gr/ontology#PAPADOPOULOS_A._GERASIMOS -->
 
-    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology/PAPADOPOULOS_A._GERASIMOS"/>
+    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology#PAPADOPOULOS_A._GERASIMOS"/>
     
 
 
-    <!-- https://crm-eq.ics.forth.gr/ontology/PLATAKIS_ELEYTHERIOS -->
+    <!-- https://crm-eq.ics.forth.gr/ontology#PLATAKIS_ELEYTHERIOS -->
 
-    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology/PLATAKIS_ELEYTHERIOS"/>
+    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology#PLATAKIS_ELEYTHERIOS"/>
     
 
 
-    <!-- https://crm-eq.ics.forth.gr/ontology/Papadopoulos_Book -->
+    <!-- https://crm-eq.ics.forth.gr/ontology#Papadopoulos_Book -->
 
-    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology/Papadopoulos_Book"/>
+    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology#Papadopoulos_Book"/>
     
 
 
-    <!-- https://crm-eq.ics.forth.gr/ontology/Perceivable -->
+    <!-- https://crm-eq.ics.forth.gr/ontology#Perceivable -->
 
-    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology/Perceivable"/>
+    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology#Perceivable"/>
     
 
 
-    <!-- https://crm-eq.ics.forth.gr/ontology/Platakis_Book -->
+    <!-- https://crm-eq.ics.forth.gr/ontology#Platakis_Book -->
 
-    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology/Platakis_Book"/>
+    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology#Platakis_Book"/>
     
 
 
-    <!-- https://crm-eq.ics.forth.gr/ontology/Rebuilding_of_Megalos_Koules -->
+    <!-- https://crm-eq.ics.forth.gr/ontology#Rebuilding_of_Megalos_Koules -->
 
-    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology/Rebuilding_of_Megalos_Koules"/>
+    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology#Rebuilding_of_Megalos_Koules"/>
     
 
 
-    <!-- https://crm-eq.ics.forth.gr/ontology/Rossi-Forel -->
+    <!-- https://crm-eq.ics.forth.gr/ontology#Rossi-Forel -->
 
-    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology/Rossi-Forel"/>
+    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology#Rossi-Forel"/>
     
 
 
-    <!-- https://crm-eq.ics.forth.gr/ontology/Seconds -->
+    <!-- https://crm-eq.ics.forth.gr/ontology#Seconds -->
 
-    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology/Seconds"/>
+    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology#Seconds"/>
     
 
 
-    <!-- https://crm-eq.ics.forth.gr/ontology/Southeast -->
+    <!-- https://crm-eq.ics.forth.gr/ontology#Southeast -->
 
-    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology/Southeast"/>
+    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology#Southeast"/>
     
 
 
-    <!-- https://crm-eq.ics.forth.gr/ontology/Southeast_of_Santorini -->
+    <!-- https://crm-eq.ics.forth.gr/ontology#Southeast_of_Santorini -->
 
-    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology/Southeast_of_Santorini"/>
+    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology#Southeast_of_Santorini"/>
     
 
 
-    <!-- https://crm-eq.ics.forth.gr/ontology/The_earthquake_has_a_possible_intensity_of_8-9 -->
+    <!-- https://crm-eq.ics.forth.gr/ontology#The_earthquake_has_a_possible_intensity_of_8-9 -->
 
-    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology/The_earthquake_has_a_possible_intensity_of_8-9"/>
+    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology#The_earthquake_has_a_possible_intensity_of_8-9"/>
     
 
 
-    <!-- https://crm-eq.ics.forth.gr/ontology/The_earthquake_has_a_possible_intensity_of_9 -->
+    <!-- https://crm-eq.ics.forth.gr/ontology#The_earthquake_has_a_possible_intensity_of_9 -->
 
-    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology/The_earthquake_has_a_possible_intensity_of_9"/>
+    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology#The_earthquake_has_a_possible_intensity_of_9"/>
     
 
 
-    <!-- https://crm-eq.ics.forth.gr/ontology/The_epicenter_of_the_earthquake_was_Southeast_of_Santorini -->
+    <!-- https://crm-eq.ics.forth.gr/ontology#The_epicenter_of_the_earthquake_was_Southeast_of_Santorini -->
 
-    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology/The_epicenter_of_the_earthquake_was_Southeast_of_Santorini"/>
+    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology#The_epicenter_of_the_earthquake_was_Southeast_of_Santorini"/>
     
 
 
-    <!-- https://crm-eq.ics.forth.gr/ontology/West -->
+    <!-- https://crm-eq.ics.forth.gr/ontology#West -->
 
-    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology/West"/>
+    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology#West"/>
     
 
 
-    <!-- https://crm-eq.ics.forth.gr/ontology/duration -->
+    <!-- https://crm-eq.ics.forth.gr/ontology#duration -->
 
-    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology/duration"/>
+    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology#duration"/>
     
 
 
-    <!-- https://crm-eq.ics.forth.gr/ontology/e1 -->
+    <!-- https://crm-eq.ics.forth.gr/ontology#e1 -->
 
-    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology/e1"/>
+    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology#e1"/>
     
 
 
-    <!-- https://crm-eq.ics.forth.gr/ontology/e1_Epicenter_Measurement -->
+    <!-- https://crm-eq.ics.forth.gr/ontology#e1_Epicenter_Measurement -->
 
-    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology/e1_Epicenter_Measurement"/>
+    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology#e1_Epicenter_Measurement"/>
     
 
 
-    <!-- https://crm-eq.ics.forth.gr/ontology/e1_Heraklion_Intensity_Measurement -->
+    <!-- https://crm-eq.ics.forth.gr/ontology#e1_Heraklion_Intensity_Measurement -->
 
-    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology/e1_Heraklion_Intensity_Measurement"/>
+    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology#e1_Heraklion_Intensity_Measurement"/>
     
 
 
-    <!-- https://crm-eq.ics.forth.gr/ontology/e1_Ierapetra_Measurement -->
+    <!-- https://crm-eq.ics.forth.gr/ontology#e1_Ierapetra_Measurement -->
 
-    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology/e1_Ierapetra_Measurement"/>
+    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology#e1_Ierapetra_Measurement"/>
     
 
 
-    <!-- https://crm-eq.ics.forth.gr/ontology/e1_Ierapetra_Quake_Direction_Measurement -->
+    <!-- https://crm-eq.ics.forth.gr/ontology#e1_Ierapetra_Quake_Direction_Measurement -->
 
-    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology/e1_Ierapetra_Quake_Direction_Measurement"/>
+    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology#e1_Ierapetra_Quake_Direction_Measurement"/>
     
 
 
-    <!-- https://crm-eq.ics.forth.gr/ontology/e1_Ierapetra_duration -->
+    <!-- https://crm-eq.ics.forth.gr/ontology#e1_Ierapetra_duration -->
 
-    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology/e1_Ierapetra_duration"/>
+    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology#e1_Ierapetra_duration"/>
     
 
 
-    <!-- https://crm-eq.ics.forth.gr/ontology/e1_Ierapetra_intensity -->
+    <!-- https://crm-eq.ics.forth.gr/ontology#e1_Ierapetra_intensity -->
 
-    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology/e1_Ierapetra_intensity"/>
+    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology#e1_Ierapetra_intensity"/>
     
 
 
-    <!-- https://crm-eq.ics.forth.gr/ontology/e1_Ierapetra_quake_movement_type -->
+    <!-- https://crm-eq.ics.forth.gr/ontology#e1_Ierapetra_quake_movement_type -->
 
-    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology/e1_Ierapetra_quake_movement_type"/>
+    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology#e1_Ierapetra_quake_movement_type"/>
     
 
 
-    <!-- https://crm-eq.ics.forth.gr/ontology/e1_Malia_Measurement -->
+    <!-- https://crm-eq.ics.forth.gr/ontology#e1_Malia_Measurement -->
 
-    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology/e1_Malia_Measurement"/>
+    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology#e1_Malia_Measurement"/>
     
 
 
-    <!-- https://crm-eq.ics.forth.gr/ontology/e1_Malia_Quake_Direction_Measurement -->
+    <!-- https://crm-eq.ics.forth.gr/ontology#e1_Malia_Quake_Direction_Measurement -->
 
-    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology/e1_Malia_Quake_Direction_Measurement"/>
+    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology#e1_Malia_Quake_Direction_Measurement"/>
     
 
 
-    <!-- https://crm-eq.ics.forth.gr/ontology/e1_Malia_duration -->
+    <!-- https://crm-eq.ics.forth.gr/ontology#e1_Malia_duration -->
 
-    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology/e1_Malia_duration"/>
+    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology#e1_Malia_duration"/>
     
 
 
-    <!-- https://crm-eq.ics.forth.gr/ontology/e1_Malia_intensity -->
+    <!-- https://crm-eq.ics.forth.gr/ontology#e1_Malia_intensity -->
 
-    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology/e1_Malia_intensity"/>
+    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology#e1_Malia_intensity"/>
     
 
 
-    <!-- https://crm-eq.ics.forth.gr/ontology/e1_Malia_quake_movement_type -->
+    <!-- https://crm-eq.ics.forth.gr/ontology#e1_Malia_quake_movement_type -->
 
-    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology/e1_Malia_quake_movement_type"/>
+    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology#e1_Malia_quake_movement_type"/>
     
 
 
-    <!-- https://crm-eq.ics.forth.gr/ontology/e1_list_of_references -->
+    <!-- https://crm-eq.ics.forth.gr/ontology#e1_list_of_references -->
 
-    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology/e1_list_of_references"/>
+    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology#e1_list_of_references"/>
     
 
 
-    <!-- https://crm-eq.ics.forth.gr/ontology/e2 -->
+    <!-- https://crm-eq.ics.forth.gr/ontology#e2 -->
 
-    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology/e2"/>
+    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology#e2"/>
     
 
 
-    <!-- https://crm-eq.ics.forth.gr/ontology/e2_Chania_intensity -->
+    <!-- https://crm-eq.ics.forth.gr/ontology#e2_Chania_intensity -->
 
-    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology/e2_Chania_intensity"/>
+    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology#e2_Chania_intensity"/>
     
 
 
-    <!-- https://crm-eq.ics.forth.gr/ontology/e2_data_evaluation -->
+    <!-- https://crm-eq.ics.forth.gr/ontology#e2_data_evaluation -->
 
-    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology/e2_data_evaluation"/>
+    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology#e2_data_evaluation"/>
     
 
 
-    <!-- https://crm-eq.ics.forth.gr/ontology/e2_intensity_Platakis_Belief -->
+    <!-- https://crm-eq.ics.forth.gr/ontology#e2_intensity_Platakis_Belief -->
 
-    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology/e2_intensity_Platakis_Belief"/>
+    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology#e2_intensity_Platakis_Belief"/>
     
 
 
-    <!-- https://crm-eq.ics.forth.gr/ontology/e2_list_of_references -->
+    <!-- https://crm-eq.ics.forth.gr/ontology#e2_list_of_references -->
 
-    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology/e2_list_of_references"/>
+    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology#e2_list_of_references"/>
     
 
 
-    <!-- https://crm-eq.ics.forth.gr/ontology/e3 -->
+    <!-- https://crm-eq.ics.forth.gr/ontology#e3 -->
 
-    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology/e3"/>
+    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology#e3"/>
     
 
 
-    <!-- https://crm-eq.ics.forth.gr/ontology/e3-e4_equality_evaluation -->
+    <!-- https://crm-eq.ics.forth.gr/ontology#e3-e4_equality_evaluation -->
 
-    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology/e3-e4_equality_evaluation"/>
+    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology#e3-e4_equality_evaluation"/>
     
 
 
-    <!-- https://crm-eq.ics.forth.gr/ontology/e3_Heraklion_intensity -->
+    <!-- https://crm-eq.ics.forth.gr/ontology#e3_Heraklion_intensity -->
 
-    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology/e3_Heraklion_intensity"/>
+    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology#e3_Heraklion_intensity"/>
     
 
 
-    <!-- https://crm-eq.ics.forth.gr/ontology/e3_and_e4_are_probably_equal -->
+    <!-- https://crm-eq.ics.forth.gr/ontology#e3_and_e4_are_probably_equal -->
 
-    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology/e3_and_e4_are_probably_equal"/>
+    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology#e3_and_e4_are_probably_equal"/>
     
 
 
-    <!-- https://crm-eq.ics.forth.gr/ontology/e3_intensity_evaluation -->
+    <!-- https://crm-eq.ics.forth.gr/ontology#e3_intensity_evaluation -->
 
-    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology/e3_intensity_evaluation"/>
+    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology#e3_intensity_evaluation"/>
     
 
 
-    <!-- https://crm-eq.ics.forth.gr/ontology/e3_list_of_references -->
+    <!-- https://crm-eq.ics.forth.gr/ontology#e3_list_of_references -->
 
-    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology/e3_list_of_references"/>
+    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology#e3_list_of_references"/>
     
 
 
-    <!-- https://crm-eq.ics.forth.gr/ontology/e3_references_provenance_1 -->
+    <!-- https://crm-eq.ics.forth.gr/ontology#e3_references_provenance_1 -->
 
-    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology/e3_references_provenance_1"/>
+    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology#e3_references_provenance_1"/>
     
 
 
-    <!-- https://crm-eq.ics.forth.gr/ontology/e4 -->
+    <!-- https://crm-eq.ics.forth.gr/ontology#e4 -->
 
-    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology/e4"/>
+    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology#e4"/>
     
 
 
-    <!-- https://crm-eq.ics.forth.gr/ontology/e4_list_of_references -->
+    <!-- https://crm-eq.ics.forth.gr/ontology#e4_list_of_references -->
 
-    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology/e4_list_of_references"/>
+    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology#e4_list_of_references"/>
     
 
 
-    <!-- https://crm-eq.ics.forth.gr/ontology/intensity -->
+    <!-- https://crm-eq.ics.forth.gr/ontology#intensity -->
 
-    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology/intensity"/>
+    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology#intensity"/>
     
 
 
-    <!-- https://crm-eq.ics.forth.gr/ontology/ranged_value -->
+    <!-- https://crm-eq.ics.forth.gr/ontology#ranged_value -->
 
-    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology/ranged_value"/>
+    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology#ranged_value"/>
     
 
 
-    <!-- https://crm-eq.ics.forth.gr/ontology/wave -->
+    <!-- https://crm-eq.ics.forth.gr/ontology#wave -->
 
-    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology/wave"/>
+    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology#wave"/>
     
 
 
-    <!-- https://crm-eq.ics.forth.gr/ontology/08-08-1303_(Julian) -->
+    <!-- https://crm-eq.ics.forth.gr/ontology#08-08-1303_(Julian) -->
 
-    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology/08-08-1303_(Julian)"/>
+    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology#08-08-1303_(Julian)"/>
     
 
 
-    <!-- https://crm-eq.ics.forth.gr/ontology/08-08-1303_(Julian_Calendar)_might_be_wrong_,probably_happened_in_1304 -->
+    <!-- https://crm-eq.ics.forth.gr/ontology#08-08-1303_(Julian_Calendar)_might_be_wrong_,probably_happened_in_1304 -->
 
-    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology/08-08-1303_(Julian_Calendar)_might_be_wrong_,probably_happened_in_1304"/>
+    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology#08-08-1303_(Julian_Calendar)_might_be_wrong_,probably_happened_in_1304"/>
     
 
 
-    <!-- https://crm-eq.ics.forth.gr/ontology/1246 -->
+    <!-- https://crm-eq.ics.forth.gr/ontology#1246 -->
 
-    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology/1246"/>
+    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology#1246"/>
     
 
 
-    <!-- https://crm-eq.ics.forth.gr/ontology/13-08-1922_00:10_GMT+00 -->
+    <!-- https://crm-eq.ics.forth.gr/ontology#13-08-1922_00:10_GMT+00 -->
 
-    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology/13-08-1922_00:10_GMT+00"/>
+    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology#13-08-1922_00:10_GMT+00"/>
     
 
 
-    <!-- https://crm-eq.ics.forth.gr/ontology/21-08-1303_(Gregorian) -->
+    <!-- https://crm-eq.ics.forth.gr/ontology#21-08-1303_(Gregorian) -->
 
-    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology/21-08-1303_(Gregorian)"/>
+    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology#21-08-1303_(Gregorian)"/>
     
 
 
-    <!-- https://crm-eq.ics.forth.gr/ontology/Asteroskopeio_Athinon_,_Annales_des_l&apos;Observatoires_de&apos;Athenes -->
+    <!-- https://crm-eq.ics.forth.gr/ontology#Asteroskopeio_Athinon_,_Annales_des_l&apos;Observatoires_de&apos;Athenes -->
 
-    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology/Asteroskopeio_Athinon_,_Annales_des_l&apos;Observatoires_de&apos;Athenes"/>
+    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology#Asteroskopeio_Athinon_,_Annales_des_l&apos;Observatoires_de&apos;Athenes"/>
     
 
 
-    <!-- https://crm-eq.ics.forth.gr/ontology/Megalos_Koules(reconstructed) -->
+    <!-- https://crm-eq.ics.forth.gr/ontology#Megalos_Koules(reconstructed) -->
 
-    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology/Megalos_Koules(reconstructed)"/>
+    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology#Megalos_Koules(reconstructed)"/>
     
 
 
-    <!-- https://crm-eq.ics.forth.gr/ontology/Morning_of_08-08-1304_(Julian_Calendar) -->
+    <!-- https://crm-eq.ics.forth.gr/ontology#Morning_of_08-08-1304_(Julian_Calendar) -->
 
-    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology/Morning_of_08-08-1304_(Julian_Calendar)"/>
+    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology#Morning_of_08-08-1304_(Julian_Calendar)"/>
     
 
 
-    <!-- https://crm-eq.ics.forth.gr/ontology/Morning_of_21-08-1304_(Gregorian_Calendar) -->
+    <!-- https://crm-eq.ics.forth.gr/ontology#Morning_of_21-08-1304_(Gregorian_Calendar) -->
 
-    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology/Morning_of_21-08-1304_(Gregorian_Calendar)"/>
+    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology#Morning_of_21-08-1304_(Gregorian_Calendar)"/>
     
 
 
-    <!-- https://crm-eq.ics.forth.gr/ontology/Rauliv_V._,_Déscription_physique_de_l&apos;île_da_Créte -->
+    <!-- https://crm-eq.ics.forth.gr/ontology#Rauliv_V._,_Déscription_physique_de_l&apos;île_da_Créte -->
 
-    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology/Rauliv_V._,_Déscription_physique_de_l&apos;île_da_Créte"/>
+    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology#Rauliv_V._,_Déscription_physique_de_l&apos;île_da_Créte"/>
     
 
 
-    <!-- https://crm-eq.ics.forth.gr/ontology/Stavrakis_N._,_Statistiki_tou_plithismou_tis_Kritis_meta_diaforon_geografikon,_istorikon,_arxaiologiko,_ekklisiastikon_klp._Eidiseon_peri_tis_nisou,_1890,_p.107-111 -->
+    <!-- https://crm-eq.ics.forth.gr/ontology#Stavrakis_N._,_Statistiki_tou_plithismou_tis_Kritis_meta_diaforon_geografikon,_istorikon,_arxaiologiko,_ekklisiastikon_klp._Eidiseon_peri_tis_nisou,_1890,_p.107-111 -->
 
-    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology/Stavrakis_N._,_Statistiki_tou_plithismou_tis_Kritis_meta_diaforon_geografikon,_istorikon,_arxaiologiko,_ekklisiastikon_klp._Eidiseon_peri_tis_nisou,_1890,_p.107-111"/>
+    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology#Stavrakis_N._,_Statistiki_tou_plithismou_tis_Kritis_meta_diaforon_geografikon,_istorikon,_arxaiologiko,_ekklisiastikon_klp._Eidiseon_peri_tis_nisou,_1890,_p.107-111"/>
     
 
 
-    <!-- https://crm-eq.ics.forth.gr/ontology/The_adoption_of_Platakis&apos;_belief_about_the_epicenter_of_e1. -->
+    <!-- https://crm-eq.ics.forth.gr/ontology#The_adoption_of_Platakis&apos;_belief_about_the_epicenter_of_e1. -->
 
-    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology/The_adoption_of_Platakis&apos;_belief_about_the_epicenter_of_e1."/>
+    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology#The_adoption_of_Platakis&apos;_belief_about_the_epicenter_of_e1."/>
     
 
 
-    <!-- https://crm-eq.ics.forth.gr/ontology/The_adoption_of_Platakis&apos;_belief_about_the_intensity_of_e2. -->
+    <!-- https://crm-eq.ics.forth.gr/ontology#The_adoption_of_Platakis&apos;_belief_about_the_intensity_of_e2. -->
 
-    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology/The_adoption_of_Platakis&apos;_belief_about_the_intensity_of_e2."/>
+    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology#The_adoption_of_Platakis&apos;_belief_about_the_intensity_of_e2."/>
     
 
 
-    <!-- https://crm-eq.ics.forth.gr/ontology/Writing_of__&apos;A_Seismic_History_of_Crete&apos; -->
+    <!-- https://crm-eq.ics.forth.gr/ontology#Writing_of__&apos;A_Seismic_History_of_Crete&apos; -->
 
-    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology/Writing_of__&apos;A_Seismic_History_of_Crete&apos;"/>
+    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology#Writing_of__&apos;A_Seismic_History_of_Crete&apos;"/>
     
 
 
-    <!-- https://crm-eq.ics.forth.gr/ontology/Writing_of_ΟΙ_ΣΕΙΣΜΟΙ_ΤΗΣ_ΚΡΗΤΗΣ_ΑΠΟ_ΤΩΝ_ΑΡΧΑΙΟΤΑΤΩΝ_ΜΕΧΡΙ_ΤΩΝ_ΚΑΘ&apos;_ΗΜΑΣ_ΧΡΟΝΩΝ -->
+    <!-- https://crm-eq.ics.forth.gr/ontology#Writing_of_ΟΙ_ΣΕΙΣΜΟΙ_ΤΗΣ_ΚΡΗΤΗΣ_ΑΠΟ_ΤΩΝ_ΑΡΧΑΙΟΤΑΤΩΝ_ΜΕΧΡΙ_ΤΩΝ_ΚΑΘ&apos;_ΗΜΑΣ_ΧΡΟΝΩΝ -->
 
-    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology/Writing_of_ΟΙ_ΣΕΙΣΜΟΙ_ΤΗΣ_ΚΡΗΤΗΣ_ΑΠΟ_ΤΩΝ_ΑΡΧΑΙΟΤΑΤΩΝ_ΜΕΧΡΙ_ΤΩΝ_ΚΑΘ&apos;_ΗΜΑΣ_ΧΡΟΝΩΝ"/>
+    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology#Writing_of_ΟΙ_ΣΕΙΣΜΟΙ_ΤΗΣ_ΚΡΗΤΗΣ_ΑΠΟ_ΤΩΝ_ΑΡΧΑΙΟΤΑΤΩΝ_ΜΕΧΡΙ_ΤΩΝ_ΚΑΘ&apos;_ΗΜΑΣ_ΧΡΟΝΩΝ"/>
     
 
 
-    <!-- https://crm-eq.ics.forth.gr/ontology/Zabelios_S._,_Istorika_Skinografimata -->
+    <!-- https://crm-eq.ics.forth.gr/ontology#Zabelios_S._,_Istorika_Skinografimata -->
 
-    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology/Zabelios_S._,_Istorika_Skinografimata"/>
+    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology#Zabelios_S._,_Istorika_Skinografimata"/>
     
 
 
-    <!-- https://crm-eq.ics.forth.gr/ontology/ΟΙ_ΣΕΙΣΜΟΙ_ΤΗΣ_ΚΡΗΤΗΣ_ΑΠΟ_ΤΩΝ_ΑΡΧΑΙΟΤΑΤΩΝ_ΜΕΧΡΙ_ΤΩΝ_ΚΑΘ&apos;_ΗΜΑΣ_ΧΡΟΝΩΝ -->
+    <!-- https://crm-eq.ics.forth.gr/ontology#ΟΙ_ΣΕΙΣΜΟΙ_ΤΗΣ_ΚΡΗΤΗΣ_ΑΠΟ_ΤΩΝ_ΑΡΧΑΙΟΤΑΤΩΝ_ΜΕΧΡΙ_ΤΩΝ_ΚΑΘ&apos;_ΗΜΑΣ_ΧΡΟΝΩΝ -->
 
-    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology/ΟΙ_ΣΕΙΣΜΟΙ_ΤΗΣ_ΚΡΗΤΗΣ_ΑΠΟ_ΤΩΝ_ΑΡΧΑΙΟΤΑΤΩΝ_ΜΕΧΡΙ_ΤΩΝ_ΚΑΘ&apos;_ΗΜΑΣ_ΧΡΟΝΩΝ"/>
+    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology#ΟΙ_ΣΕΙΣΜΟΙ_ΤΗΣ_ΚΡΗΤΗΣ_ΑΠΟ_ΤΩΝ_ΑΡΧΑΙΟΤΑΤΩΝ_ΜΕΧΡΙ_ΤΩΝ_ΚΑΘ&apos;_ΗΜΑΣ_ΧΡΟΝΩΝ"/>
 </rdf:RDF>
 
 

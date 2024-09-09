@@ -12,8 +12,8 @@
      xmlns:crmsci="http://www.cidoc-crm.org/extensions/crmsci/"
      xmlns:dcterms="http://purl.org/dc/terms/"
      xmlns:cidoc-crm="http://www.cidoc-crm.org/cidoc-crm/"
-     xmlns:earthquake_model="https://crm-eq.ics.forth.gr/ontology/">
-    <owl:Ontology rdf:about="https://crm-eq.ics.forth.gr/ontology/">
+     xmlns:earthquake_model="https://crm-eq.ics.forth.gr/ontology#">
+    <owl:Ontology rdf:about="https://crm-eq.ics.forth.gr/ontology#">
         <owl:imports rdf:resource="http://www.cidoc-crm.org/cidoc-crm/"/>
         <owl:imports rdf:resource="http://www.cidoc-crm.org/extensions/crmsci/"/>
         <cc:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
@@ -42,162 +42,6 @@
     <!-- http://purl.org/dc/terms/license -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
-    
-
-
-    <!-- http://www.cidoc-crm.org/cidoc-crm/P102_has_title -->
-
-    <owl:AnnotationProperty rdf:about="http://www.cidoc-crm.org/cidoc-crm/P102_has_title"/>
-    
-
-
-    <!-- http://www.cidoc-crm.org/cidoc-crm/P108_has_produced -->
-
-    <owl:AnnotationProperty rdf:about="http://www.cidoc-crm.org/cidoc-crm/P108_has_produced"/>
-    
-
-
-    <!-- http://www.cidoc-crm.org/cidoc-crm/P10i_contains -->
-
-    <owl:AnnotationProperty rdf:about="http://www.cidoc-crm.org/cidoc-crm/P10i_contains"/>
-    
-
-
-    <!-- http://www.cidoc-crm.org/cidoc-crm/P129i_is_subject_of -->
-
-    <owl:AnnotationProperty rdf:about="http://www.cidoc-crm.org/cidoc-crm/P129i_is_subject_of"/>
-    
-
-
-    <!-- http://www.cidoc-crm.org/cidoc-crm/P134i_was_continued_by -->
-
-    <owl:AnnotationProperty rdf:about="http://www.cidoc-crm.org/cidoc-crm/P134i_was_continued_by"/>
-    
-
-
-    <!-- http://www.cidoc-crm.org/cidoc-crm/P135i_was_created_by -->
-
-    <owl:AnnotationProperty rdf:about="http://www.cidoc-crm.org/cidoc-crm/P135i_was_created_by"/>
-    
-
-
-    <!-- http://www.cidoc-crm.org/cidoc-crm/P13_destroyed -->
-
-    <owl:AnnotationProperty rdf:about="http://www.cidoc-crm.org/cidoc-crm/P13_destroyed"/>
-    
-
-
-    <!-- http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by -->
-
-    <owl:AnnotationProperty rdf:about="http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by"/>
-    
-
-
-    <!-- http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by -->
-
-    <owl:AnnotationProperty rdf:about="http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by"/>
-    
-
-
-    <!-- http://www.cidoc-crm.org/cidoc-crm/P2_has_type -->
-
-    <owl:AnnotationProperty rdf:about="http://www.cidoc-crm.org/cidoc-crm/P2_has_type"/>
-    
-
-
-    <!-- http://www.cidoc-crm.org/cidoc-crm/P39i_was_measured_by -->
-
-    <owl:AnnotationProperty rdf:about="http://www.cidoc-crm.org/cidoc-crm/P39i_was_measured_by"/>
-    
-
-
-    <!-- http://www.cidoc-crm.org/cidoc-crm/P40_observed_dimension -->
-
-    <owl:AnnotationProperty rdf:about="http://www.cidoc-crm.org/cidoc-crm/P40_observed_dimension"/>
-    
-
-
-    <!-- http://www.cidoc-crm.org/cidoc-crm/P67_refers_to -->
-
-    <owl:AnnotationProperty rdf:about="http://www.cidoc-crm.org/cidoc-crm/P67_refers_to"/>
-    
-
-
-    <!-- http://www.cidoc-crm.org/cidoc-crm/P67i_is_referred_to_by -->
-
-    <owl:AnnotationProperty rdf:about="http://www.cidoc-crm.org/cidoc-crm/P67i_is_referred_to_by"/>
-    
-
-
-    <!-- http://www.cidoc-crm.org/cidoc-crm/P70i_is_documented_in -->
-
-    <owl:AnnotationProperty rdf:about="http://www.cidoc-crm.org/cidoc-crm/P70i_is_documented_in"/>
-    
-
-
-    <!-- http://www.cidoc-crm.org/cidoc-crm/P82_at_some_time_within -->
-
-    <owl:AnnotationProperty rdf:about="http://www.cidoc-crm.org/cidoc-crm/P82_at_some_time_within"/>
-    
-
-
-    <!-- http://www.cidoc-crm.org/cidoc-crm/P86_falls_within -->
-
-    <owl:AnnotationProperty rdf:about="http://www.cidoc-crm.org/cidoc-crm/P86_falls_within"/>
-    
-
-
-    <!-- http://www.cidoc-crm.org/cidoc-crm/P89_falls_within -->
-
-    <owl:AnnotationProperty rdf:about="http://www.cidoc-crm.org/cidoc-crm/P89_falls_within"/>
-    
-
-
-    <!-- http://www.cidoc-crm.org/cidoc-crm/P90_has_value -->
-
-    <owl:AnnotationProperty rdf:about="http://www.cidoc-crm.org/cidoc-crm/P90_has_value"/>
-    
-
-
-    <!-- http://www.cidoc-crm.org/cidoc-crm/P90a_has_lower_value_limit -->
-
-    <owl:AnnotationProperty rdf:about="http://www.cidoc-crm.org/cidoc-crm/P90a_has_lower_value_limit"/>
-    
-
-
-    <!-- http://www.cidoc-crm.org/cidoc-crm/P90b_has_upper_value_limit -->
-
-    <owl:AnnotationProperty rdf:about="http://www.cidoc-crm.org/cidoc-crm/P90b_has_upper_value_limit"/>
-    
-
-
-    <!-- http://www.cidoc-crm.org/cidoc-crm/P91_has_unit -->
-
-    <owl:AnnotationProperty rdf:about="http://www.cidoc-crm.org/cidoc-crm/P91_has_unit"/>
-    
-
-
-    <!-- http://www.cidoc-crm.org/cidoc-crm/P94i_was_created_by -->
-
-    <owl:AnnotationProperty rdf:about="http://www.cidoc-crm.org/cidoc-crm/P94i_was_created_by"/>
-    
-
-
-    <!-- http://www.cidoc-crm.org/extensions/crmsci/assigned_dimension -->
-
-    <owl:AnnotationProperty rdf:about="http://www.cidoc-crm.org/extensions/crmsci/assigned_dimension"/>
-    
-
-
-    <!-- http://www.cidoc-crm.org/extensions/crmsci/observed -->
-
-    <owl:AnnotationProperty rdf:about="http://www.cidoc-crm.org/extensions/crmsci/observed"/>
-    
-
-
-    <!-- http://www.cidoc-crm.org/extensions/crmsci/observed_value -->
-
-    <owl:AnnotationProperty rdf:about="http://www.cidoc-crm.org/extensions/crmsci/observed_value"/>
     
 
 
@@ -346,124 +190,136 @@
     
 
 
-    <!-- https://crm-eq.ics.forth.gr/ontology/PEQ2_checks_equality_of -->
+    <!-- http://www.cidoc-crm.org/extensions/crmsci/O12_has_dimension -->
 
-    <owl:ObjectProperty rdf:about="https://crm-eq.ics.forth.gr/ontology/PEQ2_checks_equality_of">
-        <owl:inverseOf rdf:resource="https://crm-eq.ics.forth.gr/ontology/PEQ2i__of_whom_equality_is_checked_in"/>
-        <rdfs:domain rdf:resource="https://crm-eq.ics.forth.gr/ontology/EQ2_Comparison_Evaluation"/>
+    <owl:ObjectProperty rdf:about="http://www.cidoc-crm.org/extensions/crmsci/O12_has_dimension"/>
+    
+
+
+    <!-- http://www.cidoc-crm.org/extensions/crmsci/O12i_is_dimension_of -->
+
+    <owl:ObjectProperty rdf:about="http://www.cidoc-crm.org/extensions/crmsci/O12i_is_dimension_of"/>
+    
+
+
+    <!-- https://crm-eq.ics.forth.gr/ontology#PEQ2_checks_equality_of -->
+
+    <owl:ObjectProperty rdf:about="https://crm-eq.ics.forth.gr/ontology#PEQ2_checks_equality_of">
+        <owl:inverseOf rdf:resource="https://crm-eq.ics.forth.gr/ontology#PEQ2i__of_whom_equality_is_checked_in"/>
+        <rdfs:domain rdf:resource="https://crm-eq.ics.forth.gr/ontology#EQ2_Comparison_Evaluation"/>
         <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://crm-eq.ics.forth.gr/ontology/PEQ2i__of_whom_equality_is_checked_in -->
+    <!-- https://crm-eq.ics.forth.gr/ontology#PEQ2i__of_whom_equality_is_checked_in -->
 
-    <owl:ObjectProperty rdf:about="https://crm-eq.ics.forth.gr/ontology/PEQ2i__of_whom_equality_is_checked_in">
+    <owl:ObjectProperty rdf:about="https://crm-eq.ics.forth.gr/ontology#PEQ2i__of_whom_equality_is_checked_in">
         <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity"/>
-        <rdfs:range rdf:resource="https://crm-eq.ics.forth.gr/ontology/EQ2_Comparison_Evaluation"/>
+        <rdfs:range rdf:resource="https://crm-eq.ics.forth.gr/ontology#EQ2_Comparison_Evaluation"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://crm-eq.ics.forth.gr/ontology/PEQ3_checks_equality_to -->
+    <!-- https://crm-eq.ics.forth.gr/ontology#PEQ3_checks_equality_to -->
 
-    <owl:ObjectProperty rdf:about="https://crm-eq.ics.forth.gr/ontology/PEQ3_checks_equality_to">
-        <owl:inverseOf rdf:resource="https://crm-eq.ics.forth.gr/ontology/PEQ3i_to_whom_equality_is_checked_in"/>
-        <rdfs:domain rdf:resource="https://crm-eq.ics.forth.gr/ontology/EQ2_Comparison_Evaluation"/>
+    <owl:ObjectProperty rdf:about="https://crm-eq.ics.forth.gr/ontology#PEQ3_checks_equality_to">
+        <owl:inverseOf rdf:resource="https://crm-eq.ics.forth.gr/ontology#PEQ3i_to_whom_equality_is_checked_in"/>
+        <rdfs:domain rdf:resource="https://crm-eq.ics.forth.gr/ontology#EQ2_Comparison_Evaluation"/>
         <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://crm-eq.ics.forth.gr/ontology/PEQ3i_to_whom_equality_is_checked_in -->
+    <!-- https://crm-eq.ics.forth.gr/ontology#PEQ3i_to_whom_equality_is_checked_in -->
 
-    <owl:ObjectProperty rdf:about="https://crm-eq.ics.forth.gr/ontology/PEQ3i_to_whom_equality_is_checked_in">
+    <owl:ObjectProperty rdf:about="https://crm-eq.ics.forth.gr/ontology#PEQ3i_to_whom_equality_is_checked_in">
         <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity"/>
-        <rdfs:range rdf:resource="https://crm-eq.ics.forth.gr/ontology/EQ2_Comparison_Evaluation"/>
+        <rdfs:range rdf:resource="https://crm-eq.ics.forth.gr/ontology#EQ2_Comparison_Evaluation"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://crm-eq.ics.forth.gr/ontology/PEQ5_has_documented_possible_timespan -->
+    <!-- https://crm-eq.ics.forth.gr/ontology#PEQ5_has_documented_possible_timespan -->
 
-    <owl:ObjectProperty rdf:about="https://crm-eq.ics.forth.gr/ontology/PEQ5_has_documented_possible_timespan">
+    <owl:ObjectProperty rdf:about="https://crm-eq.ics.forth.gr/ontology#PEQ5_has_documented_possible_timespan">
         <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P4_has_time-span"/>
-        <owl:inverseOf rdf:resource="https://crm-eq.ics.forth.gr/ontology/PEQ5i_is_documented_possible_timespan_of"/>
-        <rdfs:domain rdf:resource="https://crm-eq.ics.forth.gr/ontology/EQ1_Earthquake"/>
+        <owl:inverseOf rdf:resource="https://crm-eq.ics.forth.gr/ontology#PEQ5i_is_documented_possible_timespan_of"/>
+        <rdfs:domain rdf:resource="https://crm-eq.ics.forth.gr/ontology#EQ1_Earthquake"/>
         <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E52_Time-Span"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://crm-eq.ics.forth.gr/ontology/PEQ5i_is_documented_possible_timespan_of -->
+    <!-- https://crm-eq.ics.forth.gr/ontology#PEQ5i_is_documented_possible_timespan_of -->
 
-    <owl:ObjectProperty rdf:about="https://crm-eq.ics.forth.gr/ontology/PEQ5i_is_documented_possible_timespan_of">
+    <owl:ObjectProperty rdf:about="https://crm-eq.ics.forth.gr/ontology#PEQ5i_is_documented_possible_timespan_of">
         <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P4i_is_time-span_of"/>
         <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E52_Time-Span"/>
-        <rdfs:range rdf:resource="https://crm-eq.ics.forth.gr/ontology/EQ1_Earthquake"/>
+        <rdfs:range rdf:resource="https://crm-eq.ics.forth.gr/ontology#EQ1_Earthquake"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://crm-eq.ics.forth.gr/ontology/PEQ6_has_documented_possible_place -->
+    <!-- https://crm-eq.ics.forth.gr/ontology#PEQ6_has_documented_possible_place -->
 
-    <owl:ObjectProperty rdf:about="https://crm-eq.ics.forth.gr/ontology/PEQ6_has_documented_possible_place">
+    <owl:ObjectProperty rdf:about="https://crm-eq.ics.forth.gr/ontology#PEQ6_has_documented_possible_place">
         <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P7_took_place_at"/>
-        <owl:inverseOf rdf:resource="https://crm-eq.ics.forth.gr/ontology/PEQ6i_is_documented_possible_place_of"/>
-        <rdfs:domain rdf:resource="https://crm-eq.ics.forth.gr/ontology/EQ1_Earthquake"/>
+        <owl:inverseOf rdf:resource="https://crm-eq.ics.forth.gr/ontology#PEQ6i_is_documented_possible_place_of"/>
+        <rdfs:domain rdf:resource="https://crm-eq.ics.forth.gr/ontology#EQ1_Earthquake"/>
         <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E53_Place"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://crm-eq.ics.forth.gr/ontology/PEQ6i_is_documented_possible_place_of -->
+    <!-- https://crm-eq.ics.forth.gr/ontology#PEQ6i_is_documented_possible_place_of -->
 
-    <owl:ObjectProperty rdf:about="https://crm-eq.ics.forth.gr/ontology/PEQ6i_is_documented_possible_place_of">
+    <owl:ObjectProperty rdf:about="https://crm-eq.ics.forth.gr/ontology#PEQ6i_is_documented_possible_place_of">
         <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P7i_witnessed"/>
         <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E53_Place"/>
-        <rdfs:range rdf:resource="https://crm-eq.ics.forth.gr/ontology/EQ1_Earthquake"/>
+        <rdfs:range rdf:resource="https://crm-eq.ics.forth.gr/ontology#EQ1_Earthquake"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://crm-eq.ics.forth.gr/ontology/PEQ7_has_documented_possible_epicenter_place -->
+    <!-- https://crm-eq.ics.forth.gr/ontology#PEQ7_has_documented_possible_epicenter_place -->
 
-    <owl:ObjectProperty rdf:about="https://crm-eq.ics.forth.gr/ontology/PEQ7_has_documented_possible_epicenter_place">
+    <owl:ObjectProperty rdf:about="https://crm-eq.ics.forth.gr/ontology#PEQ7_has_documented_possible_epicenter_place">
         <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P7_took_place_at"/>
-        <owl:inverseOf rdf:resource="https://crm-eq.ics.forth.gr/ontology/PEQ7i_is__documented_possible_epicenter_place_of"/>
-        <rdfs:domain rdf:resource="https://crm-eq.ics.forth.gr/ontology/EQ1_Earthquake"/>
+        <owl:inverseOf rdf:resource="https://crm-eq.ics.forth.gr/ontology#PEQ7i_is__documented_possible_epicenter_place_of"/>
+        <rdfs:domain rdf:resource="https://crm-eq.ics.forth.gr/ontology#EQ1_Earthquake"/>
         <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E53_Place"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://crm-eq.ics.forth.gr/ontology/PEQ7i_is__documented_possible_epicenter_place_of -->
+    <!-- https://crm-eq.ics.forth.gr/ontology#PEQ7i_is__documented_possible_epicenter_place_of -->
 
-    <owl:ObjectProperty rdf:about="https://crm-eq.ics.forth.gr/ontology/PEQ7i_is__documented_possible_epicenter_place_of">
+    <owl:ObjectProperty rdf:about="https://crm-eq.ics.forth.gr/ontology#PEQ7i_is__documented_possible_epicenter_place_of">
         <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P7i_witnessed"/>
         <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E53_Place"/>
-        <rdfs:range rdf:resource="https://crm-eq.ics.forth.gr/ontology/EQ1_Earthquake"/>
+        <rdfs:range rdf:resource="https://crm-eq.ics.forth.gr/ontology#EQ1_Earthquake"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://crm-eq.ics.forth.gr/ontology/PEQ8_has_documented_possible_dimension -->
+    <!-- https://crm-eq.ics.forth.gr/ontology#PEQ8_has_documented_possible_dimension -->
 
-    <owl:ObjectProperty rdf:about="https://crm-eq.ics.forth.gr/ontology/PEQ8_has_documented_possible_dimension">
+    <owl:ObjectProperty rdf:about="https://crm-eq.ics.forth.gr/ontology#PEQ8_has_documented_possible_dimension">
         <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/extensions/crmsci/O12_has_dimension"/>
-        <owl:inverseOf rdf:resource="https://crm-eq.ics.forth.gr/ontology/PEQ8i_is_documented_possible_dimension__of"/>
-        <rdfs:domain rdf:resource="https://crm-eq.ics.forth.gr/ontology/EQ1_Earthquake"/>
+        <owl:inverseOf rdf:resource="https://crm-eq.ics.forth.gr/ontology#PEQ8i_is_documented_possible_dimension__of"/>
+        <rdfs:domain rdf:resource="https://crm-eq.ics.forth.gr/ontology#EQ1_Earthquake"/>
         <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://crm-eq.ics.forth.gr/ontology/PEQ8i_is_documented_possible_dimension__of -->
+    <!-- https://crm-eq.ics.forth.gr/ontology#PEQ8i_is_documented_possible_dimension__of -->
 
-    <owl:ObjectProperty rdf:about="https://crm-eq.ics.forth.gr/ontology/PEQ8i_is_documented_possible_dimension__of">
+    <owl:ObjectProperty rdf:about="https://crm-eq.ics.forth.gr/ontology#PEQ8i_is_documented_possible_dimension__of">
         <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/extensions/crmsci/O12i_is_dimension_of"/>
         <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"/>
-        <rdfs:range rdf:resource="https://crm-eq.ics.forth.gr/ontology/EQ1_Earthquake"/>
+        <rdfs:range rdf:resource="https://crm-eq.ics.forth.gr/ontology#EQ1_Earthquake"/>
     </owl:ObjectProperty>
     
 
@@ -489,9 +345,9 @@
     
 
 
-    <!-- https://crm-eq.ics.forth.gr/ontology/PEQ1_has_error_margin -->
+    <!-- https://crm-eq.ics.forth.gr/ontology#PEQ1_has_error_margin -->
 
-    <owl:DatatypeProperty rdf:about="https://crm-eq.ics.forth.gr/ontology/PEQ1_has_error_margin">
+    <owl:DatatypeProperty rdf:about="https://crm-eq.ics.forth.gr/ontology#PEQ1_has_error_margin">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
         <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
@@ -499,19 +355,19 @@
     
 
 
-    <!-- https://crm-eq.ics.forth.gr/ontology/PEQ4_has_comparison_value -->
+    <!-- https://crm-eq.ics.forth.gr/ontology#PEQ4_has_comparison_value -->
 
-    <owl:DatatypeProperty rdf:about="https://crm-eq.ics.forth.gr/ontology/PEQ4_has_comparison_value">
+    <owl:DatatypeProperty rdf:about="https://crm-eq.ics.forth.gr/ontology#PEQ4_has_comparison_value">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
-        <rdfs:domain rdf:resource="https://crm-eq.ics.forth.gr/ontology/EQ2_Comparison_Evaluation"/>
+        <rdfs:domain rdf:resource="https://crm-eq.ics.forth.gr/ontology#EQ2_Comparison_Evaluation"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- https://crm-eq.ics.forth.gr/ontology/PEQ9_has_documented_uncertainty_factor -->
+    <!-- https://crm-eq.ics.forth.gr/ontology#PEQ9_has_documented_uncertainty_factor -->
 
-    <owl:DatatypeProperty rdf:about="https://crm-eq.ics.forth.gr/ontology/PEQ9_has_documented_uncertainty_factor">
+    <owl:DatatypeProperty rdf:about="https://crm-eq.ics.forth.gr/ontology#PEQ9_has_documented_uncertainty_factor">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
         <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
@@ -578,17 +434,23 @@
     
 
 
-    <!-- https://crm-eq.ics.forth.gr/ontology/EQ1_Earthquake -->
+    <!-- http://www.cidoc-crm.org/extensions/crmsci/S5_Inference_Making -->
 
-    <owl:Class rdf:about="https://crm-eq.ics.forth.gr/ontology/EQ1_Earthquake">
+    <owl:Class rdf:about="http://www.cidoc-crm.org/extensions/crmsci/S5_Inference_Making"/>
+    
+
+
+    <!-- https://crm-eq.ics.forth.gr/ontology#EQ1_Earthquake -->
+
+    <owl:Class rdf:about="https://crm-eq.ics.forth.gr/ontology#EQ1_Earthquake">
         <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E5_Event"/>
     </owl:Class>
     
 
 
-    <!-- https://crm-eq.ics.forth.gr/ontology/EQ2_Comparison_Evaluation -->
+    <!-- https://crm-eq.ics.forth.gr/ontology#EQ2_Comparison_Evaluation -->
 
-    <owl:Class rdf:about="https://crm-eq.ics.forth.gr/ontology/EQ2_Comparison_Evaluation">
+    <owl:Class rdf:about="https://crm-eq.ics.forth.gr/ontology#EQ2_Comparison_Evaluation">
         <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/extensions/crmsci/S5_Inference_Making"/>
     </owl:Class>
 </rdf:RDF>

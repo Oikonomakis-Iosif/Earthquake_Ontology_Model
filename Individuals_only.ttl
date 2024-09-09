@@ -9,10 +9,10 @@
 @prefix crminf: <http://www.cidoc-crm.org/extensions/crminf/> .
 @prefix crmsci: <http://www.cidoc-crm.org/extensions/crmsci/> .
 @prefix cidoc-crm: <http://www.cidoc-crm.org/cidoc-crm/> .
-@prefix earthquake_model: <https://crm-eq.ics.forth.gr/ontology/> .
-@base <https://crm-eq.ics.forth.gr/ontology/> .
+@prefix earthquake_model: <https://crm-eq.ics.forth.gr/ontology#> .
+@base <https://crm-eq.ics.forth.gr/ontology#> .
 
-<https://crm-eq.ics.forth.gr/ontology/> rdf:type owl:Ontology ; 
+<https://crm-eq.ics.forth.gr/ontology#> rdf:type owl:Ontology ; 
 											dcterms:license <http://purl.org/dc/terms/> ;
 											cc:license <https://creativecommons.org/licenses/by/4.0/> . 
 
@@ -20,316 +20,316 @@
 #    Individuals
 #################################################################
 
-###  https://crm-eq.ics.forth.gr/ontology/A_Seismic_History_Of_Crete
+###  https://crm-eq.ics.forth.gr/ontology#A_Seismic_History_Of_Crete
 earthquake_model:A_Seismic_History_Of_Crete rdf:type owl:NamedIndividual .
 
 
-###  https://crm-eq.ics.forth.gr/ontology/Asteroskopeio_Athinon
+###  https://crm-eq.ics.forth.gr/ontology#Asteroskopeio_Athinon
 earthquake_model:Asteroskopeio_Athinon rdf:type owl:NamedIndividual .
 
 
-###  https://crm-eq.ics.forth.gr/ontology/Chania
+###  https://crm-eq.ics.forth.gr/ontology#Chania
 earthquake_model:Chania rdf:type owl:NamedIndividual .
 
 
-###  https://crm-eq.ics.forth.gr/ontology/Chania_Walls
+###  https://crm-eq.ics.forth.gr/ontology#Chania_Walls
 earthquake_model:Chania_Walls rdf:type owl:NamedIndividual .
 
 
-###  https://crm-eq.ics.forth.gr/ontology/Chania_Walls_Damage
+###  https://crm-eq.ics.forth.gr/ontology#Chania_Walls_Damage
 earthquake_model:Chania_Walls_Damage rdf:type owl:NamedIndividual .
 
 
-###  https://crm-eq.ics.forth.gr/ontology/Cracked_Heraklion_Walls
+###  https://crm-eq.ics.forth.gr/ontology#Cracked_Heraklion_Walls
 earthquake_model:Cracked_Heraklion_Walls rdf:type owl:NamedIndividual .
 
 
-###  https://crm-eq.ics.forth.gr/ontology/Crete
+###  https://crm-eq.ics.forth.gr/ontology#Crete
 earthquake_model:Crete rdf:type owl:NamedIndividual .
 
 
-###  https://crm-eq.ics.forth.gr/ontology/Death_of_4000_people
+###  https://crm-eq.ics.forth.gr/ontology#Death_of_4000_people
 earthquake_model:Death_of_4000_people rdf:type owl:NamedIndividual .
 
 
-###  https://crm-eq.ics.forth.gr/ontology/Destruction_of_Megalos_Koules
+###  https://crm-eq.ics.forth.gr/ontology#Destruction_of_Megalos_Koules
 earthquake_model:Destruction_of_Megalos_Koules rdf:type owl:NamedIndividual .
 
 
-###  https://crm-eq.ics.forth.gr/ontology/Heraklion
+###  https://crm-eq.ics.forth.gr/ontology#Heraklion
 earthquake_model:Heraklion rdf:type owl:NamedIndividual .
 
 
-###  https://crm-eq.ics.forth.gr/ontology/Heraklion_Walls
+###  https://crm-eq.ics.forth.gr/ontology#Heraklion_Walls
 earthquake_model:Heraklion_Walls rdf:type owl:NamedIndividual .
 
 
-###  https://crm-eq.ics.forth.gr/ontology/Hieronymous_Donatus
+###  https://crm-eq.ics.forth.gr/ontology#Hieronymous_Donatus
 earthquake_model:Hieronymous_Donatus rdf:type owl:NamedIndividual .
 
 
-###  https://crm-eq.ics.forth.gr/ontology/Ierapetra
+###  https://crm-eq.ics.forth.gr/ontology#Ierapetra
 earthquake_model:Ierapetra rdf:type owl:NamedIndividual .
 
 
-###  https://crm-eq.ics.forth.gr/ontology/Malia
+###  https://crm-eq.ics.forth.gr/ontology#Malia
 earthquake_model:Malia rdf:type owl:NamedIndividual .
 
 
-###  https://crm-eq.ics.forth.gr/ontology/Megalos_Koules
+###  https://crm-eq.ics.forth.gr/ontology#Megalos_Koules
 earthquake_model:Megalos_Koules rdf:type owl:NamedIndividual .
 
 
-###  https://crm-eq.ics.forth.gr/ontology/PAPADOPOULOS_A._GERASIMOS
+###  https://crm-eq.ics.forth.gr/ontology#PAPADOPOULOS_A._GERASIMOS
 earthquake_model:PAPADOPOULOS_A._GERASIMOS rdf:type owl:NamedIndividual .
 
 
-###  https://crm-eq.ics.forth.gr/ontology/PLATAKIS_ELEYTHERIOS
+###  https://crm-eq.ics.forth.gr/ontology#PLATAKIS_ELEYTHERIOS
 earthquake_model:PLATAKIS_ELEYTHERIOS rdf:type owl:NamedIndividual .
 
 
-###  https://crm-eq.ics.forth.gr/ontology/Papadopoulos_Book
+###  https://crm-eq.ics.forth.gr/ontology#Papadopoulos_Book
 earthquake_model:Papadopoulos_Book rdf:type owl:NamedIndividual .
 
 
-###  https://crm-eq.ics.forth.gr/ontology/Perceivable
+###  https://crm-eq.ics.forth.gr/ontology#Perceivable
 earthquake_model:Perceivable rdf:type owl:NamedIndividual .
 
 
-###  https://crm-eq.ics.forth.gr/ontology/Platakis_Book
+###  https://crm-eq.ics.forth.gr/ontology#Platakis_Book
 earthquake_model:Platakis_Book rdf:type owl:NamedIndividual .
 
 
-###  https://crm-eq.ics.forth.gr/ontology/Rebuilding_of_Megalos_Koules
+###  https://crm-eq.ics.forth.gr/ontology#Rebuilding_of_Megalos_Koules
 earthquake_model:Rebuilding_of_Megalos_Koules rdf:type owl:NamedIndividual .
 
 
-###  https://crm-eq.ics.forth.gr/ontology/Rossi-Forel
+###  https://crm-eq.ics.forth.gr/ontology#Rossi-Forel
 earthquake_model:Rossi-Forel rdf:type owl:NamedIndividual .
 
 
-###  https://crm-eq.ics.forth.gr/ontology/Seconds
+###  https://crm-eq.ics.forth.gr/ontology#Seconds
 earthquake_model:Seconds rdf:type owl:NamedIndividual .
 
 
-###  https://crm-eq.ics.forth.gr/ontology/Southeast
+###  https://crm-eq.ics.forth.gr/ontology#Southeast
 earthquake_model:Southeast rdf:type owl:NamedIndividual .
 
 
-###  https://crm-eq.ics.forth.gr/ontology/Southeast_of_Santorini
+###  https://crm-eq.ics.forth.gr/ontology#Southeast_of_Santorini
 earthquake_model:Southeast_of_Santorini rdf:type owl:NamedIndividual .
 
 
-###  https://crm-eq.ics.forth.gr/ontology/The_earthquake_has_a_possible_intensity_of_8-9
+###  https://crm-eq.ics.forth.gr/ontology#The_earthquake_has_a_possible_intensity_of_8-9
 earthquake_model:The_earthquake_has_a_possible_intensity_of_8-9 rdf:type owl:NamedIndividual .
 
 
-###  https://crm-eq.ics.forth.gr/ontology/The_earthquake_has_a_possible_intensity_of_9
+###  https://crm-eq.ics.forth.gr/ontology#The_earthquake_has_a_possible_intensity_of_9
 earthquake_model:The_earthquake_has_a_possible_intensity_of_9 rdf:type owl:NamedIndividual .
 
 
-###  https://crm-eq.ics.forth.gr/ontology/The_epicenter_of_the_earthquake_was_Southeast_of_Santorini
+###  https://crm-eq.ics.forth.gr/ontology#The_epicenter_of_the_earthquake_was_Southeast_of_Santorini
 earthquake_model:The_epicenter_of_the_earthquake_was_Southeast_of_Santorini rdf:type owl:NamedIndividual .
 
 
-###  https://crm-eq.ics.forth.gr/ontology/West
+###  https://crm-eq.ics.forth.gr/ontology#West
 earthquake_model:West rdf:type owl:NamedIndividual .
 
 
-###  https://crm-eq.ics.forth.gr/ontology/duration
+###  https://crm-eq.ics.forth.gr/ontology#duration
 earthquake_model:duration rdf:type owl:NamedIndividual .
 
 
-###  https://crm-eq.ics.forth.gr/ontology/e1
+###  https://crm-eq.ics.forth.gr/ontology#e1
 earthquake_model:e1 rdf:type owl:NamedIndividual .
 
 
-###  https://crm-eq.ics.forth.gr/ontology/e1_Epicenter_Measurement
+###  https://crm-eq.ics.forth.gr/ontology#e1_Epicenter_Measurement
 earthquake_model:e1_Epicenter_Measurement rdf:type owl:NamedIndividual .
 
 
-###  https://crm-eq.ics.forth.gr/ontology/e1_Heraklion_Intensity_Measurement
+###  https://crm-eq.ics.forth.gr/ontology#e1_Heraklion_Intensity_Measurement
 earthquake_model:e1_Heraklion_Intensity_Measurement rdf:type owl:NamedIndividual .
 
 
-###  https://crm-eq.ics.forth.gr/ontology/e1_Ierapetra_Measurement
+###  https://crm-eq.ics.forth.gr/ontology#e1_Ierapetra_Measurement
 earthquake_model:e1_Ierapetra_Measurement rdf:type owl:NamedIndividual .
 
 
-###  https://crm-eq.ics.forth.gr/ontology/e1_Ierapetra_Quake_Direction_Measurement
+###  https://crm-eq.ics.forth.gr/ontology#e1_Ierapetra_Quake_Direction_Measurement
 earthquake_model:e1_Ierapetra_Quake_Direction_Measurement rdf:type owl:NamedIndividual .
 
 
-###  https://crm-eq.ics.forth.gr/ontology/e1_Ierapetra_duration
+###  https://crm-eq.ics.forth.gr/ontology#e1_Ierapetra_duration
 earthquake_model:e1_Ierapetra_duration rdf:type owl:NamedIndividual .
 
 
-###  https://crm-eq.ics.forth.gr/ontology/e1_Ierapetra_intensity
+###  https://crm-eq.ics.forth.gr/ontology#e1_Ierapetra_intensity
 earthquake_model:e1_Ierapetra_intensity rdf:type owl:NamedIndividual .
 
 
-###  https://crm-eq.ics.forth.gr/ontology/e1_Ierapetra_quake_movement_type
+###  https://crm-eq.ics.forth.gr/ontology#e1_Ierapetra_quake_movement_type
 earthquake_model:e1_Ierapetra_quake_movement_type rdf:type owl:NamedIndividual .
 
 
-###  https://crm-eq.ics.forth.gr/ontology/e1_Malia_Measurement
+###  https://crm-eq.ics.forth.gr/ontology#e1_Malia_Measurement
 earthquake_model:e1_Malia_Measurement rdf:type owl:NamedIndividual .
 
 
-###  https://crm-eq.ics.forth.gr/ontology/e1_Malia_Quake_Direction_Measurement
+###  https://crm-eq.ics.forth.gr/ontology#e1_Malia_Quake_Direction_Measurement
 earthquake_model:e1_Malia_Quake_Direction_Measurement rdf:type owl:NamedIndividual .
 
 
-###  https://crm-eq.ics.forth.gr/ontology/e1_Malia_duration
+###  https://crm-eq.ics.forth.gr/ontology#e1_Malia_duration
 earthquake_model:e1_Malia_duration rdf:type owl:NamedIndividual .
 
 
-###  https://crm-eq.ics.forth.gr/ontology/e1_Malia_intensity
+###  https://crm-eq.ics.forth.gr/ontology#e1_Malia_intensity
 earthquake_model:e1_Malia_intensity rdf:type owl:NamedIndividual .
 
 
-###  https://crm-eq.ics.forth.gr/ontology/e1_Malia_quake_movement_type
+###  https://crm-eq.ics.forth.gr/ontology#e1_Malia_quake_movement_type
 earthquake_model:e1_Malia_quake_movement_type rdf:type owl:NamedIndividual .
 
 
-###  https://crm-eq.ics.forth.gr/ontology/e1_list_of_references
+###  https://crm-eq.ics.forth.gr/ontology#e1_list_of_references
 earthquake_model:e1_list_of_references rdf:type owl:NamedIndividual .
 
 
-###  https://crm-eq.ics.forth.gr/ontology/e2
+###  https://crm-eq.ics.forth.gr/ontology#e2
 earthquake_model:e2 rdf:type owl:NamedIndividual .
 
 
-###  https://crm-eq.ics.forth.gr/ontology/e2_Chania_intensity
+###  https://crm-eq.ics.forth.gr/ontology#e2_Chania_intensity
 earthquake_model:e2_Chania_intensity rdf:type owl:NamedIndividual .
 
 
-###  https://crm-eq.ics.forth.gr/ontology/e2_data_evaluation
+###  https://crm-eq.ics.forth.gr/ontology#e2_data_evaluation
 earthquake_model:e2_data_evaluation rdf:type owl:NamedIndividual .
 
 
-###  https://crm-eq.ics.forth.gr/ontology/e2_intensity_Platakis_Belief
+###  https://crm-eq.ics.forth.gr/ontology#e2_intensity_Platakis_Belief
 earthquake_model:e2_intensity_Platakis_Belief rdf:type owl:NamedIndividual .
 
 
-###  https://crm-eq.ics.forth.gr/ontology/e2_list_of_references
+###  https://crm-eq.ics.forth.gr/ontology#e2_list_of_references
 earthquake_model:e2_list_of_references rdf:type owl:NamedIndividual .
 
 
-###  https://crm-eq.ics.forth.gr/ontology/e3
+###  https://crm-eq.ics.forth.gr/ontology#e3
 earthquake_model:e3 rdf:type owl:NamedIndividual .
 
 
-###  https://crm-eq.ics.forth.gr/ontology/e3-e4_equality_evaluation
+###  https://crm-eq.ics.forth.gr/ontology#e3-e4_equality_evaluation
 earthquake_model:e3-e4_equality_evaluation rdf:type owl:NamedIndividual .
 
 
-###  https://crm-eq.ics.forth.gr/ontology/e3_Heraklion_intensity
+###  https://crm-eq.ics.forth.gr/ontology#e3_Heraklion_intensity
 earthquake_model:e3_Heraklion_intensity rdf:type owl:NamedIndividual .
 
 
-###  https://crm-eq.ics.forth.gr/ontology/e3_and_e4_are_probably_equal
+###  https://crm-eq.ics.forth.gr/ontology#e3_and_e4_are_probably_equal
 earthquake_model:e3_and_e4_are_probably_equal rdf:type owl:NamedIndividual .
 
 
-###  https://crm-eq.ics.forth.gr/ontology/e3_intensity_evaluation
+###  https://crm-eq.ics.forth.gr/ontology#e3_intensity_evaluation
 earthquake_model:e3_intensity_evaluation rdf:type owl:NamedIndividual .
 
 
-###  https://crm-eq.ics.forth.gr/ontology/e3_list_of_references
+###  https://crm-eq.ics.forth.gr/ontology#e3_list_of_references
 earthquake_model:e3_list_of_references rdf:type owl:NamedIndividual .
 
 
-###  https://crm-eq.ics.forth.gr/ontology/e3_references_provenance_1
+###  https://crm-eq.ics.forth.gr/ontology#e3_references_provenance_1
 earthquake_model:e3_references_provenance_1 rdf:type owl:NamedIndividual .
 
 
-###  https://crm-eq.ics.forth.gr/ontology/e4
+###  https://crm-eq.ics.forth.gr/ontology#e4
 earthquake_model:e4 rdf:type owl:NamedIndividual .
 
 
-###  https://crm-eq.ics.forth.gr/ontology/e4_list_of_references
+###  https://crm-eq.ics.forth.gr/ontology#e4_list_of_references
 earthquake_model:e4_list_of_references rdf:type owl:NamedIndividual .
 
 
-###  https://crm-eq.ics.forth.gr/ontology/intensity
+###  https://crm-eq.ics.forth.gr/ontology#intensity
 earthquake_model:intensity rdf:type owl:NamedIndividual .
 
 
-###  https://crm-eq.ics.forth.gr/ontology/ranged_value
+###  https://crm-eq.ics.forth.gr/ontology#ranged_value
 earthquake_model:ranged_value rdf:type owl:NamedIndividual .
 
 
-###  https://crm-eq.ics.forth.gr/ontology/wave
+###  https://crm-eq.ics.forth.gr/ontology#wave
 earthquake_model:wave rdf:type owl:NamedIndividual .
 
 
-###  https://crm-eq.ics.forth.gr/ontology/08-08-1303_(Julian)
-<https://crm-eq.ics.forth.gr/ontology/08-08-1303_(Julian)> rdf:type owl:NamedIndividual .
+###  https://crm-eq.ics.forth.gr/ontology#08-08-1303_(Julian)
+<https://crm-eq.ics.forth.gr/ontology#08-08-1303_(Julian)> rdf:type owl:NamedIndividual .
 
 
-###  https://crm-eq.ics.forth.gr/ontology/08-08-1303_(Julian_Calendar)_might_be_wrong_,probably_happened_in_1304
-<https://crm-eq.ics.forth.gr/ontology/08-08-1303_(Julian_Calendar)_might_be_wrong_,probably_happened_in_1304> rdf:type owl:NamedIndividual .
+###  https://crm-eq.ics.forth.gr/ontology#08-08-1303_(Julian_Calendar)_might_be_wrong_,probably_happened_in_1304
+<https://crm-eq.ics.forth.gr/ontology#08-08-1303_(Julian_Calendar)_might_be_wrong_,probably_happened_in_1304> rdf:type owl:NamedIndividual .
 
 
-###  https://crm-eq.ics.forth.gr/ontology/1246
-<https://crm-eq.ics.forth.gr/ontology/1246> rdf:type owl:NamedIndividual .
+###  https://crm-eq.ics.forth.gr/ontology#1246
+<https://crm-eq.ics.forth.gr/ontology#1246> rdf:type owl:NamedIndividual .
 
 
-###  https://crm-eq.ics.forth.gr/ontology/13-08-1922_00:10_GMT+00
-<https://crm-eq.ics.forth.gr/ontology/13-08-1922_00:10_GMT+00> rdf:type owl:NamedIndividual .
+###  https://crm-eq.ics.forth.gr/ontology#13-08-1922_00:10_GMT+00
+<https://crm-eq.ics.forth.gr/ontology#13-08-1922_00:10_GMT+00> rdf:type owl:NamedIndividual .
 
 
-###  https://crm-eq.ics.forth.gr/ontology/21-08-1303_(Gregorian)
-<https://crm-eq.ics.forth.gr/ontology/21-08-1303_(Gregorian)> rdf:type owl:NamedIndividual .
+###  https://crm-eq.ics.forth.gr/ontology#21-08-1303_(Gregorian)
+<https://crm-eq.ics.forth.gr/ontology#21-08-1303_(Gregorian)> rdf:type owl:NamedIndividual .
 
 
-###  https://crm-eq.ics.forth.gr/ontology/Asteroskopeio_Athinon_,_Annales_des_l'Observatoires_de'Athenes
-<https://crm-eq.ics.forth.gr/ontology/Asteroskopeio_Athinon_,_Annales_des_l'Observatoires_de'Athenes> rdf:type owl:NamedIndividual .
+###  https://crm-eq.ics.forth.gr/ontology#Asteroskopeio_Athinon_,_Annales_des_l'Observatoires_de'Athenes
+<https://crm-eq.ics.forth.gr/ontology#Asteroskopeio_Athinon_,_Annales_des_l'Observatoires_de'Athenes> rdf:type owl:NamedIndividual .
 
 
-###  https://crm-eq.ics.forth.gr/ontology/Megalos_Koules(reconstructed)
-<https://crm-eq.ics.forth.gr/ontology/Megalos_Koules(reconstructed)> rdf:type owl:NamedIndividual .
+###  https://crm-eq.ics.forth.gr/ontology#Megalos_Koules(reconstructed)
+<https://crm-eq.ics.forth.gr/ontology#Megalos_Koules(reconstructed)> rdf:type owl:NamedIndividual .
 
 
-###  https://crm-eq.ics.forth.gr/ontology/Morning_of_08-08-1304_(Julian_Calendar)
-<https://crm-eq.ics.forth.gr/ontology/Morning_of_08-08-1304_(Julian_Calendar)> rdf:type owl:NamedIndividual .
+###  https://crm-eq.ics.forth.gr/ontology#Morning_of_08-08-1304_(Julian_Calendar)
+<https://crm-eq.ics.forth.gr/ontology#Morning_of_08-08-1304_(Julian_Calendar)> rdf:type owl:NamedIndividual .
 
 
-###  https://crm-eq.ics.forth.gr/ontology/Morning_of_21-08-1304_(Gregorian_Calendar)
-<https://crm-eq.ics.forth.gr/ontology/Morning_of_21-08-1304_(Gregorian_Calendar)> rdf:type owl:NamedIndividual .
+###  https://crm-eq.ics.forth.gr/ontology#Morning_of_21-08-1304_(Gregorian_Calendar)
+<https://crm-eq.ics.forth.gr/ontology#Morning_of_21-08-1304_(Gregorian_Calendar)> rdf:type owl:NamedIndividual .
 
 
-###  https://crm-eq.ics.forth.gr/ontology/Rauliv_V._,_Déscription_physique_de_l'île_da_Créte
-<https://crm-eq.ics.forth.gr/ontology/Rauliv_V._,_Déscription_physique_de_l'île_da_Créte> rdf:type owl:NamedIndividual .
+###  https://crm-eq.ics.forth.gr/ontology#Rauliv_V._,_Déscription_physique_de_l'île_da_Créte
+<https://crm-eq.ics.forth.gr/ontology#Rauliv_V._,_Déscription_physique_de_l'île_da_Créte> rdf:type owl:NamedIndividual .
 
 
-###  https://crm-eq.ics.forth.gr/ontology/Stavrakis_N._,_Statistiki_tou_plithismou_tis_Kritis_meta_diaforon_geografikon,_istorikon,_arxaiologiko,_ekklisiastikon_klp._Eidiseon_peri_tis_nisou,_1890,_p.107-111
-<https://crm-eq.ics.forth.gr/ontology/Stavrakis_N._,_Statistiki_tou_plithismou_tis_Kritis_meta_diaforon_geografikon,_istorikon,_arxaiologiko,_ekklisiastikon_klp._Eidiseon_peri_tis_nisou,_1890,_p.107-111> rdf:type owl:NamedIndividual .
+###  https://crm-eq.ics.forth.gr/ontology#Stavrakis_N._,_Statistiki_tou_plithismou_tis_Kritis_meta_diaforon_geografikon,_istorikon,_arxaiologiko,_ekklisiastikon_klp._Eidiseon_peri_tis_nisou,_1890,_p.107-111
+<https://crm-eq.ics.forth.gr/ontology#Stavrakis_N._,_Statistiki_tou_plithismou_tis_Kritis_meta_diaforon_geografikon,_istorikon,_arxaiologiko,_ekklisiastikon_klp._Eidiseon_peri_tis_nisou,_1890,_p.107-111> rdf:type owl:NamedIndividual .
 
 
-###  https://crm-eq.ics.forth.gr/ontology/The_adoption_of_Platakis'_belief_about_the_epicenter_of_e1.
-<https://crm-eq.ics.forth.gr/ontology/The_adoption_of_Platakis'_belief_about_the_epicenter_of_e1.> rdf:type owl:NamedIndividual .
+###  https://crm-eq.ics.forth.gr/ontology#The_adoption_of_Platakis'_belief_about_the_epicenter_of_e1.
+<https://crm-eq.ics.forth.gr/ontology#The_adoption_of_Platakis'_belief_about_the_epicenter_of_e1.> rdf:type owl:NamedIndividual .
 
 
-###  https://crm-eq.ics.forth.gr/ontology/The_adoption_of_Platakis'_belief_about_the_intensity_of_e2.
-<https://crm-eq.ics.forth.gr/ontology/The_adoption_of_Platakis'_belief_about_the_intensity_of_e2.> rdf:type owl:NamedIndividual .
+###  https://crm-eq.ics.forth.gr/ontology#The_adoption_of_Platakis'_belief_about_the_intensity_of_e2.
+<https://crm-eq.ics.forth.gr/ontology#The_adoption_of_Platakis'_belief_about_the_intensity_of_e2.> rdf:type owl:NamedIndividual .
 
 
-###  https://crm-eq.ics.forth.gr/ontology/Writing_of__'A_Seismic_History_of_Crete'
-<https://crm-eq.ics.forth.gr/ontology/Writing_of__'A_Seismic_History_of_Crete'> rdf:type owl:NamedIndividual .
+###  https://crm-eq.ics.forth.gr/ontology#Writing_of__'A_Seismic_History_of_Crete'
+<https://crm-eq.ics.forth.gr/ontology#Writing_of__'A_Seismic_History_of_Crete'> rdf:type owl:NamedIndividual .
 
 
-###  https://crm-eq.ics.forth.gr/ontology/Writing_of_ΟΙ_ΣΕΙΣΜΟΙ_ΤΗΣ_ΚΡΗΤΗΣ_ΑΠΟ_ΤΩΝ_ΑΡΧΑΙΟΤΑΤΩΝ_ΜΕΧΡΙ_ΤΩΝ_ΚΑΘ'_ΗΜΑΣ_ΧΡΟΝΩΝ
-<https://crm-eq.ics.forth.gr/ontology/Writing_of_ΟΙ_ΣΕΙΣΜΟΙ_ΤΗΣ_ΚΡΗΤΗΣ_ΑΠΟ_ΤΩΝ_ΑΡΧΑΙΟΤΑΤΩΝ_ΜΕΧΡΙ_ΤΩΝ_ΚΑΘ'_ΗΜΑΣ_ΧΡΟΝΩΝ> rdf:type owl:NamedIndividual .
+###  https://crm-eq.ics.forth.gr/ontology#Writing_of_ΟΙ_ΣΕΙΣΜΟΙ_ΤΗΣ_ΚΡΗΤΗΣ_ΑΠΟ_ΤΩΝ_ΑΡΧΑΙΟΤΑΤΩΝ_ΜΕΧΡΙ_ΤΩΝ_ΚΑΘ'_ΗΜΑΣ_ΧΡΟΝΩΝ
+<https://crm-eq.ics.forth.gr/ontology#Writing_of_ΟΙ_ΣΕΙΣΜΟΙ_ΤΗΣ_ΚΡΗΤΗΣ_ΑΠΟ_ΤΩΝ_ΑΡΧΑΙΟΤΑΤΩΝ_ΜΕΧΡΙ_ΤΩΝ_ΚΑΘ'_ΗΜΑΣ_ΧΡΟΝΩΝ> rdf:type owl:NamedIndividual .
 
 
-###  https://crm-eq.ics.forth.gr/ontology/Zabelios_S._,_Istorika_Skinografimata
-<https://crm-eq.ics.forth.gr/ontology/Zabelios_S._,_Istorika_Skinografimata> rdf:type owl:NamedIndividual .
+###  https://crm-eq.ics.forth.gr/ontology#Zabelios_S._,_Istorika_Skinografimata
+<https://crm-eq.ics.forth.gr/ontology#Zabelios_S._,_Istorika_Skinografimata> rdf:type owl:NamedIndividual .
 
 
-###  https://crm-eq.ics.forth.gr/ontology/ΟΙ_ΣΕΙΣΜΟΙ_ΤΗΣ_ΚΡΗΤΗΣ_ΑΠΟ_ΤΩΝ_ΑΡΧΑΙΟΤΑΤΩΝ_ΜΕΧΡΙ_ΤΩΝ_ΚΑΘ'_ΗΜΑΣ_ΧΡΟΝΩΝ
-<https://crm-eq.ics.forth.gr/ontology/ΟΙ_ΣΕΙΣΜΟΙ_ΤΗΣ_ΚΡΗΤΗΣ_ΑΠΟ_ΤΩΝ_ΑΡΧΑΙΟΤΑΤΩΝ_ΜΕΧΡΙ_ΤΩΝ_ΚΑΘ'_ΗΜΑΣ_ΧΡΟΝΩΝ> rdf:type owl:NamedIndividual .
+###  https://crm-eq.ics.forth.gr/ontology#ΟΙ_ΣΕΙΣΜΟΙ_ΤΗΣ_ΚΡΗΤΗΣ_ΑΠΟ_ΤΩΝ_ΑΡΧΑΙΟΤΑΤΩΝ_ΜΕΧΡΙ_ΤΩΝ_ΚΑΘ'_ΗΜΑΣ_ΧΡΟΝΩΝ
+<https://crm-eq.ics.forth.gr/ontology#ΟΙ_ΣΕΙΣΜΟΙ_ΤΗΣ_ΚΡΗΤΗΣ_ΑΠΟ_ΤΩΝ_ΑΡΧΑΙΟΤΑΤΩΝ_ΜΕΧΡΙ_ΤΩΝ_ΚΑΘ'_ΗΜΑΣ_ΧΡΟΝΩΝ> rdf:type owl:NamedIndividual .
 
 
 ###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi

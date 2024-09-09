@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="Imports Wizard Entry" name="http://www.cidoc-crm.org/cidoc-crm/" uri="https://cidoc-crm.org/rdfs/7.1.3/CIDOC_CRM_v7.1.3.rdf"/>
+    <uri id="Imports Wizard Entry" name="http://www.cidoc-crm.org/extensions/crmsci/" uri="https://cidoc-crm.org/extensions/crmsci/owl/2.0/CRMsci_v2.0.owl"/>
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1725890401169" name="duplicate:http://www.cidoc-crm.org/cidoc-crm/" uri="Basic_Model.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1725890401169" name="duplicate:http://www.cidoc-crm.org/cidoc-crm/" uri="Earthquake_Model.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1725890401169" name="duplicate:http://www.cidoc-crm.org/cidoc-crm/" uri="Earthquake_Model_with_examples.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1725890401169" name="duplicate:http://www.cidoc-crm.org/cidoc-crm/" uri="Earthquake_Model_with_examples_plus_reasoner.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1725890401169" name="duplicate:http://www.cidoc-crm.org/cidoc-crm/" uri="Individuals_only.rdf"/>
+    </group>
+</catalog>
