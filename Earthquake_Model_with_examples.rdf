@@ -725,14 +725,14 @@
     <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology#e1">
         <rdf:type rdf:resource="https://crm-eq.ics.forth.gr/ontology#EQ1_Earthquake"/>
         <P129i_is_subject_of rdf:resource="https://crm-eq.ics.forth.gr/ontology#e1_list_of_references"/>
-        <crmsci:O12_has_dimension rdf:resource="https://crm-eq.ics.forth.gr/ontology#e1_Ierapetra_duration"/>
-        <crmsci:O12_has_dimension rdf:resource="https://crm-eq.ics.forth.gr/ontology#e1_Ierapetra_intensity"/>
-        <crmsci:O12_has_dimension rdf:resource="https://crm-eq.ics.forth.gr/ontology#e1_Malia_intensity"/>
         <P4_has_time-span rdf:resource="https://crm-eq.ics.forth.gr/ontology#13-08-1922_00:10_GMT+00"/>
         <P70i_is_documented_in rdf:resource="https://crm-eq.ics.forth.gr/ontology#Platakis_Book"/>
         <P7_took_place_at rdf:resource="https://crm-eq.ics.forth.gr/ontology#Heraklion"/>
         <P7_took_place_at rdf:resource="https://crm-eq.ics.forth.gr/ontology#Ierapetra"/>
         <P7_took_place_at rdf:resource="https://crm-eq.ics.forth.gr/ontology#Malia"/>
+        <crmsci:O12_has_dimension rdf:resource="https://crm-eq.ics.forth.gr/ontology#e1_Ierapetra_duration"/>
+        <crmsci:O12_has_dimension rdf:resource="https://crm-eq.ics.forth.gr/ontology#e1_Ierapetra_intensity"/>
+        <crmsci:O12_has_dimension rdf:resource="https://crm-eq.ics.forth.gr/ontology#e1_Malia_intensity"/>
         <crmsci:O24i_was_measured_by rdf:resource="https://crm-eq.ics.forth.gr/ontology#e1_Epicenter_Measurement"/>
         <crmsci:O24i_was_measured_by rdf:resource="https://crm-eq.ics.forth.gr/ontology#e1_Heraklion_Intensity_Measurement"/>
         <crmsci:O24i_was_measured_by rdf:resource="https://crm-eq.ics.forth.gr/ontology#e1_Ierapetra_Measurement"/>
@@ -892,11 +892,11 @@
     <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology#e2">
         <rdf:type rdf:resource="https://crm-eq.ics.forth.gr/ontology#EQ1_Earthquake"/>
         <P129i_is_subject_of rdf:resource="https://crm-eq.ics.forth.gr/ontology#e2_list_of_references"/>
-        <crmsci:O12_has_dimension rdf:resource="https://crm-eq.ics.forth.gr/ontology#e2_Chania_intensity"/>
         <P4_has_time-span rdf:resource="https://crm-eq.ics.forth.gr/ontology#1246"/>
         <P70i_is_documented_in rdf:resource="https://crm-eq.ics.forth.gr/ontology#Platakis_Book"/>
         <P7_took_place_at rdf:resource="https://crm-eq.ics.forth.gr/ontology#Chania"/>
         <crmsci:O11i_was_described_by rdf:resource="https://crm-eq.ics.forth.gr/ontology#e2_data_evaluation"/>
+        <crmsci:O12_has_dimension rdf:resource="https://crm-eq.ics.forth.gr/ontology#e2_Chania_intensity"/>
         <crmsci:O13_triggered rdf:resource="https://crm-eq.ics.forth.gr/ontology#Chania_Walls_Damage"/>
         <earthquake_model:PEQ8_has_documented_possible_dimension rdf:resource="https://crm-eq.ics.forth.gr/ontology#e2_Chania_intensity"/>
     </owl:NamedIndividual>
@@ -949,11 +949,11 @@
     <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology#e3">
         <rdf:type rdf:resource="https://crm-eq.ics.forth.gr/ontology#EQ1_Earthquake"/>
         <P129i_is_subject_of rdf:resource="https://crm-eq.ics.forth.gr/ontology#e3_list_of_references"/>
-        <crmsci:O12_has_dimension rdf:resource="https://crm-eq.ics.forth.gr/ontology#e3_Heraklion_intensity"/>
         <P4_has_time-span rdf:resource="https://crm-eq.ics.forth.gr/ontology#08-08-1303_(Julian)"/>
         <P70i_is_documented_in rdf:resource="https://crm-eq.ics.forth.gr/ontology#Platakis_Book"/>
         <P7_took_place_at rdf:resource="https://crm-eq.ics.forth.gr/ontology#Heraklion"/>
         <crmsci:O11i_was_described_by rdf:resource="https://crm-eq.ics.forth.gr/ontology#e3_intensity_evaluation"/>
+        <crmsci:O12_has_dimension rdf:resource="https://crm-eq.ics.forth.gr/ontology#e3_Heraklion_intensity"/>
         <crmsci:O13_triggered rdf:resource="https://crm-eq.ics.forth.gr/ontology#Cracked_Heraklion_Walls"/>
         <crmsci:O13_triggered rdf:resource="https://crm-eq.ics.forth.gr/ontology#Destruction_of_Megalos_Koules"/>
         <earthquake_model:PEQ5_has_documented_possible_timespan rdf:resource="https://crm-eq.ics.forth.gr/ontology#08-08-1303_(Julian)"/>
@@ -1012,7 +1012,7 @@
         <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object"/>
         <P67_refers_to rdf:resource="https://crm-eq.ics.forth.gr/ontology#e3_references_provenance_1"/>
         <P67_refers_to rdf:resource="https://crm-eq.ics.forth.gr/ontology#Stavrakis_N._,_Statistiki_tou_plithismou_tis_Kritis_meta_diaforon_geografikon,_istorikon,_arxaiologiko,_ekklisiastikon_klp._Eidiseon_peri_tis_nisou,_1890,_p.107-111"/>
-        <P67_refers_to rdf:resource="https://crm-eq.ics.forth.gr/ontology#Zabelios_S._,_Istorika_Skinografimata"/>
+        <P67_refers_to rdf:resource="https://crm-eq.ics.forth.gr/ontology#Zabelios-S.,Istorika-Skinografimata"/>
         <P70i_is_documented_in rdf:resource="https://crm-eq.ics.forth.gr/ontology#Platakis_Book"/>
     </owl:NamedIndividual>
     
@@ -1023,7 +1023,7 @@
     <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology#e3_references_provenance_1">
         <rdf:type rdf:resource="http://www.cidoc-crm.org/extensions/crminf/I10_Provenance_Statement"/>
         <P67i_is_referred_to_by rdf:resource="https://crm-eq.ics.forth.gr/ontology#Stavrakis_N._,_Statistiki_tou_plithismou_tis_Kritis_meta_diaforon_geografikon,_istorikon,_arxaiologiko,_ekklisiastikon_klp._Eidiseon_peri_tis_nisou,_1890,_p.107-111"/>
-        <crminf:J20_is_about_the_provenance_of rdf:resource="https://crm-eq.ics.forth.gr/ontology#Zabelios_S._,_Istorika_Skinografimata"/>
+        <crminf:J20_is_about_the_provenance_of rdf:resource="https://crm-eq.ics.forth.gr/ontology#Zabelios-S.,Istorika-Skinografimata"/>
     </owl:NamedIndividual>
     
 
@@ -1216,9 +1216,9 @@
     
 
 
-    <!-- https://crm-eq.ics.forth.gr/ontology#Zabelios_S._,_Istorika_Skinografimata -->
+    <!-- https://crm-eq.ics.forth.gr/ontology#Zabelios-S.,Istorika-Skinografimata -->
 
-    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology#Zabelios_S._,_Istorika_Skinografimata">
+    <owl:NamedIndividual rdf:about="https://crm-eq.ics.forth.gr/ontology#Zabelios-S.,Istorika-Skinografimata">
         <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object"/>
     </owl:NamedIndividual>
     
